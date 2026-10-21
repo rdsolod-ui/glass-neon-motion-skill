@@ -53,3 +53,7 @@ CLI сообщил превышение skills context budget: описания 
 - [Проверенные вызовы трёх ролей](../tests/agent-smoke/evidence/parent-native-work-receipt.json)
 
 Ранее описанная Desktop fallback-подготовка остаётся отдельным историческим этапом. Дополнительная native цепочка подтверждает сборку/приёмку в CLI, но не добавляет selector в Desktop-чате родительского проекта.
+
+## Публикационное обновление — 2026-10-21, V3
+
+По следующему прямому поручению Ивана исходники этюда, компактные проверенные receipts и этот отчёт опубликованы commit `17e84d8fe63f8e7e34e69932d509922b1ac7d201`. [Этюд доступен публично](https://rdsolod-ui.github.io/glass-neon-motion-skill/study/index.html). Ранее записанные «локально / без push» относятся к исходному smoke-этапу. Raw CLI stream, screenshots и backups остаются локальными. [Результат публикации](release-v3.md). Открытие отдельного Desktop-проекта дошло до запроса доверия; [новая проверка](desktop-project-verification.md) пока не подтверждает Desktop native selector.

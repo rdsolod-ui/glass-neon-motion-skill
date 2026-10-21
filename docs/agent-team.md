@@ -27,3 +27,7 @@ Standalone TOML содержит `name`, `description`, `developer_instructions`
 ## Runtime-проверка 2026-10-21
 
 В новой CLI-сессии из корня репозитория все6 ролей обнаружены и запущены через native agent_type. Затем design/site/QA выполнили реальный handoff, build и50/50 browser checks. В новом Desktop-чате проекта C:/CodexWork native selector отсутствовал. [Точные доказательства и ограничения](agent-native-smoke.md). Предыдущая запись о непроверенной native discovery выше относится к моменту публикации V2.
+
+## Распределение V3
+
+`html_atlas_v3` реализовал113 HTML-тегов/22input/12states и независимо принял motion. `motion_atlas_v3` реализовал39 motion-примеров/13групп и независимо принял HTML. `desktop_roles_v3` проверил публикационный этюд и применение скилла; отдельно дошёл до штатного запроса доверия папке в Desktop. Координатор интегрировал, обновил skill, выполнил29/29 local и29/29 public и опубликовал V3. Это реальные collaboration jobs с fallback инструкциями ролей; их нельзя путать с ранее доказанными native CLI-запусками. [Приёмка V3](acceptance-v3.md) · [релиз](release-v3.md).

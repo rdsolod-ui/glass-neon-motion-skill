@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-21T11:55:28.189Z",
+  "source": "17e84d8fe63f8e7e34e69932d509922b1ac7d201",
+  "rows": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytesMatch": true
+    },
+    {
+      "path": "moodboard.html",
+      "status": 200,
+      "bytesMatch": true
+    },
+    {
+      "path": "html-atlas.css",
+      "status": 200,
+      "bytesMatch": true
+    },
+    {
+      "path": "html-atlas.js",
+      "status": 200,
+      "bytesMatch": true
+    },
+    {
+      "path": "motion-atlas.css",
+      "status": 200,
+      "bytesMatch": true
+    },
+    {
+      "path": "motion-atlas.js",
+      "status": 200,
+      "bytesMatch": true
+    },
+    {
+      "path": "study/index.html",
+      "status": 200,
+      "bytesMatch": true
+    },
+    {
+      "path": "study/style.css",
+      "status": 200,
+      "bytesMatch": true
+    },
+    {
+      "path": "study/app.js",
+      "status": 200,
+      "bytesMatch": true
+    }
+  ]
+}
