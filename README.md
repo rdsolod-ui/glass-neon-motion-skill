@@ -2,6 +2,13 @@
 
 Расширенный Codex skill для glassmorphism-сайтов: две темы, яркие неоновые акценты, осмысленный motion, интерактивный мудборд и независимая приёмка.
 
+## Открыть онлайн
+
+- [Тестовый сайт LUMA](https://rdsolod-ui.github.io/glass-neon-motion-skill/)
+- [Мудборд Glass Atlas](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html)
+
+Обе страницы публичны и не требуют входа. GitHub Pages публикует `site/` через `.github/workflows/pages.yml` после изменений сайта в `main`.
+
 ## Что входит
 
 - [`skill/glass-neon-motion`](skill/glass-neon-motion/SKILL.md): entrypoint и шесть подробных руководств — материалы, референсы, компоненты, motion, библиотеки, приёмка.
@@ -65,4 +72,4 @@ node scripts/install-skill.mjs
 
 HTML/CSS/JS и оптические этюды написаны для проекта. Manrope — `@fontsource-variable/manrope` 5.3.0, Latin/Cyrillic; [SIL OFL](site/assets/Manrope-OFL.txt), [upstream](https://github.com/sharanda/manrope), [Fontsource](https://fontsource.org/fonts/manrope). Внешние страницы — референсы, их изображения/логотипы не переупакованы. Поиск навыков нашёл существующий glassmorphism-скилл; он не копировался и не устанавливался вместо оригинального расширения. Код сторонних component libraries не включён.
 
-Репозиторий приватный; отсутствие отдельной лицензии на оригинальные материалы не предоставляет третьим лицам права на распространение. Лицензия приложенного шрифта сохраняет силу.
+Репозиторий публичный по запросу владельца; отсутствие отдельной лицензии на оригинальные материалы не предоставляет третьим лицам права на распространение. Лицензия приложенного шрифта сохраняет силу.
