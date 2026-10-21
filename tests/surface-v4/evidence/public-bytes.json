@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-21T15:31:03.400Z",
+  "source": "0745ae776192d9c9d259f093de871db7b74f4791",
+  "normalization": "CRLF to LF",
+  "rows": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytesMatch": true,
+      "sha256": "e87dfab57bc2f5dc1826239bd36e4f9779af14793dc9530c0f2b195d506ab36e"
+    },
+    {
+      "path": "moodboard.html",
+      "status": 200,
+      "bytesMatch": true,
+      "sha256": "0d49b700d4f0b8dd09790b0c363d454d6424113de55e1c3de090ca13f09ae399"
+    },
+    {
+      "path": "style.css",
+      "status": 200,
+      "bytesMatch": true,
+      "sha256": "ad90784781ef8b55837909014c7f33abcfa07c6a24eb3b79771641825db330dc"
+    },
+    {
+      "path": "expressive.css",
+      "status": 200,
+      "bytesMatch": true,
+      "sha256": "86c277d736ddf1b16ef5d0f250cdba598d0a307476e1b78c8ba276c92d810c48"
+    },
+    {
+      "path": "board-v2.css",
+      "status": 200,
+      "bytesMatch": true,
+      "sha256": "f2af312e8909df0cfbd84e8c97274db156acd9b3403a32e3d7e54b96e30b3c9e"
+    },
+    {
+      "path": "html-atlas.css",
+      "status": 200,
+      "bytesMatch": true,
+      "sha256": "211d3265d9377f999ebd92a55cc270b3e64c7b5645a8cbaebd762b8a1b1deca1"
+    },
+    {
+      "path": "motion-atlas.css",
+      "status": 200,
+      "bytesMatch": true,
+      "sha256": "fdea1a5a3e6351ea343a8f4a6f40075c91793b73355ab45d26dd2b6924790cad"
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytesMatch": true,
+      "sha256": "8f0c1687ec6110ce8e7a4fcf404524834f5f5b3ee22ab2da7adf28ef5edd5f32"
+    },
+    {
+      "path": "theme.js",
+      "status": 200,
+      "bytesMatch": true,
+      "sha256": "02c08347c93d23afc29a81299f2ba751f6e6ee9f260c8e49e8ff499bab40afcc"
+    }
+  ],
+  "passed": 9,
+  "total": 9
+}

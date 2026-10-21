@@ -1,0 +1,168 @@
+{
+  "base": "https://rdsolod-ui.github.io/glass-neon-motion-skill/",
+  "checkedAt": "2026-10-21T15:31:42.974Z",
+  "checks": [
+    {
+      "name": "board HTTP200",
+      "pass": true
+    },
+    {
+      "name": "integrated inventories",
+      "pass": true
+    },
+    {
+      "name": "no duplicate DOM ids",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "one visible main",
+      "pass": true
+    },
+    {
+      "name": "all page anchors resolve",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "all sections fit light 1440",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1425
+      }
+    },
+    {
+      "name": "all sections fit light 768",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scroll": 753
+      }
+    },
+    {
+      "name": "all sections fit light 390",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 375
+      }
+    },
+    {
+      "name": "all sections fit light 320",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305
+      }
+    },
+    {
+      "name": "all sections fit dark 1440",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1425
+      }
+    },
+    {
+      "name": "all sections fit dark 768",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scroll": 753
+      }
+    },
+    {
+      "name": "all sections fit dark 390",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 375
+      }
+    },
+    {
+      "name": "all sections fit dark 320",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305
+      }
+    },
+    {
+      "name": "mobile nav closes on HTML selection",
+      "pass": true
+    },
+    {
+      "name": "HTML native dialog opens",
+      "pass": true
+    },
+    {
+      "name": "HTML dialog restores focus",
+      "pass": true
+    },
+    {
+      "name": "original recipe dialog still works",
+      "pass": true
+    },
+    {
+      "name": "manual solid reaches new labs",
+      "pass": true,
+      "detail": [
+        "none"
+      ]
+    },
+    {
+      "name": "motion group filter independent of HTML",
+      "pass": true
+    },
+    {
+      "name": "live reduce cancels new animations",
+      "pass": true
+    },
+    {
+      "name": "replay respects system reduce",
+      "pass": true
+    },
+    {
+      "name": "reduced before load in fresh context",
+      "pass": true,
+      "detail": {
+        "media": true,
+        "root": "true",
+        "animations": []
+      }
+    },
+    {
+      "name": "drag keyboard alternative",
+      "pass": true
+    },
+    {
+      "name": "drag keyboard Home",
+      "pass": true
+    },
+    {
+      "name": "no JS content retained",
+      "pass": true
+    },
+    {
+      "name": "native details without JS",
+      "pass": true
+    },
+    {
+      "name": "original site HTTP200",
+      "pass": true
+    },
+    {
+      "name": "original site dialog regression",
+      "pass": true
+    },
+    {
+      "name": "no JS or asset errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "passed": 29,
+  "failed": 0
+}

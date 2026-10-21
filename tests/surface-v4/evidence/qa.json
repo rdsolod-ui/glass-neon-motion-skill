@@ -1,0 +1,269 @@
+{
+  "scope": "V4 independent local review",
+  "sourceCommit": "0745ae776192d9c9d259f093de871db7b74f4791",
+  "browser": "Chromium 155.0.8059.85",
+  "surfaceChecks": [
+    {
+      "scope": "site",
+      "checkedAt": "2026-10-21T15:04:02.152Z",
+      "passed": 20,
+      "failed": 0,
+      "errors": [],
+      "checks": [
+        {
+          "name": "site-light-normal-alpha-and-blur",
+          "pass": true
+        },
+        {
+          "name": "site-light-width-1440",
+          "pass": true
+        },
+        {
+          "name": "site-light-width-768",
+          "pass": true
+        },
+        {
+          "name": "site-light-width-390",
+          "pass": true
+        },
+        {
+          "name": "site-light-width-320",
+          "pass": true
+        },
+        {
+          "name": "site-light-live-blur-keyboard",
+          "pass": true
+        },
+        {
+          "name": "site-light-manual-solid",
+          "pass": true
+        },
+        {
+          "name": "site-light-reduced-transparency",
+          "pass": true
+        },
+        {
+          "name": "site-light-forced-colors",
+          "pass": true
+        },
+        {
+          "name": "site-light-keyboard-focus",
+          "pass": true
+        },
+        {
+          "name": "site-dark-normal-alpha-and-blur",
+          "pass": true
+        },
+        {
+          "name": "site-dark-width-1440",
+          "pass": true
+        },
+        {
+          "name": "site-dark-width-768",
+          "pass": true
+        },
+        {
+          "name": "site-dark-width-390",
+          "pass": true
+        },
+        {
+          "name": "site-dark-width-320",
+          "pass": true
+        },
+        {
+          "name": "site-dark-live-blur-keyboard",
+          "pass": true
+        },
+        {
+          "name": "site-dark-manual-solid",
+          "pass": true
+        },
+        {
+          "name": "site-dark-reduced-transparency",
+          "pass": true
+        },
+        {
+          "name": "site-dark-forced-colors",
+          "pass": true
+        },
+        {
+          "name": "site-dark-keyboard-focus",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "scope": "board",
+      "checkedAt": "2026-10-21T15:02:37.479Z",
+      "passed": 12,
+      "failed": 0,
+      "errors": [],
+      "checks": [
+        {
+          "name": "board-light-normal-alpha-and-blur",
+          "pass": true
+        },
+        {
+          "name": "board-light-placeholder-readback",
+          "pass": true
+        },
+        {
+          "name": "board-light-manual-solid",
+          "pass": true
+        },
+        {
+          "name": "board-light-reduced-transparency",
+          "pass": true
+        },
+        {
+          "name": "board-light-forced-colors",
+          "pass": true
+        },
+        {
+          "name": "board-light-keyboard-focus",
+          "pass": true
+        },
+        {
+          "name": "board-dark-normal-alpha-and-blur",
+          "pass": true
+        },
+        {
+          "name": "board-dark-placeholder-readback",
+          "pass": true
+        },
+        {
+          "name": "board-dark-manual-solid",
+          "pass": true
+        },
+        {
+          "name": "board-dark-reduced-transparency",
+          "pass": true
+        },
+        {
+          "name": "board-dark-forced-colors",
+          "pass": true
+        },
+        {
+          "name": "board-dark-keyboard-focus",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "blurReadback": {
+    "checkedAt": "2026-10-21T15:11:25.144Z",
+    "passed": true,
+    "values": [
+      {
+        "value": "0",
+        "host": "none",
+        "pseudo": "blur(0px) saturate(1.4)",
+        "label": "0 px"
+      },
+      {
+        "value": "28",
+        "host": "none",
+        "pseudo": "blur(28px) saturate(1.4)",
+        "label": "28 px"
+      },
+      {
+        "value": "8",
+        "host": "none",
+        "pseudo": "blur(8px) saturate(1.4)",
+        "label": "8 px"
+      }
+    ],
+    "screenshot": "qa/v4-render-site-final-blur8.png"
+  },
+  "renderPaths": {
+    "checkedAt": "2026-10-21T15:04:46.046Z",
+    "snapshots": [
+      "v4-render-site-theme-anchor-studio.png",
+      "v4-render-site-theme-anchor-materials.png",
+      "v4-render-site-theme-anchor-studio-repeat.png",
+      "v4-render-site-mobile-dark-form.png",
+      "v4-render-board-nested-2d.png",
+      "v4-render-board-nested-3d.png",
+      "v4-render-board-optics.png",
+      "v4-render-board-nested-repeat.png",
+      "v4-render-board-mobile-nested.png",
+      "v4-render-board-mobile-optics.png"
+    ],
+    "evidence": [
+      {
+        "name": "v4-render-site-theme-anchor-studio",
+        "theme": "dark",
+        "width": 1440,
+        "scroll": 1425
+      },
+      {
+        "name": "v4-render-site-theme-anchor-materials",
+        "theme": "dark",
+        "width": 1440,
+        "scroll": 1425
+      },
+      {
+        "name": "v4-render-site-theme-anchor-studio-repeat",
+        "theme": "dark",
+        "width": 1440,
+        "scroll": 1425
+      },
+      {
+        "name": "v4-render-site-mobile-dark-form",
+        "theme": "dark",
+        "width": 390,
+        "scroll": 375
+      },
+      {
+        "name": "v4-render-board-nested-2d",
+        "theme": "dark",
+        "width": 1440,
+        "scroll": 1425
+      },
+      {
+        "name": "v4-render-board-nested-3d",
+        "theme": "dark",
+        "width": 1440,
+        "scroll": 1425
+      },
+      {
+        "name": "v4-render-board-optics",
+        "theme": "dark",
+        "width": 1440,
+        "scroll": 1425
+      },
+      {
+        "name": "v4-render-board-nested-repeat",
+        "theme": "dark",
+        "width": 1440,
+        "scroll": 1425
+      },
+      {
+        "name": "v4-render-board-mobile-nested",
+        "theme": "dark",
+        "width": 390,
+        "scroll": 375
+      },
+      {
+        "name": "v4-render-board-mobile-optics",
+        "theme": "dark",
+        "width": 390,
+        "scroll": 375
+      }
+    ]
+  },
+  "limitations": [
+    "Chromium emulation; no physical phone, Safari/Firefox or complete WCAG/FPS audit.",
+    "Original parallel media capture pass rejected; final runs sequential."
+  ],
+  "receiptAssembledBy": "Coordinator from saved independent QA JSON and reviewer handoff",
+  "sourceSha256": {
+    "site/index.html": "d2fe0ee3b091fcf66e517545f72cecb82903dcbb35751f6497db6481632cefa9",
+    "site/style.css": "7e66d74637f4cc9f963b005b71c7a83caecbee3aeb25c39a64f145c559c17ff6",
+    "site/expressive.css": "663bdf7a629cef895791a038c1192b08e342335472c2ae29bafddc08ec64f6fc",
+    "site/moodboard.html": "0d49b700d4f0b8dd09790b0c363d454d6424113de55e1c3de090ca13f09ae399",
+    "site/board-v2.css": "062af8dc95158fb37484e77f939b26fbed01c05870c0d554cb8ac26e6e2555f6",
+    "site/html-atlas.css": "2e41332c674df963f474b2dd6aa8ad810f37a49a453e51fd705b4f22a5a6c25a",
+    "site/motion-atlas.css": "fdea1a5a3e6351ea343a8f4a6f40075c91793b73355ab45d26dd2b6924790cad"
+  }
+}
