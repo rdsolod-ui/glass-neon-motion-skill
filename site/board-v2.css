@@ -27,5 +27,66 @@
 @media(forced-colors:active){.optical-pane,.glass-token,.pattern-preview .mini-ui{border:2px solid CanvasText;box-shadow:none}.liquid .optical-pane:after{display:none}}
 .frost .glass-token,.smoke .glass-token{box-shadow:0 10px 18px #12265122}.optical-scene{border:0}
 
-/* V3 section routing: plain navigation, no extra glass layer. */
+/* Section routing. The V4 shell below shares the site's glass material tokens. */
 .atlas-route{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:70px}.atlas-route a{display:flex;gap:14px;align-items:center;padding:16px 18px;min-height:56px;background:var(--solid);border-radius:14px;text-decoration:none;font-size:.9rem;overflow-wrap:anywhere}.atlas-route b{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.72rem}.atlas-route a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}section[id]{scroll-margin-top:110px}@media(max-width:600px){.atlas-route{grid-template-columns:1fr 1fr;margin-bottom:42px}.atlas-route a{padding:14px 10px;gap:8px;font-size:.8rem}}@media(forced-colors:active){.atlas-route a{border:1px solid CanvasText}}
+
+/* V4 — glass is the interface shell as well as the subject of the collection.
+   Outer surfaces diffuse the shared substrate; reading wells do not add blur. */
+.atlas-page :is(.board-copy,.atlas-route a,.material-controls,.optical-study,.map-node,.pattern,.source-card,.user-reference,.board-toolbar){
+  background:var(--glass-reflection),var(--glass-fill);
+  border:0;box-shadow:var(--glass-shadow);
+  backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);
+}
+.atlas-page .board-hero{grid-template-columns:1fr 1fr;align-items:stretch;gap:24px;padding-block:38px 22px}
+.atlas-page .board-hero:after{display:none}
+.board-copy{border-radius:30px;padding:30px 34px;min-width:0}
+.board-copy .eyebrow{font-size:.75rem;margin-bottom:20px}
+.atlas-page .board-hero h1{font-size:clamp(3.5rem,5.8vw,5.65rem);line-height:1.03;letter-spacing:-.065em;max-width:8ch}
+.atlas-page .board-hero p{max-width:44ch;font-size:.98rem;line-height:1.6;margin-top:18px}
+.atlas-page .board-hero p[data-motion-status]{font-size:.72rem;margin-top:19px}
+.board-counts{display:flex;flex-wrap:wrap;gap:26px;margin-top:25px}
+.board-counts span{display:grid;gap:2px;font-size:.68rem;color:var(--muted)}
+.board-counts b{font-size:1.65rem;line-height:1.2;letter-spacing:-.04em;color:var(--ink);font-variant-numeric:tabular-nums}
+.board-art{position:relative;isolation:isolate;min-height:355px;border-radius:30px;overflow:hidden;background:radial-gradient(ellipse at 10% 90%,#9b43eb66,transparent 60%),radial-gradient(ellipse at 100% 0,#00eaff3b,transparent 55%),var(--glass-fill);box-shadow:var(--glass-shadow)}
+.board-art-orb{position:absolute;width:225px;height:225px;left:6%;top:28%;border-radius:50%;background:radial-gradient(circle at 26% 22%,#ffe1ff,#f245bd 27%,#ae35e9 60%,#3f1b97 90%);box-shadow:18px 24px 35px #23055540}
+.board-art-ribbon{position:absolute;width:390px;height:105px;right:-75px;top:25%;transform:rotate(-37deg);border-radius:80px;background:linear-gradient(120deg,#cafff7,#00e3ee 37%,#277cfb 77%,#5a34f4);box-shadow:0 20px 30px #05386035}
+.board-art-back{position:absolute;inset:15% 15% 23% 23%;border-radius:25px;transform:rotate(10deg);background:#d6f9ff10;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.board-art-film{position:absolute;inset:15% 16% 21% 13%;padding:24px 27px;border-radius:26px;transform:rotate(-7deg);background:var(--glass-reflection),var(--glass-fill);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);box-shadow:0 24px 40px -20px #130c5a66;display:flex;flex-direction:column;justify-content:space-between;gap:10px}
+.board-art-index{font-size:.55rem;letter-spacing:.15em;font-weight:700;color:var(--ink)}
+.board-art-film strong{font-size:clamp(4rem,8vw,6.5rem);line-height:1;letter-spacing:-.09em;font-weight:550;color:var(--ink);align-self:start}
+.board-art-line{width:75%;height:2px;background:linear-gradient(90deg,var(--cyan),transparent);flex-shrink:0}
+.board-art-note{font-size:.67rem;color:var(--ink)}
+.board-art-edge{position:absolute;right:8%;bottom:14%;height:102px;width:105px;padding:17px;border-radius:25px;background:var(--glass-reflection),var(--glass-fill);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:var(--glass-edge-shadow);transform:rotate(9deg);display:flex;align-items:start;justify-content:space-between;flex-direction:column}
+.board-art-edge span{font-size:.65rem;letter-spacing:.12em;font-weight:700}.board-art-edge b{font-size:2rem;line-height:1;align-self:end;font-weight:400}
+.board-art-label{position:absolute;left:28px;bottom:22px;font-size:.65rem;color:var(--muted)}
+.atlas-page .atlas-route{grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:62px}
+.atlas-page .atlas-route a{flex-direction:column;align-items:start;justify-content:center;gap:10px;min-height:96px;padding:16px;border-radius:19px;font-size:.8rem;line-height:1.4}
+.atlas-page .atlas-route b{color:var(--cyan);font-size:.65rem}
+.atlas-page .material-controls{padding:24px 26px;margin-bottom:24px;border-radius:23px}
+.atlas-page .optical-grid{gap:20px}
+.atlas-page .optical-study{border-radius:30px;padding:9px}
+.atlas-page .optical-scene{border-radius:23px}
+.atlas-page .study-description{padding:22px 18px 20px}
+.atlas-page .study-description p{font-size:.85rem}
+.atlas-page .map-node{border-radius:19px;padding:21px;min-height:100px;display:flex;flex-direction:column;justify-content:space-between;gap:12px}
+.atlas-page .map-node strong{font-size:.9rem}.atlas-page .map-node small{font-size:.73rem}
+.atlas-page .pattern{padding:9px;border-radius:28px}.atlas-page .pattern-preview{border-radius:20px}
+.atlas-page .pattern-body{padding:22px 17px}.atlas-page .pattern-body h3{font-size:1.2rem}
+.atlas-page .pattern-body p{font-size:.86rem}.atlas-page .pattern-body .actions{flex-wrap:wrap}
+.atlas-page .board-toolbar{border:0;border-radius:24px;padding:24px;box-shadow:var(--glass-shadow)}
+.atlas-page .board-toolbar input{background:var(--glass-dense);border:0;font-size:16px}
+.atlas-page .board-toolbar input::placeholder{color:var(--muted);opacity:1}
+.atlas-page .filter{background:var(--glass-reflection),var(--glass-control);border:0;padding-inline:15px}
+.atlas-page .filter[aria-pressed=true]{background:var(--accent);color:var(--accent-ink)}
+.atlas-page :is(.source-card,.user-reference){border-radius:23px;padding:26px;display:flex;flex-direction:column;align-items:start}
+.atlas-page :is(.source-card,.user-reference) p{flex:1;line-height:1.65}.atlas-page :is(.source-card,.user-reference) a{padding-block:10px;font-size:.82rem}
+.atlas-page .user-reference h3{margin-top:10px;font-size:1.18rem}
+.atlas-page .closing{background:var(--glass-reflection),var(--glass-fill)}
+.atlas-page #recipe-dialog{background:var(--glass-reflection),var(--glass-dense);border:0;backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);box-shadow:var(--glass-edge-shadow)}
+@media(hover:hover) and (pointer:fine){.atlas-page :is(.atlas-route a,.map-node):hover{background-color:var(--glass-highlight)}}
+@media(max-width:1100px){.atlas-page .atlas-route{grid-template-columns:repeat(3,minmax(0,1fr))}.atlas-page .atlas-route a{flex-direction:row;align-items:center;justify-content:start;min-height:66px}.board-copy{padding:28px}.board-counts{gap:20px}.board-art-film{padding:22px;inset-inline:10% 13%}.board-art-edge{right:5%}}
+@media(max-width:760px){.atlas-page .board-hero{grid-template-columns:1fr;gap:16px;padding-block:26px 18px}.board-copy{padding:25px}.atlas-page .board-hero h1{font-size:clamp(3.6rem,15vw,5rem);max-width:none}.board-copy .eyebrow{margin-bottom:16px}.board-art{min-height:280px}.board-art-orb{width:180px;height:180px;top:22%}.board-art-ribbon{top:20%;height:88px}.board-art-film{inset:13% 18% 22% 12%;padding:20px 24px}.board-art-film strong{font-size:4rem}.board-art-edge{height:83px;width:86px;right:9%;bottom:15%;padding:14px}.board-art-edge b{font-size:1.6rem}.board-art-label{left:24px;bottom:17px}.atlas-page .atlas-route{grid-template-columns:1fr 1fr;margin-bottom:48px;gap:8px}.atlas-page .atlas-route a{font-size:.77rem;padding:14px;gap:10px;border-radius:15px}.atlas-page .material-controls{padding:20px;gap:18px}.atlas-page .board-toolbar{padding:20px}.atlas-page .source-card,.atlas-page .user-reference{padding:23px}.atlas-page .map-node{padding:18px}}
+:root[data-solid=true] .board-art-film,:root[data-solid=true] .board-art-edge,:root[data-solid=true] .board-art-back{background:var(--solid);backdrop-filter:none;-webkit-backdrop-filter:none}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.board-art-film,.board-art-edge,.board-art-back{background:var(--solid)}}
+@media(prefers-reduced-transparency:reduce){.board-art-film,.board-art-edge,.board-art-back{background:var(--solid);backdrop-filter:none;-webkit-backdrop-filter:none}}
+@media(forced-colors:active){.atlas-page :is(.board-copy,.atlas-route a,.material-controls,.optical-study,.map-node,.pattern,.source-card,.user-reference,.board-toolbar,#recipe-dialog,.filter){background:Canvas;color:CanvasText;border:1px solid CanvasText;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}.atlas-page .filter[aria-pressed=true]{background:Highlight;color:HighlightText}.board-art-orb,.board-art-ribbon,.board-art-back{display:none}.board-art{background:Canvas;border:1px solid CanvasText;box-shadow:none}.board-art-film,.board-art-edge{background:Canvas;color:CanvasText;box-shadow:none;border:1px solid CanvasText;backdrop-filter:none;-webkit-backdrop-filter:none}.board-art-line{background:CanvasText}.board-art :is(strong,span),.board-counts :is(b,span){color:CanvasText}.atlas-page .atlas-route b{color:LinkText}}

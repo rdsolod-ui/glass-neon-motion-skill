@@ -1,0 +1,118 @@
+{
+  "checks": [
+    {
+      "name": "preferences-real",
+      "pass": true
+    },
+    {
+      "name": "expanded-1440-light",
+      "pass": true,
+      "detail": {
+        "theme": "light",
+        "client": 1425,
+        "scroll": 1425,
+        "navShadow": "rgba(75, 59, 130, 0.376) 0px 22px 65px -28px",
+        "placeholder": "rgb(76, 75, 104)",
+        "filter": "blur(14px) saturate(1.2)"
+      }
+    },
+    {
+      "name": "expanded-1440-dark",
+      "pass": true,
+      "detail": {
+        "theme": "dark",
+        "client": 1425,
+        "scroll": 1425,
+        "navShadow": "rgba(3, 4, 27, 0.55) 0px 22px 60px -22px",
+        "placeholder": "rgb(201, 206, 228)",
+        "filter": "blur(14px) saturate(1.2)"
+      }
+    },
+    {
+      "name": "expanded-390-light",
+      "pass": true,
+      "detail": {
+        "theme": "light",
+        "client": 375,
+        "scroll": 375,
+        "navShadow": "rgba(75, 59, 130, 0.376) 0px 22px 65px -28px",
+        "placeholder": "rgb(76, 75, 104)",
+        "filter": "blur(14px) saturate(1.2)"
+      }
+    },
+    {
+      "name": "expanded-390-dark",
+      "pass": true,
+      "detail": {
+        "theme": "dark",
+        "client": 375,
+        "scroll": 375,
+        "navShadow": "rgba(3, 4, 27, 0.55) 0px 22px 60px -22px",
+        "placeholder": "rgb(201, 206, 228)",
+        "filter": "blur(14px) saturate(1.2)"
+      }
+    },
+    {
+      "name": "button-keyboard",
+      "pass": true
+    },
+    {
+      "name": "html-filter",
+      "pass": true
+    },
+    {
+      "name": "pattern-empty",
+      "pass": true
+    },
+    {
+      "name": "pattern-filter",
+      "pass": true
+    },
+    {
+      "name": "motion-filter",
+      "pass": true
+    },
+    {
+      "name": "motion-replay",
+      "pass": true
+    },
+    {
+      "name": "motion-finite",
+      "pass": true
+    },
+    {
+      "name": "solid-shell",
+      "pass": true,
+      "detail": [
+        {
+          "blur": "none",
+          "bg": "rgb(29, 34, 60)"
+        },
+        {
+          "blur": "none",
+          "bg": "rgb(29, 34, 60)"
+        },
+        {
+          "blur": "none",
+          "bg": "rgb(29, 34, 60)"
+        },
+        {
+          "blur": "none",
+          "bg": "rgb(29, 34, 60)"
+        }
+      ]
+    },
+    {
+      "name": "no-errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "qa/v4-board-peer/1440-light-expanded.png",
+    "qa/v4-board-peer/1440-dark-expanded.png",
+    "qa/v4-board-peer/390-light-expanded.png",
+    "qa/v4-board-peer/390-dark-expanded.png"
+  ]
+}

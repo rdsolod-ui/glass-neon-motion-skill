@@ -26,3 +26,37 @@
 @media(prefers-reduced-transparency:reduce){.ha-surface,.ha-input-demo{background:var(--solid);color:var(--ink);backdrop-filter:none;-webkit-backdrop-filter:none;--ha-text:var(--ink);--ha-subtle:var(--muted)}}
 @media(prefers-reduced-motion:reduce){.ha-demo button:active{transform:none}.ha-root *{scroll-behavior:auto}}
 @media(forced-colors:active){.ha-root{--ha-panel:Canvas;--ha-text:CanvasText;--ha-subtle:CanvasText;--ha-control:Canvas;--ha-highlight:LinkText;--ha-error:CanvasText;--ha-stroke:CanvasText}.ha-map button,.ha-entry,.ha-input-card,.ha-surface,.ha-state,.ha-modal,.ha-popover,.ha-demo button{background:Canvas;color:CanvasText;border:1px solid CanvasText;box-shadow:none!important;backdrop-filter:none;-webkit-backdrop-filter:none}.ha-map button[aria-pressed=true],.ha-demo button[aria-pressed=true]{background:Highlight;color:HighlightText}.ha-scene{background:Canvas}.ha-scene:before,.ha-surface:after{display:none}.ha-root a{color:LinkText}.ha-root pre{background:Canvas;color:CanvasText}.ha-demo button.ha-primary{background:ButtonFace;color:ButtonText}}
+
+/* V4 explorer shell: transparent categories and cards, dense reading wells.
+   Group headers are separate surfaces so closed groups never layer two blurs. */
+.ha-toolbar,.ha-map button,.ha-group>summary,.ha-entry,.ha-input-card,.ha-state,.ha-legacy{
+  background:var(--glass-reflection),var(--glass-fill);border:0;
+  box-shadow:var(--glass-shadow);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);
+}
+.ha-toolbar{padding:26px;border-radius:25px}
+.ha-toolbar input[type=search]{background:var(--glass-dense);border:0;border-radius:13px}
+.ha-toolbar input[type=search]::placeholder{color:var(--muted);opacity:1}
+.ha-map{gap:10px;margin:20px 0 28px}
+.ha-map button{border-radius:17px;min-height:66px;padding:15px 18px;font-size:.83rem}
+.ha-map button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);box-shadow:0 10px 28px -14px color-mix(in srgb,var(--accent),transparent 25%)}
+.ha-group{border:0;margin:12px 0}
+.ha-group>summary{border-radius:21px;padding:22px 24px;min-height:88px}
+.ha-group>summary>span{color:var(--cyan);font-size:.75rem}
+.ha-group>summary h3{font-size:clamp(1.15rem,1.8vw,1.6rem);letter-spacing:-.035em}
+.ha-group[open]>summary{margin-bottom:12px}
+.ha-entries{gap:10px;padding-bottom:12px}
+.ha-entry{border-radius:20px}
+.ha-entry>summary{padding:20px 24px}
+.ha-entry>summary>code{font-size:.87rem}.ha-entry>summary>span{font-size:.9rem}
+.ha-entry-body{padding:12px 18px 18px;gap:18px}
+.ha-spec{padding:20px;border-radius:16px;background:var(--glass-dense)}
+.ha-spec pre{background:var(--bg)}
+.ha-input-grid{gap:12px}.ha-input-card{border-radius:19px}
+.ha-input-card>summary{padding:20px 22px;min-height:86px}
+.ha-state{border:0;padding:22px;border-radius:23px}
+.ha-state h4{line-height:1.4}.ha-state .ha-scene{border-radius:17px}
+.ha-legacy{border-radius:21px;padding:24px}
+.ha-modal,.ha-popover{background:var(--glass-reflection),var(--glass-dense);border:0;box-shadow:var(--glass-edge-shadow);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter)}
+@media(hover:hover) and (pointer:fine){.ha-entry>summary:hover,.ha-input-card>summary:hover{background:var(--glass-highlight);border-radius:inherit}.ha-map button:hover{filter:none;background-color:var(--glass-highlight)}.ha-map button[aria-pressed=true]:hover{background:var(--accent)}}
+@media(max-width:700px){.ha-toolbar{padding:20px}.ha-map button{padding:14px;gap:10px}.ha-group>summary{padding:20px 17px;gap:12px}.ha-entry>summary{padding:18px 16px}.ha-entry-body{padding:8px 12px 14px;gap:12px}.ha-spec{padding:17px}.ha-input-card>summary{padding:17px}.ha-state{padding:20px}.ha-state-grid{gap:14px}.ha-legacy{padding:20px}}
+@media(forced-colors:active){.ha-toolbar,.ha-map button,.ha-group>summary,.ha-entry,.ha-input-card,.ha-state,.ha-legacy,.ha-spec,.ha-modal,.ha-popover{background:Canvas;color:CanvasText;border:1px solid CanvasText;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}.ha-spec pre{background:Canvas;color:CanvasText}.ha-map button[aria-pressed=true]{background:Highlight;color:HighlightText}.ha-toolbar input[type=search]{background:Canvas;border:1px solid CanvasText}.ha-group>summary>span{color:CanvasText}}

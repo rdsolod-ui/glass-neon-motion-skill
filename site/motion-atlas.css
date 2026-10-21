@@ -9,3 +9,33 @@
 :root[data-solid=true] .ma-pane,:root[data-solid=true] .ma-cell,:root[data-solid=true] .ma-shared,:root[data-solid=true] .ma-stack>span,:root[data-solid=true] .ma-hero .ma-b{background:var(--ma-stage);backdrop-filter:none;-webkit-backdrop-filter:none}
 @media(prefers-reduced-transparency:reduce){.ma-pane,.ma-cell,.ma-shared,.ma-stack>span,.ma-hero .ma-b{background:var(--ma-stage);backdrop-filter:none;-webkit-backdrop-filter:none}}
 @media(forced-colors:active){.ma-lab{--ma-stage:Canvas;--ma-fg:CanvasText;--ma-cyan:CanvasText;--ma-neon:Highlight;--ma-film:Canvas}.ma-stage::before,.ma-stage::after{display:none}.ma-pane,.ma-cell,.ma-shared,.ma-stack>span,.ma-card,.ma-map a,.ma-press,.ma-drag-knob,.ma-snap>span,.ma-orbit,.ma-hero .ma-b{background:Canvas;color:CanvasText;border:1px solid CanvasText;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}.ma-track,.ma-drag-track{border:1px solid CanvasText}.ma-track i,.ma-bars i,.ma-dots i{background:Highlight}.ma-stage,.ma-landscape{background:Canvas}.ma-shape{fill:Highlight}.ma-glass-3d{box-shadow:none}}
+
+/* V4 motion library: the controls, routes and specimen frames share the glass
+   shell. Each stage keeps its own substrate for unambiguous material demos. */
+.ma-tools,.ma-map a,.ma-card{
+  border:0;background:var(--glass-reflection),var(--glass-fill);
+  box-shadow:var(--glass-shadow);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);
+}
+.ma-tools{padding:25px 26px;border-radius:25px;gap:18px;margin-bottom:18px}
+.ma-tools input[type=search],.ma-tools select{background:var(--glass-dense);border:0;min-height:48px;font-size:16px;border-radius:13px}
+.ma-tools input[type=search]::placeholder{color:var(--muted);opacity:1}
+.ma-summary{padding:0 5px 24px}
+.ma-map{gap:10px;margin-bottom:50px}
+.ma-map a{padding:20px;border-radius:20px;gap:8px;min-height:120px}
+.ma-map a>span{font-size:.65rem;letter-spacing:.08em}.ma-map strong{font-size:.9rem;line-height:1.4}.ma-map small{font-size:.75rem}
+.ma-group{margin-bottom:46px}
+.ma-group-heading{gap:14px;margin-bottom:18px}
+.ma-group-heading>span{font-size:.68rem;background:var(--glass-reflection),var(--glass-fill);border-radius:10px;padding:8px 10px}
+.ma-group-heading h3{font-size:clamp(1.25rem,2.1vw,1.8rem);letter-spacing:-.035em}
+.ma-grid{gap:20px}
+.ma-card{padding:9px;border-radius:28px}
+.ma-stage{border-radius:20px}
+.ma-card-body{padding:21px 17px 17px}
+.ma-card h4{font-size:1.12rem;line-height:1.35}
+.ma-card-body>p{font-size:.84rem}
+.ma-recipe[open]{padding:14px 16px 7px;margin-top:17px;border-radius:15px;background:var(--glass-dense)}
+.ma-recipe[open] summary{padding-top:0}
+.ma-footnote{font-size:.8rem;max-width:78ch}
+@media(hover:hover) and (pointer:fine){.ma-map a:hover{background-color:var(--glass-highlight)}}
+@media(max-width:650px){.ma-tools{padding:20px;gap:16px}.ma-map{gap:9px}.ma-map a{padding:16px;min-height:93px;border-radius:17px}.ma-map strong{font-size:.81rem}.ma-grid{gap:15px}.ma-card-body{padding:20px 16px 17px}.ma-summary{font-size:.77rem;padding-inline:2px}.ma-group-heading h3{font-size:1.3rem}.ma-group-heading p{font-size:.83rem}}
+@media(forced-colors:active){.ma-tools,.ma-map a,.ma-card,.ma-recipe[open],.ma-group-heading>span{background:Canvas;color:CanvasText;border:1px solid CanvasText;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}.ma-tools input[type=search],.ma-tools select{background:Canvas;border:1px solid CanvasText}}
