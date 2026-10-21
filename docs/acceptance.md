@@ -45,3 +45,14 @@ Windows, Node 24.18.0, npm 11.16.0, существующий dedicated Chromium/
 - Снимки и начальные сырые результаты остаются локально в `qa/`, исключённом из Git. Исходные отчёты могут ссылаться на эти локальные файлы. Скрипты создают новые свидетельства, не исторический результат.
 
 GitHub хранит исходники и компактную приёмку; публичный хостинг демо не входит в факт загрузки репозитория. Для просмотра используется локальный server либо самостоятельная публикация `dist/`.
+
+
+## Публичная публикация — 2026-10-21
+
+По следующему прямому запросу Ивана репозиторий изменён на PUBLIC и сайт опубликован через GitHub Pages. Этот раздел обновляет предыдущий статус «только локально».
+
+- Сайт: https://rdsolod-ui.github.io/glass-neon-motion-skill/
+- Мудборд: https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html
+- Deployment: https://github.com/rdsolod-ui/glass-neon-motion-skill/actions/runs/39584571872 — success, source commit `d5280bea6462e19c304a30b2cb73fdd308bff404`.
+- Публичная проверка: 9/9, HTTPS 200 на обеих страницах, 48 образцов, мобильный viewport 390px, theme/search/dialog, нет overflow и ошибок ресурсов/JS. Это browser mobile emulation, не физический телефон.
+- Опубликована только папка `site/`; workflow срабатывает на изменения сайта в `main` и вручную. [JSON-проверка](qa/publication-check.json).

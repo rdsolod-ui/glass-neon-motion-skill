@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "name": "public HTTPS site",
+      "pass": true
+    },
+    {
+      "name": "site title",
+      "pass": true
+    },
+    {
+      "name": "mobile theme action",
+      "pass": true
+    },
+    {
+      "name": "public HTTPS board",
+      "pass": true
+    },
+    {
+      "name": "48 specimens",
+      "pass": true
+    },
+    {
+      "name": "live search",
+      "pass": true
+    },
+    {
+      "name": "recipe dialog",
+      "pass": true
+    },
+    {
+      "name": "mobile no overflow",
+      "pass": true
+    },
+    {
+      "name": "no runtime or asset errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}
