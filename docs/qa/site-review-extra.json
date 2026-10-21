@@ -1,0 +1,130 @@
+{
+  "checks": [
+    {
+      "name": "light computed opaque background contrast hero body",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(69, 85, 114)",
+        "bg": "rgb(238, 241, 244)",
+        "ratio": 6.63
+      }
+    },
+    {
+      "name": "light computed opaque background contrast material body",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(69, 85, 114)",
+        "bg": "rgb(197, 221, 228)",
+        "ratio": 5.31
+      }
+    },
+    {
+      "name": "light computed opaque background contrast smoke body",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(193, 204, 220)",
+        "bg": "rgb(24, 36, 56)",
+        "ratio": 9.6
+      }
+    },
+    {
+      "name": "light computed opaque background contrast primary CTA",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(23, 43, 11)",
+        "bg": "rgb(192, 255, 131)",
+        "ratio": 12.89
+      }
+    },
+    {
+      "name": "light computed opaque background contrast input",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(23, 35, 60)",
+        "bg": "rgb(255, 255, 255)",
+        "ratio": 15.65
+      }
+    },
+    {
+      "name": "dark computed opaque background contrast hero body",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(180, 191, 211)",
+        "bg": "rgb(12, 16, 24)",
+        "ratio": 10.28
+      }
+    },
+    {
+      "name": "dark computed opaque background contrast material body",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(180, 191, 211)",
+        "bg": "rgb(25, 59, 76)",
+        "ratio": 6.4
+      }
+    },
+    {
+      "name": "dark computed opaque background contrast smoke body",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(193, 204, 220)",
+        "bg": "rgb(24, 36, 56)",
+        "ratio": 9.6
+      }
+    },
+    {
+      "name": "dark computed opaque background contrast primary CTA",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(17, 32, 9)",
+        "bg": "rgb(168, 255, 98)",
+        "ratio": 13.89
+      }
+    },
+    {
+      "name": "dark computed opaque background contrast input",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(243, 246, 255)",
+        "bg": "rgb(24, 34, 53)",
+        "ratio": 14.74
+      }
+    },
+    {
+      "name": "reduced hover no transform",
+      "pass": true
+    },
+    {
+      "name": "solid cancels slider backdrop",
+      "pass": true
+    },
+    {
+      "name": "dialog reverse Tab wraps",
+      "pass": true
+    },
+    {
+      "name": "no backdrop branch light smoke contrast",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(193, 204, 220)",
+        "bg": "rgb(24, 36, 56)",
+        "ratio": 9.6,
+        "method": "CSS conditional forced in task-owned response; not an old-browser compatibility test"
+      }
+    },
+    {
+      "name": "reduced transparency branch light smoke contrast",
+      "pass": true,
+      "detail": {
+        "fg": "rgb(193, 204, 220)",
+        "bg": "rgb(24, 36, 56)",
+        "ratio": 9.6,
+        "method": "CSS conditional forced in task-owned response; not an old-browser compatibility test"
+      }
+    },
+    {
+      "name": "forced colors material boundary",
+      "pass": true
+    }
+  ]
+}

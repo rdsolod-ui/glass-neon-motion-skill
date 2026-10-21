@@ -1,0 +1,4 @@
+interface:
+  display_name: "Glass / Neon / Motion"
+  short_description: "Glassmorphism, две темы и осмысленный motion"
+  default_prompt: "Используй $glass-neon-motion: собери стеклянный сайт, карту референсов и проверь light/dark, motion и доступность."
