@@ -1,0 +1,78 @@
+{
+  "deploymentRun": "39588874580",
+  "sourceCommit": "86ac0e5755acc9d274c5fc7d8ad3b78fcceae662",
+  "checkedAt": "2026-10-21T11:02:54.179Z",
+  "viewport": "390x844; comparison screenshot1440",
+  "checks": [
+    {
+      "name": "site HTTP200",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "surface real selection",
+      "pass": true
+    },
+    {
+      "name": "site mobile width",
+      "pass": true
+    },
+    {
+      "name": "site expressive stylesheet loaded",
+      "pass": true
+    },
+    {
+      "name": "moodboard HTTP200",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "48 patterns",
+      "pass": true
+    },
+    {
+      "name": "six studies",
+      "pass": true
+    },
+    {
+      "name": "23 references",
+      "pass": true
+    },
+    {
+      "name": "2D/3D labels",
+      "pass": true
+    },
+    {
+      "name": "board stylesheet loaded",
+      "pass": true
+    },
+    {
+      "name": "manual solid disables blur",
+      "pass": true
+    },
+    {
+      "name": "substrate toggle off",
+      "pass": true
+    },
+    {
+      "name": "substrate toggle restored",
+      "pass": true
+    },
+    {
+      "name": "board mobile width",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no failed resources",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "failed": []
+}
