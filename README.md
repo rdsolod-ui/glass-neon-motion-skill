@@ -6,19 +6,22 @@
 
 - [Тестовый сайт LUMA](https://rdsolod-ui.github.io/glass-neon-motion-skill/)
 - [Мудборд Glass Atlas](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html)
+- [Этюд команды: 2D / 3D](https://rdsolod-ui.github.io/glass-neon-motion-skill/study/index.html)
 
-Обе страницы публичны и не требуют входа. GitHub Pages публикует `site/` через `.github/workflows/pages.yml` после изменений сайта в `main`.
+Страницы публичны и не требуют входа. GitHub Pages публикует `site/` через `.github/workflows/pages.yml` после изменений сайта в `main`.
 
-## Версия 2 — выразительное стекло и команда
+## Версия 3 — HTML и motion-лаборатории
 
 Обновление по референсам Ивана: видимая цветная подложка, перекрывающиеся слои и раздельные 2D-плёнки / 3D-кромки без базовой равномерной обводки. Текст получает устойчивые зоны чтения, а keyboard focus сохраняется. Новое движение — авторская интерпретация статичных изображений.
 
-Шесть проектных ролей в [`.codex/agents`](.codex/agents): design, site, moodboard, skill, QA, release. [Работа команды](docs/agent-team.md) · [Границы файлов](agents/ownership.json) · [Правила проекта](AGENTS.md) · [Приёмка V2](docs/acceptance-v2.md). В текущей сборке реальные агенты реализовали отдельные части и выполнили перекрёстный review. Сохранённые TOML проверены отдельно от обнаружения ролей новым чатом.
+Шесть проектных ролей в [`.codex/agents`](.codex/agents): design, site, moodboard, skill, QA, release. [Работа команды](docs/agent-team.md) · [Границы файлов](agents/ownership.json) · [Правила проекта](AGENTS.md) · [Приёмка V2](docs/acceptance-v2.md). В текущей сборке реальные агенты реализовали отдельные части и выполнили перекрёстный review. Все шесть ролей обнаружены и реально запущены в новой repo-scoped CLI-сессии; design/site/QA выполнили сборку и браузерную приёмку. [Доказательства и границы Desktop](docs/agent-native-smoke.md).
+
+Карта расширена двумя самостоятельными разделами: [HTML и состояния](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#html-atlas) и [Motion](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#motion-atlas). **113 HTML-тегов**, SVG/MathML отдельно, **22 типа input**, **12 групп состояний**, **39 motion-образцов в13 группах**. Нативные теги, типы полей и составные паттерны считаются отдельно. Служебные элементы показаны рецептами, медиа и серверные интеграции не выдаются за подключённые сервисы.
 
 ## Что входит
 
 - [`skill/glass-neon-motion`](skill/glass-neon-motion/SKILL.md): entrypoint и руководства по материалам, референсам, компонентам, motion, библиотекам, приёмке и работе команды.
-- [`site/moodboard.html`](site/moodboard.html): Glass Atlas, **48 отдельных визуальных образцов**, 10 разделов, 6 живых материальных этюдов, 23 референса Ивана и 10 исходных источников; поиск, фильтр, motion replay и рецепты.
+- [`site/moodboard.html`](site/moodboard.html): Glass Atlas, **48 отдельных визуальных композиций**, расширенные HTML/motion карты, 10 исходных разделов, 6 живых материальных этюдов, 23 референса Ивана и 10 исходных источников; поиск, фильтр, motion replay и рецепты.
 - [`site/index.html`](site/index.html): авторский LUMA demo, две темы, три акцента, blur/solid/reduced controls, экспорт частичных CSS-токенов, modal и FAQ.
 - [`docs/global-rule-addition.md`](docs/global-rule-addition.md): переносимое дополнение frontend-правил.
 - [`docs/references-review.md`](docs/references-review.md): источники, фактические наблюдения и решения арт-директора.
@@ -39,7 +42,8 @@ npm start
 Открыть `http://127.0.0.1:4177/` и `http://127.0.0.1:4177/moodboard.html`. Другой порт: переменная `PORT`. Сервер слушает только loopback и предназначен для просмотра, не production.
 
 ```sh
-node scripts/render-atlas.mjs
+npm run generate
+npm run check
 npm run build
 ```
 

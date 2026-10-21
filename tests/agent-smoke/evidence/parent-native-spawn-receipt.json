@@ -1,0 +1,50 @@
+{
+  "verified_by": "parent coordinator from persisted runtime tool call/output events",
+  "session_id": "01a15e23-ae6e-7df1-a452-3530eb953700",
+  "source_rollout": "rollout-2026-10-21T14-06-00-01a15e23-ae6e-7df1-a452-3530eb953700.jsonl",
+  "calls": [
+    {
+      "role": "glass_design",
+      "task_name": "smoke_glass_design",
+      "fork_turns": "none",
+      "call_id": "call_633bc42980704aa9b300010e3582d014",
+      "result": "{\"task_name\":\"/root/smoke_glass_design\"}"
+    },
+    {
+      "role": "glass_site",
+      "task_name": "smoke_glass_site",
+      "fork_turns": "none",
+      "call_id": "call_3e779afa8b3b45d386bbfa852d115a8a",
+      "result": "{\"task_name\":\"/root/smoke_glass_site\"}"
+    },
+    {
+      "role": "glass_moodboard",
+      "task_name": "smoke_glass_moodboard",
+      "fork_turns": "none",
+      "call_id": "call_f07c35032bd043ca8c8ba8cac31b07d4",
+      "result": "{\"task_name\":\"/root/smoke_glass_moodboard\"}"
+    },
+    {
+      "role": "glass_skill",
+      "task_name": "smoke_glass_skill",
+      "fork_turns": "none",
+      "call_id": "call_2ea2bcdab8dc4e639039e0f3e0e1ba49",
+      "result": "{\"task_name\":\"/root/smoke_glass_skill\"}"
+    },
+    {
+      "role": "glass_qa",
+      "task_name": "smoke_glass_qa",
+      "fork_turns": "none",
+      "call_id": "call_21116a5f22414ce59733befeb442fcda",
+      "result": "{\"task_name\":\"/root/smoke_glass_qa\"}"
+    },
+    {
+      "role": "glass_release",
+      "task_name": "smoke_glass_release",
+      "fork_turns": "none",
+      "call_id": "call_4df68b8390e6449d98742f8c37af9743",
+      "result": "{\"task_name\":\"/root/smoke_glass_release\"}"
+    }
+  ],
+  "excludes": "prompt payloads, credentials and raw session contents"
+}

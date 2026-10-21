@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru" data-theme="light" data-mode="2d">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>LUMA — исследование края</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead"><a class="wordmark" href="#study">LUMA<span> / MATERIAL STUDY</span></a><button type="button" id="theme-toggle" aria-pressed="false">Тёмная тема</button></header>
+    <section id="study" class="study" aria-labelledby="title">
+      <div class="intro">
+        <p class="eyebrow">ЭТЮД 01 · СВЕТ И ПОВЕРХНОСТЬ</p>
+        <h1 id="title">Один свет.<br>Два края.</h1>
+        <p class="lede">Прозрачная плёнка растворяет фон. Оптическая кромка добавляет ощущение толщины.</p>
+        <fieldset class="mode-control"><legend>Материал</legend><div class="segments"><label><input type="radio" name="material" value="2d" checked><span>2D · Плёнка</span></label><label><input type="radio" name="material" value="3d"><span>3D · Кромка</span></label></div></fieldset>
+        <label class="solid-control"><input id="solid-toggle" type="checkbox"><span>Плотная поверхность</span></label>
+        <div class="material-copy" aria-live="polite" aria-atomic="true"><h2 id="mode-title">Плёнка без толщины</h2><p id="mode-copy">Граница возникает из прозрачности и рассеивания. Без обводки, фаски и объёмной тени.</p></div>
+      </div>
+      <figure class="specimen" aria-labelledby="specimen-caption">
+        <div class="stage" role="img" aria-label="Цветные ленты пересекают прозрачную плоскость: снаружи контуры чёткие, внутри размыты.">
+          <div class="stage-grid" aria-hidden="true"></div>
+          <div class="ribbon ribbon-cyan" aria-hidden="true"></div><div class="ribbon ribbon-lime" aria-hidden="true"></div>
+          <div class="rear-plane" aria-hidden="true"></div>
+          <div class="glass-panel" aria-hidden="true"><i class="edge edge-top"></i><i class="edge edge-side"></i><i class="edge edge-bottom"></i></div>
+          <span class="stage-mark" aria-hidden="true">L / 01</span><span class="stage-label" id="stage-label" aria-hidden="true">2D FILM</span>
+        </div>
+        <figcaption id="specimen-caption"><span>Чётко снаружи. Мягко внутри.</span><span>CSS-этюд материала</span></figcaption>
+      </figure>
+    </section>
+    <footer><p>Сравнивайте край на одной геометрии и при одном направлении света.</p><p>Визуальная имитация рассеивания, не физическая рефракция.</p></footer>
+    <noscript><p class="notice">Показана светлая 2D-плёнка. Для переключения режимов нужен JavaScript.</p></noscript>
+  </main>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "roles": {
     "glass_design": {
       "native_config": ".codex/agents/glass_design.toml",
@@ -20,7 +20,12 @@
         "site/index.html",
         "site/app.js",
         "site/expressive.css",
-        "docs/site-v2-notes.md"
+        "docs/site-v2-notes.md",
+        "scripts/motion-atlas-section.mjs",
+        "site/motion-atlas.js",
+        "site/motion-atlas.css",
+        "docs/motion-atlas-coverage.md",
+        "tests/agent-smoke/**"
       ],
       "reads": [
         "site/style.css",
@@ -39,7 +44,11 @@
         "site/catalog.js",
         "site/board.js",
         "site/board-v2.css",
-        "docs/moodboard-v2-notes.md"
+        "docs/moodboard-v2-notes.md",
+        "scripts/html-atlas-section.mjs",
+        "site/html-atlas.js",
+        "site/html-atlas.css",
+        "docs/html-atlas-coverage.md"
       ],
       "reads": [
         "site/style.css",
@@ -93,7 +102,11 @@
         "agents/**",
         "README.md",
         "docs/agent-team.md",
-        "docs/release*.md"
+        "docs/release*.md",
+        "scripts/publish-study.mjs",
+        "site/study/**",
+        "docs/agent-native-smoke.md",
+        "docs/desktop-project-verification.md"
       ],
       "reads": [
         "**"

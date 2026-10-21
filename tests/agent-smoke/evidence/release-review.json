@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-21",
+  "reviewer": "/root/runtime_contract",
+  "assignment": "glass_release developer instructions read and applied as explicit fallback; not native role selection",
+  "scope": "tests/agent-smoke source, scope, packaging, compact evidence; independent of site author",
+  "checks": {
+    "main_site_package_lock_scripts_ci_codex_diff": "git diff --exit-code -- site package.json package-lock.json scripts .github .codex returned 0",
+    "source_links": "index stylesheet/script and #study target exist; font paths resolve through explicit loopback server map",
+    "server_boundary": "127.0.0.1:4189; fixed file map; no arbitrary filesystem routing",
+    "build_boundary": "qa/agent-smoke/build only; ignored by existing qa rule",
+    "secret_scan": "No matches for private-key/PAT/OpenAI key or password/access_token/refresh_token assignment patterns in tests/agent-smoke; bounded pattern review, not a complete secret audit",
+    "native_evidence": "6 spawn calls, 6 matching agent_role metadata records, 6 completed events; no encrypted prompts or account identifiers copied to compact receipt",
+    "main_build": "Coordinator reported check 17/17 and build exit 0; not rerun by this reviewer"
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "medium",
+      "file": "tests/agent-smoke/build.mjs",
+      "detail": "Standalone build copies Manrope WOFF2 files but omits existing Manrope-OFL.txt license.",
+      "requested_fix": "Copy site/assets/Manrope-OFL.txt alongside the fonts.",
+      "status": "resolved: owner updated copy list; built license SHA-256 matches source"
+    }
+  ],
+  "browser_qa": "Owned by independent QA agent; deferred to qa.md/browser-qa.json",
+  "publication": "not authorized and not performed",
+  "license_sha256": "D826AB6583B12C26807D8716A545BDBBB672DF04F48608A364BA9EFDBE501C30",
+  "verdict": "release-scope review passed; browser acceptance remains separate"
+}

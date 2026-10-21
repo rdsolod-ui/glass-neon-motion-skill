@@ -26,3 +26,6 @@
 .pattern-preview .mini-ui{box-shadow:0 15px 20px #07142755}
 @media(forced-colors:active){.optical-pane,.glass-token,.pattern-preview .mini-ui{border:2px solid CanvasText;box-shadow:none}.liquid .optical-pane:after{display:none}}
 .frost .glass-token,.smoke .glass-token{box-shadow:0 10px 18px #12265122}.optical-scene{border:0}
+
+/* V3 section routing: plain navigation, no extra glass layer. */
+.atlas-route{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:70px}.atlas-route a{display:flex;gap:14px;align-items:center;padding:16px 18px;min-height:56px;background:var(--solid);border-radius:14px;text-decoration:none;font-size:.9rem;overflow-wrap:anywhere}.atlas-route b{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.72rem}.atlas-route a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}section[id]{scroll-margin-top:110px}@media(max-width:600px){.atlas-route{grid-template-columns:1fr 1fr;margin-bottom:42px}.atlas-route a{padding:14px 10px;gap:8px;font-size:.8rem}}@media(forced-colors:active){.atlas-route a{border:1px solid CanvasText}}

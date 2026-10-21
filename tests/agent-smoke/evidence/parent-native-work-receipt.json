@@ -1,0 +1,24 @@
+{
+  "session": "01a15e23-ae6e-7df1-a452-3530eb953700",
+  "verified_by": "parent from actual runtime call/output events",
+  "calls": [
+    {
+      "role": "glass_design",
+      "task_name": "native_design_work",
+      "call_id": "call_a4f485fc35b24848b79b8308763b81f8",
+      "result": "{\"task_name\":\"/root/native_design_work\"}"
+    },
+    {
+      "role": "glass_site",
+      "task_name": "native_site_work",
+      "call_id": "call_b4bd7465b27a46b28c7871fe1fe37ef9",
+      "result": "{\"task_name\":\"/root/native_site_work\"}"
+    },
+    {
+      "role": "glass_qa",
+      "task_name": "native_qa_work",
+      "call_id": "call_b01d58c85c0048da9024e5ca5ce80e00",
+      "result": "{\"task_name\":\"/root/native_qa_work\"}"
+    }
+  ]
+}

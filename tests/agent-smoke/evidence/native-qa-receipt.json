@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "role": "glass_qa",
+  "taskIdentifier": "/root/native_qa_work",
+  "nativeSelector": {
+    "tool": "collaboration.spawn_agent",
+    "field": "agent_type",
+    "value": "glass_qa",
+    "provenance": "native role assigned by parent"
+  },
+  "command": "node tests/agent-smoke/qa.mjs",
+  "cwd": "C:\\CodexWork\\glass-neon-motion-skill",
+  "exitCode": 0,
+  "executionToolChunk": "b5f5e0",
+  "reportStartedAt": "2026-10-21T11:20:41.264Z",
+  "verifiedAt": "2026-10-21T11:21:30.530Z",
+  "browser": "155.0.8059.85",
+  "url": "http://127.0.0.1:4190",
+  "result": "PASS",
+  "results": {
+    "checks": 50,
+    "passed": 50,
+    "failed": 0,
+    "errors": [],
+    "screenshots": 21,
+    "reportedCountsAgree": true,
+    "checkResults": [
+      {
+        "name": "layout-1440-light-2d",
+        "pass": true
+      },
+      {
+        "name": "material-1440-light-2d",
+        "pass": true
+      },
+      {
+        "name": "layout-1440-light-3d",
+        "pass": true
+      },
+      {
+        "name": "material-1440-light-3d",
+        "pass": true
+      },
+      {
+        "name": "layout-1440-dark-2d",
+        "pass": true
+      },
+      {
+        "name": "material-1440-dark-2d",
+        "pass": true
+      },
+      {
+        "name": "layout-1440-dark-3d",
+        "pass": true
+      },
+      {
+        "name": "material-1440-dark-3d",
+        "pass": true
+      },
+      {
+        "name": "layout-768-light-2d",
+        "pass": true
+      },
+      {
+        "name": "material-768-light-2d",
+        "pass": true
+      },
+      {
+        "name": "layout-768-light-3d",
+        "pass": true
+      },
+      {
+        "name": "material-768-light-3d",
+        "pass": true
+      },
+      {
+        "name": "layout-768-dark-2d",
+        "pass": true
+      },
+      {
+        "name": "material-768-dark-2d",
+        "pass": true
+      },
+      {
+        "name": "layout-768-dark-3d",
+        "pass": true
+      },
+      {
+        "name": "material-768-dark-3d",
+        "pass": true
+      },
+      {
+        "name": "layout-390-light-2d",
+        "pass": true
+      },
+      {
+        "name": "material-390-light-2d",
+        "pass": true
+      },
+      {
+        "name": "layout-390-light-3d",
+        "pass": true
+      },
+      {
+        "name": "material-390-light-3d",
+        "pass": true
+      },
+      {
+        "name": "layout-390-dark-2d",
+        "pass": true
+      },
+      {
+        "name": "material-390-dark-2d",
+        "pass": true
+      },
+      {
+        "name": "layout-390-dark-3d",
+        "pass": true
+      },
+      {
+        "name": "material-390-dark-3d",
+        "pass": true
+      },
+      {
+        "name": "layout-320-light-2d",
+        "pass": true
+      },
+      {
+        "name": "material-320-light-2d",
+        "pass": true
+      },
+      {
+        "name": "layout-320-light-3d",
+        "pass": true
+      },
+      {
+        "name": "material-320-light-3d",
+        "pass": true
+      },
+      {
+        "name": "layout-320-dark-2d",
+        "pass": true
+      },
+      {
+        "name": "material-320-dark-2d",
+        "pass": true
+      },
+      {
+        "name": "layout-320-dark-3d",
+        "pass": true
+      },
+      {
+        "name": "material-320-dark-3d",
+        "pass": true
+      },
+      {
+        "name": "keyboard-theme-space",
+        "pass": true
+      },
+      {
+        "name": "keyboard-radio-arrow",
+        "pass": true
+      },
+      {
+        "name": "focus-visible",
+        "pass": true
+      },
+      {
+        "name": "keyboard-tab-next",
+        "pass": true
+      },
+      {
+        "name": "solid-toggle",
+        "pass": true
+      },
+      {
+        "name": "solid-description",
+        "pass": true
+      },
+      {
+        "name": "transparent-description-restored",
+        "pass": true
+      },
+      {
+        "name": "reduced-before-load",
+        "pass": true
+      },
+      {
+        "name": "reduced-live",
+        "pass": true
+      },
+      {
+        "name": "rapid-toggles",
+        "pass": true
+      },
+      {
+        "name": "forced-colors",
+        "pass": true
+      },
+      {
+        "name": "reduced-transparency-media",
+        "pass": true
+      },
+      {
+        "name": "long-content-320",
+        "pass": true
+      },
+      {
+        "name": "zoom-200-320",
+        "pass": true
+      },
+      {
+        "name": "opaque-reading-contrast",
+        "pass": true
+      },
+      {
+        "name": "touch-controls",
+        "pass": true
+      },
+      {
+        "name": "no-javascript-readable",
+        "pass": true
+      },
+      {
+        "name": "console-network",
+        "pass": true
+      }
+    ]
+  },
+  "report": {
+    "path": "tests/agent-smoke/evidence/browser-qa.json",
+    "sha256": "a22fba0b7c623a72ec3b7b0952f450fc4f740d339a75f483b7f9b669633797c2",
+    "legacyReviewer": "/root/design -> fallback glass_qa",
+    "legacyImplementationAuthor": "/root/site",
+    "metadataExplanation": "qa.mjs retains historical hardcoded /root/design -> fallback glass_qa and /root/site labels. Actual current runner is native glass_qa /root/native_qa_work. Original implementation remains Desktop fallback; this run does not establish Desktop native selector availability."
+  },
+  "qaScript": {
+    "path": "tests/agent-smoke/qa.mjs",
+    "beforeSha256": "30c280cdd4e0b98ba8d5b54a85a00ed1ce63fd4a1e1af401addcd0d9f44574c6",
+    "afterSha256": "30c280cdd4e0b98ba8d5b54a85a00ed1ce63fd4a1e1af401addcd0d9f44574c6",
+    "unchanged": true
+  },
+  "priorReportBackup": {
+    "path": "tests/agent-smoke/evidence/native-qa-prior-20261021-142035-9386525.json",
+    "sha256": "3986f7e6742422ce1914f660b954228aa6f6f596405ff8febb48b545d90c74a6",
+    "originalSha256": "3986f7e6742422ce1914f660b954228aa6f6f596405ff8febb48b545d90c74a6"
+  },
+  "serverContentComparisons": [
+    {
+      "url": "http://127.0.0.1:4190/index.html",
+      "status": 200,
+      "servedSha256": "a8861d0c8682a4935348e741c3b1ce9d0827dcacc578393d5ca24fa05423834e",
+      "builtSha256": "a8861d0c8682a4935348e741c3b1ce9d0827dcacc578393d5ca24fa05423834e",
+      "matches": true
+    },
+    {
+      "url": "http://127.0.0.1:4190/style.css",
+      "status": 200,
+      "servedSha256": "0003e1c38431e46c25736b271471b59474a85f36f9636410c30383c631d65974",
+      "builtSha256": "0003e1c38431e46c25736b271471b59474a85f36f9636410c30383c631d65974",
+      "matches": true
+    },
+    {
+      "url": "http://127.0.0.1:4190/app.js",
+      "status": 200,
+      "servedSha256": "0307bf91858651f255c2cf24f610959703f92ca891504774a699822dbc7854b6",
+      "builtSha256": "0307bf91858651f255c2cf24f610959703f92ca891504774a699822dbc7854b6",
+      "matches": true
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\1440-light-2d.png",
+      "sha256": "0cd58bd87a9df919adef9fa8605a1907d84004485aa302396e32b7bc515da648"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\1440-light-3d.png",
+      "sha256": "9d6e6f0380d3572f2a0c7caa236fe531fe64dcdfb1e81ff149e42a8ba0d495f0"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\1440-dark-2d.png",
+      "sha256": "3a4a2cb52d85890184e65f0d65df1c39edabe131de833cfc9c3b6005b07d16ec"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\1440-dark-3d.png",
+      "sha256": "538f47256fb42c2cbf3dfdf8c6f1b770d2c02ab93b3d65aacdef680f320e0b8e"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\768-light-2d.png",
+      "sha256": "c600ff9bee682cd588a303817c52276ba31b0044b74d416e0c39ebdf3f0aa2a8"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\768-light-3d.png",
+      "sha256": "3636feed6d026f5197e287bc17440a396fed4122348a70d591472c2fdf263023"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\768-dark-2d.png",
+      "sha256": "f9e600ae4088a9b1385d63366117cdb414b0ec4d0a09462b27f1fe6649649a2d"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\768-dark-3d.png",
+      "sha256": "2c090f6a92fd42afb60b816961e6aa7b81541a588aa56b0afd2b9eb32b491cdf"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\390-light-2d.png",
+      "sha256": "5a33aa72025fc01e8fdc0a7f04ab0bd27b90b26c093a851515b88f9e81a37e3e"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\390-light-3d.png",
+      "sha256": "fa0f54a41c437614a14c7e331d83734b30baec71cc171dade261b0071f9a566f"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\390-dark-2d.png",
+      "sha256": "b506714f249a07315a2ab5d82cc8a6510c91a608a80cf4376b3328c435bb1a3b"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\390-dark-3d.png",
+      "sha256": "de43523b4e95fdb53fc4d8a717221c2e3bc94b40b1b7fd4d34baaafd0c5ec12c"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\320-light-2d.png",
+      "sha256": "8bdec354bdc6750d805506e6c2bf498ac268829c7079d92b8cd26e33118f089b"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\320-light-3d.png",
+      "sha256": "ce0c4a1f6c8eed2ef9f2b3fcd652d5a99b3d006b95eefe184ab577577ccc8d2b"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\320-dark-2d.png",
+      "sha256": "62c1543ab5db311f272dc493f46c25840100cc5eda96592b9d5cb44de82c2411"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\320-dark-3d.png",
+      "sha256": "9a87d92e3ad4e1c4433277326eb485b639f60c8cdfb879e23f1e3fcc46063115"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\keyboard-focus.png",
+      "sha256": "75e9fdb164f5795d05cbda6622f02b4fb9e28a476a0005fc1be4f3609743b1e6"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\solid.png",
+      "sha256": "2ff24dc4a95efc59a5e7c127ba0c4e7fe31ea21d7a7ff528d630cfb5119bd104"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\forced-colors.png",
+      "sha256": "e61c777447191eee2ba403a879ca1b6a7f0e07bf072ab9491d8bda3775c5a055"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\long-content-320.png",
+      "sha256": "9672cd09044b3d3c045a88c80643cf5e99240384a312d0ad5a1a90a42b002d42"
+    },
+    {
+      "path": "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\zoom-200.png",
+      "sha256": "a9076feceda45adaf7c51ddae5da089904fa5f6b17509f2be8a820164e8980b7"
+    }
+  ],
+  "visualReview": {
+    "inspected": [
+      "1440-light-2d.png",
+      "1440-dark-3d.png",
+      "390-light-3d.png",
+      "390-dark-2d.png"
+    ],
+    "finding": "No blocking visual finding in inspected frames. Cyan/lime substrate crosses glass with visible diffusion; 2D has no thickness contour, 3D directional highlight/shadow is visible. Reading text is outside glass. Desktop/mobile content remains readable.",
+    "blockingFindings": []
+  },
+  "limitations": [
+    "Chromium only; no physical phone or OS setting test",
+    "Contrast computed on opaque reading surfaces; no WCAG certification",
+    "No performance/FPS claim",
+    "Bounded smoke only; no full moodboard/site acceptance or dialog test (no dialog in smoke).",
+    "Contrast checked on opaque reading surfaces, not pixel-sampled composite contrast.",
+    "No separate unsupported-backdrop-filter browser or physical OS preference verification.",
+    "50 existing checks unchanged; four listed screenshots manually visually reviewed.",
+    "Node fetch rejected port 4190 before network access; ordinary node:http GET used for content hashes without config or security change.",
+    "No source correction, server restart, global configuration, git or publication change."
+  ],
+  "sourceChanges": []
+}

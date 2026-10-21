@@ -22,3 +22,8 @@
 Standalone TOML содержит `name`, `description`, `developer_instructions`, согласно [официальным subagents docs](https://learn.chatgpt.com/docs/agent-configuration/subagents), просмотренным 2026-10-21. [Config schema](https://raw.githubusercontent.com/openai/codex/main/codex-rs/core/config.schema.json) дополнительно описывает старый маршрут `agents.<role>.config_file`; он не дублируется здесь, чтобы не создать два источника роли.
 
 Проверено Python tomllib: все 7 TOML читаются, шесть имён уникальны; role files не содержат model/security/provider/MCP overrides. Новая native discovery-сессия не запускалась и не подтверждена. Установка skill и копирование repository role configs в другие проекты — отдельные операции; installer навыка не меняет конфигурацию чужого проекта.
+
+
+## Runtime-проверка 2026-10-21
+
+В новой CLI-сессии из корня репозитория все6 ролей обнаружены и запущены через native agent_type. Затем design/site/QA выполнили реальный handoff, build и50/50 browser checks. В новом Desktop-чате проекта C:/CodexWork native selector отсутствовал. [Точные доказательства и ограничения](agent-native-smoke.md). Предыдущая запись о непроверенной native discovery выше относится к моменту публикации V2.

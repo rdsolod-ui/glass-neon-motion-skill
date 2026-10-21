@@ -1,0 +1,782 @@
+{
+  "date": "2026-10-21T11:20:41.264Z",
+  "reviewer": "/root/design -> fallback glass_qa",
+  "implementationAuthor": "/root/site",
+  "browser": "155.0.8059.85",
+  "url": "http://127.0.0.1:4190",
+  "checks": [
+    {
+      "name": "layout-1440-light-2d",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-1440-light-2d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "none",
+        "blur": "blur(18px)",
+        "edges": [
+          "none",
+          "none",
+          "none"
+        ]
+      }
+    },
+    {
+      "name": "layout-1440-light-3d",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-1440-light-3d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "rgba(21, 63, 48, 0.28) 12px 18px 24px -16px, rgba(21, 63, 48, 0.28) -7px -8px 11px -9px inset",
+        "blur": "blur(18px)",
+        "edges": [
+          "block",
+          "block",
+          "block"
+        ]
+      }
+    },
+    {
+      "name": "layout-1440-dark-2d",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-1440-dark-2d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "none",
+        "blur": "blur(18px)",
+        "edges": [
+          "none",
+          "none",
+          "none"
+        ]
+      }
+    },
+    {
+      "name": "layout-1440-dark-3d",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-1440-dark-3d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "rgba(0, 0, 0, 0.6) 12px 18px 24px -16px, rgba(0, 0, 0, 0.6) -7px -8px 11px -9px inset",
+        "blur": "blur(18px)",
+        "edges": [
+          "block",
+          "block",
+          "block"
+        ]
+      }
+    },
+    {
+      "name": "layout-768-light-2d",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-768-light-2d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "none",
+        "blur": "blur(18px)",
+        "edges": [
+          "none",
+          "none",
+          "none"
+        ]
+      }
+    },
+    {
+      "name": "layout-768-light-3d",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-768-light-3d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "rgba(21, 63, 48, 0.28) 12px 18px 24px -16px, rgba(21, 63, 48, 0.28) -7px -8px 11px -9px inset",
+        "blur": "blur(18px)",
+        "edges": [
+          "block",
+          "block",
+          "block"
+        ]
+      }
+    },
+    {
+      "name": "layout-768-dark-2d",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-768-dark-2d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "none",
+        "blur": "blur(18px)",
+        "edges": [
+          "none",
+          "none",
+          "none"
+        ]
+      }
+    },
+    {
+      "name": "layout-768-dark-3d",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-768-dark-3d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "rgba(0, 0, 0, 0.6) 12px 18px 24px -16px, rgba(0, 0, 0, 0.6) -7px -8px 11px -9px inset",
+        "blur": "blur(18px)",
+        "edges": [
+          "block",
+          "block",
+          "block"
+        ]
+      }
+    },
+    {
+      "name": "layout-390-light-2d",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 375,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-390-light-2d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "none",
+        "blur": "blur(18px)",
+        "edges": [
+          "none",
+          "none",
+          "none"
+        ]
+      }
+    },
+    {
+      "name": "layout-390-light-3d",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 375,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-390-light-3d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "rgba(21, 63, 48, 0.28) 12px 18px 24px -16px, rgba(21, 63, 48, 0.28) -7px -8px 11px -9px inset",
+        "blur": "blur(18px)",
+        "edges": [
+          "block",
+          "block",
+          "block"
+        ]
+      }
+    },
+    {
+      "name": "layout-390-dark-2d",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 375,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-390-dark-2d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "none",
+        "blur": "blur(18px)",
+        "edges": [
+          "none",
+          "none",
+          "none"
+        ]
+      }
+    },
+    {
+      "name": "layout-390-dark-3d",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 375,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-390-dark-3d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "rgba(0, 0, 0, 0.6) 12px 18px 24px -16px, rgba(0, 0, 0, 0.6) -7px -8px 11px -9px inset",
+        "blur": "blur(18px)",
+        "edges": [
+          "block",
+          "block",
+          "block"
+        ]
+      }
+    },
+    {
+      "name": "layout-320-light-2d",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-320-light-2d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "none",
+        "blur": "blur(18px)",
+        "edges": [
+          "none",
+          "none",
+          "none"
+        ]
+      }
+    },
+    {
+      "name": "layout-320-light-3d",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-320-light-3d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "rgba(21, 63, 48, 0.28) 12px 18px 24px -16px, rgba(21, 63, 48, 0.28) -7px -8px 11px -9px inset",
+        "blur": "blur(18px)",
+        "edges": [
+          "block",
+          "block",
+          "block"
+        ]
+      }
+    },
+    {
+      "name": "layout-320-dark-2d",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-320-dark-2d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "none",
+        "blur": "blur(18px)",
+        "edges": [
+          "none",
+          "none",
+          "none"
+        ]
+      }
+    },
+    {
+      "name": "layout-320-dark-3d",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "material-320-dark-3d",
+      "pass": true,
+      "detail": {
+        "border": "0px",
+        "outline": "0px",
+        "shadow": "rgba(0, 0, 0, 0.6) 12px 18px 24px -16px, rgba(0, 0, 0, 0.6) -7px -8px 11px -9px inset",
+        "blur": "blur(18px)",
+        "edges": [
+          "block",
+          "block",
+          "block"
+        ]
+      }
+    },
+    {
+      "name": "keyboard-theme-space",
+      "pass": true
+    },
+    {
+      "name": "keyboard-radio-arrow",
+      "pass": true
+    },
+    {
+      "name": "focus-visible",
+      "pass": true,
+      "detail": {
+        "outline": "solid",
+        "width": "3px"
+      }
+    },
+    {
+      "name": "keyboard-tab-next",
+      "pass": true
+    },
+    {
+      "name": "solid-toggle",
+      "pass": true,
+      "detail": {
+        "blur": "none",
+        "bg": "rgb(33, 56, 44)"
+      }
+    },
+    {
+      "name": "solid-description",
+      "pass": true
+    },
+    {
+      "name": "transparent-description-restored",
+      "pass": true
+    },
+    {
+      "name": "reduced-before-load",
+      "pass": true,
+      "detail": {
+        "animations": 0,
+        "transition": "0s",
+        "visible": true
+      }
+    },
+    {
+      "name": "reduced-live",
+      "pass": true,
+      "detail": {
+        "animations": 0,
+        "transition": "0s",
+        "visible": true
+      }
+    },
+    {
+      "name": "rapid-toggles",
+      "pass": true
+    },
+    {
+      "name": "forced-colors",
+      "pass": true,
+      "detail": {
+        "blur": "none",
+        "border": "1px",
+        "shadow": "none"
+      }
+    },
+    {
+      "name": "reduced-transparency-media",
+      "pass": true,
+      "detail": {
+        "matches": true,
+        "blur": "none"
+      }
+    },
+    {
+      "name": "long-content-320",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "zoom-200-320",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305,
+        "bodyOverflow": "visible",
+        "fonts": true,
+        "loaded": 2
+      }
+    },
+    {
+      "name": "opaque-reading-contrast",
+      "pass": true,
+      "detail": [
+        {
+          "theme": "light",
+          "element": "BUTTON",
+          "text": "Тёмная тема",
+          "ratio": 12.209098850293842,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "eyebrow",
+          "text": "ЭТЮД 01 · СВЕТ И ПОВЕРХНОСТЬ",
+          "ratio": 6.483246889148774,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "H1",
+          "text": "Один свет.Два края.",
+          "ratio": 14.495441052475645,
+          "required": 3
+        },
+        {
+          "theme": "light",
+          "element": "lede",
+          "text": "Прозрачная плёнка растворяет фон. О",
+          "ratio": 6.483246889148774,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "LEGEND",
+          "text": "Материал",
+          "ratio": 14.495441052475645,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "SPAN",
+          "text": "2D · Плёнка",
+          "ratio": 11.726591713589718,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "SPAN",
+          "text": "3D · Кромка",
+          "ratio": 12.209098850293842,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "SPAN",
+          "text": "Плотная поверхность",
+          "ratio": 14.495441052475645,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "H2",
+          "text": "Плёнка без толщины",
+          "ratio": 14.495441052475645,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "P",
+          "text": "Граница возникает из прозрачности и",
+          "ratio": 6.483246889148774,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "stage-mark",
+          "text": "L / 01",
+          "ratio": 13.248020151341759,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "stage-label",
+          "text": "2D FILM",
+          "ratio": 13.248020151341759,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "FIGCAPTION",
+          "text": "Чётко снаружи. Мягко внутри.CSS-этю",
+          "ratio": 6.483246889148774,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "P",
+          "text": "Сравнивайте край на одной геометрии",
+          "ratio": 6.483246889148774,
+          "required": 4.5
+        },
+        {
+          "theme": "light",
+          "element": "P",
+          "text": "Визуальная имитация рассеивания, не",
+          "ratio": 6.483246889148774,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "BUTTON",
+          "text": "Тёмная тема",
+          "ratio": 10.809688402641207,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "eyebrow",
+          "text": "ЭТЮД 01 · СВЕТ И ПОВЕРХНОСТЬ",
+          "ratio": 10.113922188398314,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "H1",
+          "text": "Один свет.Два края.",
+          "ratio": 16.351908130485185,
+          "required": 3
+        },
+        {
+          "theme": "dark",
+          "element": "lede",
+          "text": "Прозрачная плёнка растворяет фон. О",
+          "ratio": 10.113922188398314,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "LEGEND",
+          "text": "Материал",
+          "ratio": 16.351908130485185,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "SPAN",
+          "text": "2D · Плёнка",
+          "ratio": 11.361075439447443,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "SPAN",
+          "text": "3D · Кромка",
+          "ratio": 10.015235507918495,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "SPAN",
+          "text": "Плотная поверхность",
+          "ratio": 16.351908130485185,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "H2",
+          "text": "Плёнка без толщины",
+          "ratio": 16.351908130485185,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "P",
+          "text": "Граница возникает из прозрачности и",
+          "ratio": 10.113922188398314,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "stage-mark",
+          "text": "L / 01",
+          "ratio": 13.375785563504591,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "stage-label",
+          "text": "2D FILM",
+          "ratio": 13.375785563504591,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "FIGCAPTION",
+          "text": "Чётко снаружи. Мягко внутри.CSS-этю",
+          "ratio": 10.113922188398314,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "P",
+          "text": "Сравнивайте край на одной геометрии",
+          "ratio": 10.113922188398314,
+          "required": 4.5
+        },
+        {
+          "theme": "dark",
+          "element": "P",
+          "text": "Визуальная имитация рассеивания, не",
+          "ratio": 10.113922188398314,
+          "required": 4.5
+        }
+      ]
+    },
+    {
+      "name": "touch-controls",
+      "pass": true
+    },
+    {
+      "name": "no-javascript-readable",
+      "pass": true
+    },
+    {
+      "name": "console-network",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "screenshots": [
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\1440-light-2d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\1440-light-3d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\1440-dark-2d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\1440-dark-3d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\768-light-2d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\768-light-3d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\768-dark-2d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\768-dark-3d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\390-light-2d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\390-light-3d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\390-dark-2d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\390-dark-3d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\320-light-2d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\320-light-3d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\320-dark-2d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\320-dark-3d.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\keyboard-focus.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\solid.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\forced-colors.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\long-content-320.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\zoom-200.png"
+  ],
+  "errors": [],
+  "limits": [
+    "Chromium only; no physical phone or OS setting test",
+    "Contrast computed on opaque reading surfaces; no WCAG certification",
+    "No performance/FPS claim"
+  ],
+  "passed": 50,
+  "failed": 0
+}

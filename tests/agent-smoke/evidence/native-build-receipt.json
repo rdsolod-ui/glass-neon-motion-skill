@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "role": "glass_site",
+  "taskIdentifier": "/root/native_site_work",
+  "nativeSelector": {
+    "tool": "collaboration.spawn_agent",
+    "field": "agent_type",
+    "value": "glass_site",
+    "provenance": "native role assigned by parent"
+  },
+  "command": "node tests/agent-smoke/build.mjs",
+  "cwd": "C:\\CodexWork\\glass-neon-motion-skill",
+  "exitCode": 0,
+  "buildExecutionToolChunk": "f334ec",
+  "verifiedAt": "2026-10-21T11:20:01.261Z",
+  "buildOutput": [
+    "index.html 3313 a8861d0c8682a4935348e741c3b1ce9d0827dcacc578393d5ca24fa05423834e",
+    "style.css 8453 0003e1c38431e46c25736b271471b59474a85f36f9636410c30383c631d65974",
+    "app.js 2657 0307bf91858651f255c2cf24f610959703f92ca891504774a699822dbc7854b6",
+    "Built isolated output: C:\\CodexWork\\glass-neon-motion-skill\\qa\\agent-smoke\\build"
+  ],
+  "handoff": {
+    "path": "tests/agent-smoke/evidence/native-design-handoff.md",
+    "sha256": "18f8beb657a3e0f881ef7d3c116f71f2d15b2e22147f7330ecebed55301c80c2",
+    "verdict": "ACCEPT",
+    "acceptedHashes": [
+      {
+        "path": "tests/agent-smoke/design.md",
+        "acceptedSha256": "d1417dce101f1a02be7cff27baab679231e524e0bbd12eee123d4e731ccab4c9",
+        "actualSha256": "d1417dce101f1a02be7cff27baab679231e524e0bbd12eee123d4e731ccab4c9",
+        "matches": true
+      },
+      {
+        "path": "tests/agent-smoke/index.html",
+        "acceptedSha256": "a8861d0c8682a4935348e741c3b1ce9d0827dcacc578393d5ca24fa05423834e",
+        "actualSha256": "a8861d0c8682a4935348e741c3b1ce9d0827dcacc578393d5ca24fa05423834e",
+        "matches": true
+      },
+      {
+        "path": "tests/agent-smoke/style.css",
+        "acceptedSha256": "0003e1c38431e46c25736b271471b59474a85f36f9636410c30383c631d65974",
+        "actualSha256": "0003e1c38431e46c25736b271471b59474a85f36f9636410c30383c631d65974",
+        "matches": true
+      },
+      {
+        "path": "docs/agent-native-smoke.md",
+        "acceptedSha256": "57a6c4b5b6d519c28d2cc595d4ce9f4c0c1329f97579c61dcbdc5f19b51335cf",
+        "actualSha256": "57a6c4b5b6d519c28d2cc595d4ce9f4c0c1329f97579c61dcbdc5f19b51335cf",
+        "matches": true
+      }
+    ]
+  },
+  "files": [
+    {
+      "source": "tests/agent-smoke/index.html",
+      "output": "qa/agent-smoke/build/index.html",
+      "sourceSha256": "a8861d0c8682a4935348e741c3b1ce9d0827dcacc578393d5ca24fa05423834e",
+      "outputSha256": "a8861d0c8682a4935348e741c3b1ce9d0827dcacc578393d5ca24fa05423834e",
+      "sourceBytes": 3313,
+      "outputBytes": 3313,
+      "equal": true,
+      "outputModifiedAt": "2026-10-21T11:09:46.599Z"
+    },
+    {
+      "source": "tests/agent-smoke/style.css",
+      "output": "qa/agent-smoke/build/style.css",
+      "sourceSha256": "0003e1c38431e46c25736b271471b59474a85f36f9636410c30383c631d65974",
+      "outputSha256": "0003e1c38431e46c25736b271471b59474a85f36f9636410c30383c631d65974",
+      "sourceBytes": 8453,
+      "outputBytes": 8453,
+      "equal": true,
+      "outputModifiedAt": "2026-10-21T11:11:43.365Z"
+    },
+    {
+      "source": "tests/agent-smoke/app.js",
+      "output": "qa/agent-smoke/build/app.js",
+      "sourceSha256": "0307bf91858651f255c2cf24f610959703f92ca891504774a699822dbc7854b6",
+      "outputSha256": "0307bf91858651f255c2cf24f610959703f92ca891504774a699822dbc7854b6",
+      "sourceBytes": 2657,
+      "outputBytes": 2657,
+      "equal": true,
+      "outputModifiedAt": "2026-10-21T11:10:36.593Z"
+    },
+    {
+      "source": "site/assets/manrope-latin.woff2",
+      "output": "qa/agent-smoke/build/assets/manrope-latin.woff2",
+      "sourceSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "outputSha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "sourceBytes": 24836,
+      "outputBytes": 24836,
+      "equal": true,
+      "outputModifiedAt": "2026-10-14T08:05:35.168Z"
+    },
+    {
+      "source": "site/assets/manrope-cyrillic.woff2",
+      "output": "qa/agent-smoke/build/assets/manrope-cyrillic.woff2",
+      "sourceSha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914",
+      "outputSha256": "c268b459a9329e59fecf39a17618efd44c71735532048d60b12aab76a8c14914",
+      "sourceBytes": 14500,
+      "outputBytes": 14500,
+      "equal": true,
+      "outputModifiedAt": "2026-10-14T08:05:34.946Z"
+    },
+    {
+      "source": "site/assets/Manrope-OFL.txt",
+      "output": "qa/agent-smoke/build/assets/Manrope-OFL.txt",
+      "sourceSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "outputSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30",
+      "sourceBytes": 4383,
+      "outputBytes": 4383,
+      "equal": true,
+      "outputModifiedAt": "2026-10-14T08:05:34.330Z"
+    }
+  ],
+  "allSourceOutputHashesEqual": true,
+  "acceptedSourceHashesUnchanged": true,
+  "sourceChanges": [],
+  "scripts": {
+    "build": {
+      "path": "tests/agent-smoke/build.mjs",
+      "sha256": "33aced5235f080d3fea2f1ec13291e23090feac6b572588bfe04e9c44ff8d2bc"
+    },
+    "qa": {
+      "path": "tests/agent-smoke/qa.mjs",
+      "sha256": "30c280cdd4e0b98ba8d5b54a85a00ed1ce63fd4a1e1af401addcd0d9f44574c6"
+    }
+  },
+  "result": "PASS",
+  "limits": [
+    "Build and byte integrity only; browser QA is delegated to independent glass_qa.",
+    "Historical Desktop fallback results are not this native execution.",
+    "No server startup or restart; no global configuration, git, publication or source edits."
+  ]
+}

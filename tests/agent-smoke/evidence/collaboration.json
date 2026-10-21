@@ -1,0 +1,48 @@
+{
+  "desktopThread": "01a15e22-e190-7fb3-a875-6e63cd32ace5",
+  "initialCwd": "C:/CodexWork",
+  "preRoleReadContract": {
+    "tool": "collaboration.spawn_agent",
+    "fields": [
+      "task_name",
+      "message",
+      "fork_turns",
+      "model",
+      "reasoning_effort"
+    ],
+    "nativeRoleSelector": false,
+    "nativeRoleDiscoveryTool": false
+  },
+  "returnedIdentifiersAre": "canonical task names; no separate UUID returned",
+  "agents": [
+    {
+      "id": "/root/runtime_contract",
+      "work": "CLI native-role contract and evidence; separate from block implementation"
+    },
+    {
+      "id": "/root/design",
+      "role": "glass_design via explicit instructions, fallback",
+      "work": "design.md; then glass_qa fallback independently reviewing site implementation"
+    },
+    {
+      "id": "/root/site",
+      "role": "glass_site via explicit instructions, fallback",
+      "work": "isolated HTML/CSS/JS and build/server"
+    }
+  ],
+  "handoffs": [
+    "design to root/site: identical panel geometry; 2D no rim, 3D localized directional rim; separate light/dark tokens",
+    "root to design: independent glass_qa acceptance after site build; fixes assigned to site owner"
+  ],
+  "nativeCliEvidence": "See docs/agent-native-smoke.md and native evidence receipts. CLI role discovery is separate from these Desktop collaboration agents.",
+  "rootChecks": {
+    "npm run check": {
+      "exitCode": 0,
+      "passed": 17
+    },
+    "npm run build": {
+      "exitCode": 0
+    }
+  },
+  "scope": "Isolated block workers did not create additional user chats, publish, push or change global configuration. The coordinating parent created the explicitly requested Desktop verification chat recorded above."
+}
