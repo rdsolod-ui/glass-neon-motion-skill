@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-10-21T16:19:50+03:00",
+  "reviewer": "/root/desktop_roles_v3",
+  "authorization": "Иван явно подтвердил: Да, доверять этой папке",
+  "requested_path": "C:\\CodexWork\\glass-neon-motion-skill",
+  "ui_observation": {
+    "application_package": "OpenAI.Codex_2p2nqsd0c76g0!App",
+    "trust_dialog_present": false,
+    "sidebar_project_visible": "glass-neon-motion-skill",
+    "sidebar_project_empty_chat_label_visible": true,
+    "method": "Fresh Windows Computer Use screenshot and accessibility state"
+  },
+  "native_list_projects": {
+    "projectId": "1c4d1a0b-608b-4fb5-bda3-16eb4f69f8de",
+    "projectKind": "local",
+    "label": "glass-neon-motion-skill",
+    "path": "C:\\CodexWork\\glass-neon-motion-skill",
+    "hostId": "local",
+    "isGitRepository": true
+  },
+  "action_taken_on_resume": "Read-only refresh; no trust click performed because the dialog had already disappeared and the separate project was registered",
+  "trust_click_actor": "Not observed; do not attribute the completed registration to this agent",
+  "native_role_discovery": "Not established by project registration; requires the new exact-project Desktop chat",
+  "new_chat_created_by_this_agent": false,
+  "configuration_or_security_changes_by_this_agent": false,
+  "verdict": "Separate Desktop project registration verified by both UI and native project inventory"
+}

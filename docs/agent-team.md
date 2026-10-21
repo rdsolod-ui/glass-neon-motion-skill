@@ -21,7 +21,7 @@
 
 Standalone TOML содержит `name`, `description`, `developer_instructions`, согласно [официальным subagents docs](https://learn.chatgpt.com/docs/agent-configuration/subagents), просмотренным 2026-10-21. [Config schema](https://raw.githubusercontent.com/openai/codex/main/codex-rs/core/config.schema.json) дополнительно описывает старый маршрут `agents.<role>.config_file`; он не дублируется здесь, чтобы не создать два источника роли.
 
-Проверено Python tomllib: все 7 TOML читаются, шесть имён уникальны; role files не содержат model/security/provider/MCP overrides. Новая native discovery-сессия не запускалась и не подтверждена. Установка skill и копирование repository role configs в другие проекты — отдельные операции; installer навыка не меняет конфигурацию чужого проекта.
+Проверено Python tomllib: все 7 TOML читаются, шесть имён уникальны; role files не содержат model/security/provider/MCP overrides. На этапе V2 runtime ещё не проверялся; последующие CLI и Desktop результаты приведены ниже. Установка skill и копирование repository role configs в другие проекты — отдельные операции; installer навыка не меняет конфигурацию чужого проекта.
 
 
 ## Runtime-проверка 2026-10-21
@@ -31,3 +31,7 @@ Standalone TOML содержит `name`, `description`, `developer_instructions`
 ## Распределение V3
 
 `html_atlas_v3` реализовал113 HTML-тегов/22input/12states и независимо принял motion. `motion_atlas_v3` реализовал39 motion-примеров/13групп и независимо принял HTML. `desktop_roles_v3` проверил публикационный этюд и применение скилла; отдельно дошёл до штатного запроса доверия папке в Desktop. Координатор интегрировал, обновил skill, выполнил29/29 local и29/29 public и опубликовал V3. Это реальные collaboration jobs с fallback инструкциями ролей; их нельзя путать с ранее доказанными native CLI-запусками. [Приёмка V3](acceptance-v3.md) · [релиз](release-v3.md).
+
+## Desktop native 6/6 — завершённая проверка
+
+В отдельном проекте `C:/CodexWork/glass-neon-motion-skill` новый чат обнаружил все шесть имён непосредственно в описании `agent_type`; каждый native запуск завершился ответом. Координатор и независимый агент сверили вызовы, дочерние metadata и completion. Для новых задач использовать именно этот проект; уже открытые чаты родительской папки автоматически не обновляются. [Отчёт, receipt и ограничение routing timeout](desktop-project-verification.md).

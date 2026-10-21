@@ -19,7 +19,7 @@
 | desktop_roles_v3 | Штатное открытие проекта до trust prompt | Этюд: 15 критериев +7/7 интеграции; skill forward review |
 | Координатор | Интеграция, skill, публикационный build | Итоговый интеграционный прогон29/29 |
 
-В этом Desktop-чате доступен обычный collaboration selector; роли исполнителей переданы явными заданиями. Ранее подтверждены **native CLI6/6** и реальная именованная цепочка design→build→QA: [доказательства](agent-native-smoke.md). Отдельный Desktop project дошёл до запроса доверия: [точный статус](desktop-project-verification.md). Ни наличие TOML, ни fallback-команда не выдаются за native Desktop discovery.
+В исходном Desktop-чате V3 был доступен обычный collaboration selector; роли исполнителей переданы явными заданиями. Ранее подтверждены **native CLI6/6** и реальная именованная цепочка design→build→QA: [доказательства](agent-native-smoke.md). После регистрации отдельного проекта выполнен новый Desktop smoke: **6/6 native ролей** обнаружены, запущены и ответили через `agent_type`; [доказательства и границы](desktop-project-verification.md). Это отдельная проверка, она не превращает прежнюю fallback-сборку в native Desktop-сборку задним числом.
 
 ## Проверки и исправления
 

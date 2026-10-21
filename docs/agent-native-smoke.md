@@ -1,6 +1,6 @@
 # Native agent smoke — 2026-10-21
 
-Иван, все шесть проектных ролей **обнаружены и запущены в новой обычной CLI-сессии с cwd репозитория**. В новом Desktop-чате с cwd `C:/CodexWork` именованный selector не был доступен. Это разные проверенные поверхности; успех CLI не означает исправление Desktop routing или перезагрузку других чатов.
+Иван, все шесть проектных ролей **обнаружены и запущены в новой обычной CLI-сессии с cwd репозитория**. В первом Desktop-чате с cwd `C:/CodexWork` именованный selector не был доступен. Позже отдельный проект с cwd самого репозитория также прошёл **Desktop native 6/6**: [актуальный отчёт](desktop-project-verification.md). Это разные проверенные поверхности; успех smoke не означает исправление Desktop routing или перезагрузку других чатов.
 
 ## Контракт и воспроизведение
 
@@ -56,4 +56,10 @@ CLI сообщил превышение skills context budget: описания 
 
 ## Публикационное обновление — 2026-10-21, V3
 
-По следующему прямому поручению Ивана исходники этюда, компактные проверенные receipts и этот отчёт опубликованы commit `17e84d8fe63f8e7e34e69932d509922b1ac7d201`. [Этюд доступен публично](https://rdsolod-ui.github.io/glass-neon-motion-skill/study/index.html). Ранее записанные «локально / без push» относятся к исходному smoke-этапу. Raw CLI stream, screenshots и backups остаются локальными. [Результат публикации](release-v3.md). Открытие отдельного Desktop-проекта дошло до запроса доверия; [новая проверка](desktop-project-verification.md) пока не подтверждает Desktop native selector.
+По следующему прямому поручению Ивана исходники этюда, компактные проверенные receipts и этот отчёт опубликованы commit `17e84d8fe63f8e7e34e69932d509922b1ac7d201`. [Этюд доступен публично](https://rdsolod-ui.github.io/glass-neon-motion-skill/study/index.html). Ранее записанные «локально / без push» относятся к исходному smoke-этапу. Raw CLI stream, screenshots и backups остаются локальными. [Результат публикации](release-v3.md).
+
+## Desktop после регистрации отдельного проекта
+
+После разрешения Ивана доверить папку подтверждена регистрация отдельного `glass-neon-motion-skill`. Новый Desktop-чат `01a15e9e-8197-7960-91d0-ae8b86e1cb45` обнаружил все шесть имён в описании native `agent_type` до чтения role files и выполнил шесть настоящих запусков с ответами. Независимо проверены calls/results, UUID и role/parent metadata, completion и текущие хеши role definitions. [Отчёт](desktop-project-verification.md) · [Receipt](../tests/agent-smoke/evidence/native-desktop-project-receipt.json).
+
+Первый turn получил `workspace routing discovery timed out`; одно продолжение того же чата завершилось успешно без повторного запуска первых четырёх ролей. Причина тайм-аута не установлена. Desktop smoke не выполнял новую сборку или публикацию и не подменяет ранее зафиксированную CLI design→build→QA цепочку.
