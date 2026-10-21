@@ -1,0 +1,142 @@
+{
+  "checks": [
+    {
+      "name": "light 1440 no document overflow",
+      "pass": true,
+      "detail": {
+        "scroll": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "light 768 no document overflow",
+      "pass": true,
+      "detail": {
+        "scroll": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "light 390 no document overflow",
+      "pass": true,
+      "detail": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "light 320 no document overflow",
+      "pass": true,
+      "detail": {
+        "scroll": 320,
+        "width": 320
+      }
+    },
+    {
+      "name": "dark 1440 no document overflow",
+      "pass": true,
+      "detail": {
+        "scroll": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "name": "dark 768 no document overflow",
+      "pass": true,
+      "detail": {
+        "scroll": 768,
+        "width": 768
+      }
+    },
+    {
+      "name": "dark 390 no document overflow",
+      "pass": true,
+      "detail": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "name": "dark 320 no document overflow",
+      "pass": true,
+      "detail": {
+        "scroll": 305,
+        "width": 320
+      }
+    },
+    {
+      "name": "keyboard dialog open",
+      "pass": true
+    },
+    {
+      "name": "dialog Tab focus contained",
+      "pass": true
+    },
+    {
+      "name": "dialog Escape and focus return",
+      "pass": true
+    },
+    {
+      "name": "live OS reduce cancels",
+      "pass": true
+    },
+    {
+      "name": "manual reduce cancels",
+      "pass": true
+    },
+    {
+      "name": "rapid replay settles",
+      "pass": true
+    },
+    {
+      "name": "form preview updates",
+      "pass": true
+    },
+    {
+      "name": "range update",
+      "pass": true
+    },
+    {
+      "name": "download css",
+      "pass": true
+    },
+    {
+      "name": "long material name fits preview",
+      "pass": true,
+      "detail": {
+        "scroll": 213,
+        "client": 213
+      }
+    },
+    {
+      "name": "light solid smoke text remains contrasted",
+      "pass": true,
+      "detail": {
+        "background": "rgb(24, 36, 56)",
+        "color": "rgb(243, 246, 255)"
+      }
+    },
+    {
+      "name": "mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "mobile menu escape focus",
+      "pass": true
+    },
+    {
+      "name": "mobile nav link close",
+      "pass": true
+    },
+    {
+      "name": "OS reduced before load",
+      "pass": true
+    },
+    {
+      "name": "no browser/runtime failures",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

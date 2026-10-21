@@ -1,0 +1,22 @@
+[
+  {
+    "name": "isolated reduced before load",
+    "pass": true
+  },
+  {
+    "name": "touch prism state",
+    "pass": true
+  },
+  {
+    "name": "keyboard smoke state",
+    "pass": true
+  },
+  {
+    "name": "reduced segment no animation",
+    "pass": true
+  },
+  {
+    "name": "segment resize alignment",
+    "pass": true
+  }
+]

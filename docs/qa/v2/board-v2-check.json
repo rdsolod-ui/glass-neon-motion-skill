@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "name": "six optical studies",
+      "pass": true
+    },
+    {
+      "name": "23 unique user references",
+      "pass": true
+    },
+    {
+      "name": "light 1440 document width",
+      "pass": true
+    },
+    {
+      "name": "light 1440 text clipping",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "light 390 document width",
+      "pass": true
+    },
+    {
+      "name": "light 390 text clipping",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "light 320 document width",
+      "pass": true
+    },
+    {
+      "name": "light 320 text clipping",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "dark 1440 document width",
+      "pass": true
+    },
+    {
+      "name": "dark 1440 text clipping",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "dark 390 document width",
+      "pass": true
+    },
+    {
+      "name": "dark 390 text clipping",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "dark 320 document width",
+      "pass": true
+    },
+    {
+      "name": "dark 320 text clipping",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "blur keyboard min",
+      "pass": true
+    },
+    {
+      "name": "blur keyboard max",
+      "pass": true
+    },
+    {
+      "name": "substrate off",
+      "pass": true
+    },
+    {
+      "name": "substrate on",
+      "pass": true
+    },
+    {
+      "name": "reduced controls stay functional",
+      "pass": true
+    }
+  ]
+}

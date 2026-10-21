@@ -1,0 +1,32 @@
+[
+  {
+    "study": 0,
+    "minimumCentralReadingWellContrast": 12.37,
+    "method": "Central 60% width x 40% height of rotated title well; text color temporarily transparent; not whole element contrast audit"
+  },
+  {
+    "study": 1,
+    "minimumCentralReadingWellContrast": 13.62,
+    "method": "Central 60% width x 40% height of rotated title well; text color temporarily transparent; not whole element contrast audit"
+  },
+  {
+    "study": 2,
+    "minimumCentralReadingWellContrast": 13.85,
+    "method": "Central 60% width x 40% height of rotated title well; text color temporarily transparent; not whole element contrast audit"
+  },
+  {
+    "study": 3,
+    "minimumCentralReadingWellContrast": 11.39,
+    "method": "Central 60% width x 40% height of rotated title well; text color temporarily transparent; not whole element contrast audit"
+  },
+  {
+    "study": 4,
+    "minimumCentralReadingWellContrast": 13.25,
+    "method": "Central 60% width x 40% height of rotated title well; text color temporarily transparent; not whole element contrast audit"
+  },
+  {
+    "study": 5,
+    "minimumCentralReadingWellContrast": 12.61,
+    "method": "Central 60% width x 40% height of rotated title well; text color temporarily transparent; not whole element contrast audit"
+  }
+]

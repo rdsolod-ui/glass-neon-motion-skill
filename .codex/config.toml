@@ -1,0 +1,3 @@
+# Project-local native roles are discovered from .codex/agents/*.toml.
+# No model, permission, provider, MCP or global-setting override.
+[agents]

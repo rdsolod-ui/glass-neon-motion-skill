@@ -1,0 +1,119 @@
+{
+  "version": 2,
+  "roles": {
+    "glass_design": {
+      "native_config": ".codex/agents/glass_design.toml",
+      "description": "Material art director and source analyst",
+      "owns": [
+        "docs/design-brief*.md",
+        "docs/reference*.md"
+      ],
+      "reads": [
+        "site/**",
+        "skill/glass-neon-motion/references/**"
+      ]
+    },
+    "glass_site": {
+      "native_config": ".codex/agents/glass_site.toml",
+      "description": "Website implementation owner",
+      "owns": [
+        "site/index.html",
+        "site/app.js",
+        "site/expressive.css",
+        "docs/site-v2-notes.md"
+      ],
+      "reads": [
+        "site/style.css",
+        "site/theme.js",
+        "skill/**",
+        "docs/design-brief*.md"
+      ]
+    },
+    "glass_moodboard": {
+      "native_config": ".codex/agents/glass_moodboard.toml",
+      "description": "Moodboard and component-atlas implementation owner",
+      "owns": [
+        "scripts/render-atlas.mjs",
+        "scripts/atlas-previews.mjs",
+        "site/moodboard.html",
+        "site/catalog.js",
+        "site/board.js",
+        "site/board-v2.css",
+        "docs/moodboard-v2-notes.md"
+      ],
+      "reads": [
+        "site/style.css",
+        "site/app.js",
+        "site/theme.js",
+        "skill/**"
+      ]
+    },
+    "glass_skill": {
+      "native_config": ".codex/agents/glass_skill.toml",
+      "description": "Reusable skill and component-recipe maintainer",
+      "owns": [
+        "skill/**",
+        "docs/skill-v2-notes.md"
+      ],
+      "reads": [
+        "site/**",
+        "scripts/**",
+        "docs/qa/**",
+        "agents/ownership.json"
+      ]
+    },
+    "glass_qa": {
+      "native_config": ".codex/agents/glass_qa.toml",
+      "description": "Independent visual, motion and accessibility acceptance",
+      "owns": [
+        "docs/qa/**"
+      ],
+      "reads": [
+        "site/**",
+        "scripts/**",
+        "skill/**",
+        "docs/**"
+      ]
+    },
+    "glass_release": {
+      "native_config": ".codex/agents/glass_release.toml",
+      "description": "Integration, build and authorized release owner",
+      "owns": [
+        "site/style.css",
+        "site/theme.js",
+        "package.json",
+        "package-lock.json",
+        "scripts/build.mjs",
+        "scripts/check.mjs",
+        "scripts/serve.mjs",
+        "scripts/install-skill.mjs",
+        ".github/**",
+        ".codex/**",
+        "AGENTS.md",
+        "agents/**",
+        "README.md",
+        "docs/agent-team.md",
+        "docs/release*.md"
+      ],
+      "reads": [
+        "**"
+      ]
+    }
+  },
+  "shared_owner": "glass_release",
+  "handoff": [
+    "files",
+    "checks",
+    "findings",
+    "evidence",
+    "unverified"
+  ],
+  "stages": [
+    "concept",
+    "parallel-build",
+    "independent-review",
+    "fix-and-recheck",
+    "authorized-release"
+  ],
+  "ownership_policy": "Exact file handoff overrides these defaults only after prior owner stops writing and coordinator notifies dependent roles. glass_qa writes reports only; application corrections return to owner."
+}

@@ -1,0 +1,19 @@
+{
+  "immediately": {
+    "atDocumentStart": true,
+    "media": true,
+    "diagnostics": {
+      "active": 0,
+      "reduced": true,
+      "theme": "light"
+    }
+  },
+  "settled": {
+    "media": true,
+    "diagnostics": {
+      "active": 0,
+      "reduced": true,
+      "theme": "light"
+    }
+  }
+}

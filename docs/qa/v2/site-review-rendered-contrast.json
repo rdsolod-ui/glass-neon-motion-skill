@@ -1,0 +1,62 @@
+[
+  {
+    "theme": "light",
+    "name": "instrument-muted",
+    "color": "rgb(39, 54, 78)",
+    "file": "C:\\CodexWork\\glass-neon-motion-skill\\qa/site-review-background-light-instrument-muted.png",
+    "min_ratio": 8.82,
+    "pass_check": true,
+    "samples": 1200,
+    "method": "Rendered background sampled in central text region with only target text color transparent; crop inset excludes adjacent glyphs from rotated bounding box. Not full WCAG audit."
+  },
+  {
+    "theme": "light",
+    "name": "float-chip",
+    "color": "rgb(20, 33, 57)",
+    "file": "C:\\CodexWork\\glass-neon-motion-skill\\qa/site-review-background-light-float-chip.png",
+    "min_ratio": 11.82,
+    "pass_check": true,
+    "samples": 406,
+    "method": "Rendered background sampled in central text region with only target text color transparent; crop inset excludes adjacent glyphs from rotated bounding box. Not full WCAG audit."
+  },
+  {
+    "theme": "light",
+    "name": "settings-note",
+    "color": "rgb(67, 81, 106)",
+    "file": "C:\\CodexWork\\glass-neon-motion-skill\\qa/site-review-background-light-settings-note.png",
+    "min_ratio": 7.58,
+    "pass_check": true,
+    "samples": 2541,
+    "method": "Rendered background sampled in central text region with only target text color transparent; crop inset excludes adjacent glyphs from rotated bounding box. Not full WCAG audit."
+  },
+  {
+    "theme": "dark",
+    "name": "instrument-muted",
+    "color": "rgb(224, 230, 245)",
+    "file": "C:\\CodexWork\\glass-neon-motion-skill\\qa/site-review-background-dark-instrument-muted.png",
+    "min_ratio": 6.92,
+    "pass_check": true,
+    "samples": 1200,
+    "method": "Rendered background sampled in central text region with only target text color transparent; crop inset excludes adjacent glyphs from rotated bounding box. Not full WCAG audit."
+  },
+  {
+    "theme": "dark",
+    "name": "float-chip",
+    "color": "rgb(248, 250, 255)",
+    "file": "C:\\CodexWork\\glass-neon-motion-skill\\qa/site-review-background-dark-float-chip.png",
+    "min_ratio": 14.23,
+    "pass_check": true,
+    "samples": 406,
+    "method": "Rendered background sampled in central text region with only target text color transparent; crop inset excludes adjacent glyphs from rotated bounding box. Not full WCAG audit."
+  },
+  {
+    "theme": "dark",
+    "name": "settings-note",
+    "color": "rgb(192, 201, 220)",
+    "file": "C:\\CodexWork\\glass-neon-motion-skill\\qa/site-review-background-dark-settings-note.png",
+    "min_ratio": 10.12,
+    "pass_check": true,
+    "samples": 2541,
+    "method": "Rendered background sampled in central text region with only target text color transparent; crop inset excludes adjacent glyphs from rotated bounding box. Not full WCAG audit."
+  }
+]

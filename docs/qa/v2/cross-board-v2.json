@@ -1,0 +1,26 @@
+[
+  {
+    "name": "light mobile overflow",
+    "pass": true
+  },
+  {
+    "name": "dark mobile overflow",
+    "pass": true
+  },
+  {
+    "name": "touch hides substrate",
+    "pass": true
+  },
+  {
+    "name": "blur control zero",
+    "pass": true
+  },
+  {
+    "name": "keyboard opens recipe",
+    "pass": true
+  },
+  {
+    "name": "escape restores focus",
+    "pass": true
+  }
+]

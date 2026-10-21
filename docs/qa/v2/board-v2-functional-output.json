@@ -1,0 +1,114 @@
+{
+  "checks": [
+    {
+      "name": "48 rendered specimens",
+      "pass": true
+    },
+    {
+      "name": "10 source cards",
+      "pass": true
+    },
+    {
+      "name": "dark 1440 overflow",
+      "pass": true,
+      "detail": {
+        "w": 1440,
+        "s": 1425
+      }
+    },
+    {
+      "name": "dark 768 overflow",
+      "pass": true,
+      "detail": {
+        "w": 768,
+        "s": 753
+      }
+    },
+    {
+      "name": "dark 390 overflow",
+      "pass": true,
+      "detail": {
+        "w": 390,
+        "s": 375
+      }
+    },
+    {
+      "name": "light 1440 overflow",
+      "pass": true,
+      "detail": {
+        "w": 1440,
+        "s": 1425
+      }
+    },
+    {
+      "name": "light 768 overflow",
+      "pass": true,
+      "detail": {
+        "w": 768,
+        "s": 753
+      }
+    },
+    {
+      "name": "light 390 overflow",
+      "pass": true,
+      "detail": {
+        "w": 390,
+        "s": 375
+      }
+    },
+    {
+      "name": "Forms filter 10",
+      "pass": true
+    },
+    {
+      "name": "search dialog",
+      "pass": true
+    },
+    {
+      "name": "empty state",
+      "pass": true
+    },
+    {
+      "name": "keyboard recipe open",
+      "pass": true
+    },
+    {
+      "name": "modal keyboard trap",
+      "pass": true
+    },
+    {
+      "name": "Escape returns focus",
+      "pass": true
+    },
+    {
+      "name": "replay starts actual animation",
+      "pass": true
+    },
+    {
+      "name": "live reduce cancels",
+      "pass": true
+    },
+    {
+      "name": "reduce replay stays static",
+      "pass": true
+    },
+    {
+      "name": "mobile recipe no internal horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile menu open",
+      "pass": true
+    },
+    {
+      "name": "mobile menu Escape",
+      "pass": true
+    },
+    {
+      "name": "no runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "name": "48 unique component previews",
+      "pass": true,
+      "detail": 48
+    },
+    {
+      "name": "dark 1440 preview clipping",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "dark 1440 document width",
+      "pass": true
+    },
+    {
+      "name": "dark 320 preview clipping",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "dark 320 document width",
+      "pass": true
+    },
+    {
+      "name": "light 1440 preview clipping",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "light 1440 document width",
+      "pass": true
+    },
+    {
+      "name": "light 320 preview clipping",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "light 320 document width",
+      "pass": true
+    },
+    {
+      "name": "recipe reset after reopening",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "optical highlight owns animation",
+      "pass": true,
+      "detail": {
+        "spec": 1,
+        "pane": 0
+      }
+    },
+    {
+      "name": "optical reduced clears effects",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}
