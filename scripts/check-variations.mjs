@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {variationAtlasSection,variationGroups,variationCount} from './variation-atlas.mjs';
+const board=await readFile('site/moodboard.html','utf8'),manifest=JSON.parse(await readFile('site/variation-manifest.json','utf8'));
+assert(board.includes(variationAtlasSection()),'Variation markup must match generator');
+assert.equal(manifest.count,variationCount);assert.equal(variationGroups.length,15);
+const items=variationGroups.flatMap(g=>g.items);assert.equal(new Set(items.map(x=>x.id)).size,items.length);
+assert.deepEqual(manifest.groups.flatMap(g=>g.items.map(x=>x.id)),items.map(x=>x.id));
+for(const item of items)assert(item.tags&&item.body&&item.note&&item.status==='live-local');
+console.log(JSON.stringify({variationChecks:6,groups:variationGroups.length,examples:variationCount}));

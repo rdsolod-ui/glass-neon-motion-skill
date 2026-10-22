@@ -28,3 +28,4 @@ check('font license retained',(await readFile('site/assets/Manrope-OFL.txt','utf
 console.log(JSON.stringify({passed:checks.length,checks},null,2));
 
 await import('./check-ui.mjs');
+await import('./check-variations.mjs');

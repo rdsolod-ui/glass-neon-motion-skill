@@ -1,0 +1,419 @@
+{
+  "version": 1,
+  "count": 44,
+  "groups": [
+    {
+      "id": "progress",
+      "title": "Прогресс и показатели",
+      "base": "loading",
+      "items": [
+        {
+          "id": "vx-linear",
+          "title": "Линейный прогресс",
+          "tags": "progress bar прогресс бар загрузка",
+          "note": "Обычная шкала с числом и подписью.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-thin",
+          "title": "Тонкая линия",
+          "tags": "progress slim тонкий",
+          "note": "Для компактной строки состояния.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-ring",
+          "title": "Кольцевой индикатор",
+          "tags": "progress circular ring круг кольцо",
+          "note": "Число внутри кольца, единый доступный progressbar.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-segments",
+          "title": "Сегментная шкала",
+          "tags": "progress segmented сегменты",
+          "note": "Десять дискретных секций и точный процент рядом.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "scroll",
+      "title": "Прокрутка и чтение",
+      "base": "navigation",
+      "items": [
+        {
+          "id": "vx-scroll-default",
+          "title": "Нативный скроллбар",
+          "tags": "scrollbar скролл скроллбар скролл бары прокрутка",
+          "note": "Системная механика, окрашенные ползунок и дорожка.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-scroll-thin",
+          "title": "Компактный скроллбар",
+          "tags": "scrollbar thin тонкий скролл",
+          "note": "Тонкий ползунок; область доступна клавишами и касанием.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-scroll-horizontal",
+          "title": "Горизонтальная лента",
+          "tags": "scroll horizontal snap горизонтальный",
+          "note": "Нативная прокрутка и мягкое snap-позиционирование.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-scroll-reading",
+          "title": "Прогресс чтения",
+          "tags": "scroll reading чтение прогресс",
+          "note": "Шкала вычисляется по фактическому положению текста.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "loading",
+      "title": "Ожидание и загрузка",
+      "base": "loading",
+      "items": [
+        {
+          "id": "vx-spinner",
+          "title": "Кольцо ожидания",
+          "tags": "spinner loading спиннер",
+          "note": "Короткая загрузка, завершение и отмена.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-dots",
+          "title": "Три точки",
+          "tags": "dots loading точки",
+          "note": "Конечный ритм без бесконечного движения.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-skeleton",
+          "title": "Каркас содержимого",
+          "tags": "skeleton placeholder скелетон",
+          "note": "Статический каркас, затем готовое содержание.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-empty",
+          "title": "Пустое состояние → данные",
+          "tags": "empty state пустое состояние",
+          "note": "Переход от пустой области к локальному результату.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "title": "Шаги и последовательности",
+      "base": "forms",
+      "items": [
+        {
+          "id": "vx-steps-horizontal",
+          "title": "Горизонтальные шаги",
+          "tags": "stepper wizard шаги",
+          "note": "Текущий шаг, движение назад и вперёд.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-steps-vertical",
+          "title": "Вертикальный маршрут",
+          "tags": "stepper timeline вертикальный",
+          "note": "Для узких колонок и длинных подписей.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-steps-compact",
+          "title": "Компактный счётчик шагов",
+          "tags": "steps compact счетчик",
+          "note": "Минимальная композиция с тем же состоянием.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "actions",
+      "title": "Варианты кнопок",
+      "base": "buttons",
+      "items": [
+        {
+          "id": "vx-button-hierarchy",
+          "title": "Иерархия действий",
+          "tags": "button primary secondary ghost кнопки",
+          "note": "Основная, вторичная и текстовая кнопки.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-button-toggle",
+          "title": "Кнопка с выбором",
+          "tags": "button toggle pill избранное",
+          "note": "Округлая форма и явное pressed-состояние.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-button-sizes",
+          "title": "Три масштаба",
+          "tags": "button size compact large размер",
+          "note": "Разные внутренние отступы, зона нажатия от 44 px.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-button-states",
+          "title": "Доступность и намерение",
+          "tags": "button disabled danger состояния",
+          "note": "Основное действие, disabled и локальное удаление демо.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "fields",
+      "title": "Варианты полей",
+      "base": "inputs",
+      "items": [
+        {
+          "id": "vx-field-units",
+          "title": "Поле с единицей",
+          "tags": "input suffix units поле единица",
+          "note": "Единица измерения остаётся рядом со значением.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-field-quantity",
+          "title": "Счётчик количества",
+          "tags": "input number stepper количество",
+          "note": "Плюс, минус и ручной ввод с границами.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-field-count",
+          "title": "Многострочное поле",
+          "tags": "textarea counter поле счетчик",
+          "note": "Остаток длины без подмены подписи placeholder-ом.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-field-validation",
+          "title": "Проверка значения",
+          "tags": "input validation email ошибка",
+          "note": "Валидация с доступной ошибкой без отправки данных.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "cards",
+      "title": "Варианты карточек",
+      "base": "content",
+      "items": [
+        {
+          "id": "vx-card-metric",
+          "title": "Карточка показателя",
+          "tags": "card metric kpi карточка показатель",
+          "note": "Крупное число и компактный контекст.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-card-select",
+          "title": "Карточка выбора",
+          "tags": "card checkbox selection выбор",
+          "note": "Кликабельная подпись настоящего checkbox.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-card-details",
+          "title": "Карточка с раскрытием",
+          "tags": "card details disclosure раскрытие",
+          "note": "Нативное раскрытие дополнительного содержания.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "status",
+      "title": "Статусы и метки",
+      "base": "feedback",
+      "items": [
+        {
+          "id": "vx-status-badge",
+          "title": "Метка статуса",
+          "tags": "badge status статус бейдж",
+          "note": "Текст передаёт состояние независимо от цвета.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-status-chips",
+          "title": "Множественный выбор",
+          "tags": "chips filter tags чипсы теги фильтр",
+          "note": "Независимые нажимаемые метки с общим результатом.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-status-meter",
+          "title": "Шкала заполненности",
+          "tags": "meter gauge capacity индикатор",
+          "note": "Измеренная величина, а не ход выполнения задачи.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-status-notice",
+          "title": "Встроенное уведомление",
+          "tags": "alert notice feedback уведомление",
+          "note": "Смена результата в потоке без перекрытия страницы.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "pagination",
+      "title": "Пагинация и выдача",
+      "base": "navigation",
+      "items": [
+        {
+          "id": "vx-pagination",
+          "title": "Номера страниц",
+          "tags": "pagination pages пагинация страницы",
+          "note": "Переключение страниц и честные границы.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-load-more",
+          "title": "Показать ещё",
+          "tags": "pagination load more показать еще",
+          "note": "Постепенное раскрытие девяти локальных результатов.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "title": "Таймлайны событий",
+      "base": "content",
+      "items": [
+        {
+          "id": "vx-timeline-vertical",
+          "title": "Вертикальная история",
+          "tags": "timeline vertical таймлайн история",
+          "note": "Три этапа с текущим состоянием и текстовым пояснением.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-timeline-horizontal",
+          "title": "Горизонтальный маршрут",
+          "tags": "timeline horizontal activity события",
+          "note": "Та же последовательность в горизонтальной композиции.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "queue",
+      "title": "Очереди файлов",
+      "base": "media",
+      "items": [
+        {
+          "id": "vx-queue-list",
+          "title": "Список файлов",
+          "tags": "file upload queue files очередь файлы",
+          "note": "Добавление, удаление и ручное моделирование обработки.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-queue-cards",
+          "title": "Карточки файлов",
+          "tags": "file upload queue cards файлы карточки",
+          "note": "Тот же локальный сценарий в карточной раскладке.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "notifications",
+      "title": "Центр уведомлений",
+      "base": "feedback",
+      "items": [
+        {
+          "id": "vx-notifications",
+          "title": "Непрочитанные события",
+          "tags": "notification center unread уведомления центр",
+          "note": "Прочитать одно или сразу все, счётчик синхронизируется.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-notifications-undo",
+          "title": "Удаление с отменой",
+          "tags": "notification undo отмена вернуть",
+          "note": "Убрать последнее сообщение и восстановить его.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "rating",
+      "title": "Оценки и рейтинги",
+      "base": "inputs",
+      "items": [
+        {
+          "id": "vx-rating-stars",
+          "title": "Оценка звёздами",
+          "tags": "rating stars review рейтинг звезды",
+          "note": "Нативная radio-группа с текстовой альтернативой.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-rating-score",
+          "title": "Числовая оценка",
+          "tags": "rating score nps оценка шкала",
+          "note": "Непрерывный выбор 0–10 без выдуманных отзывов.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "title": "Диапазоны значений",
+      "base": "inputs",
+      "items": [
+        {
+          "id": "vx-range-price",
+          "title": "Диапазон цены",
+          "tags": "range price dual slider цена диапазон",
+          "note": "Две границы в рублях; это демоданные, не предложение.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-range-percent",
+          "title": "Диапазон процентов",
+          "tags": "range percent dual slider проценты",
+          "note": "Независимые ручки с ограничением пересечения.",
+          "status": "live-local"
+        }
+      ]
+    },
+    {
+      "id": "split",
+      "title": "Изменяемые панели",
+      "base": "layout",
+      "items": [
+        {
+          "id": "vx-split-horizontal",
+          "title": "Две колонки",
+          "tags": "resizable split pane горизонтальный панели",
+          "note": "Нативный ползунок управляет пропорцией колонок.",
+          "status": "live-local"
+        },
+        {
+          "id": "vx-split-vertical",
+          "title": "Две строки",
+          "tags": "resizable split pane вертикальный панели",
+          "note": "Изменение высоты панелей, содержимое прокручивается.",
+          "status": "live-local"
+        }
+      ]
+    }
+  ]
+}

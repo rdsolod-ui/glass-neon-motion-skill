@@ -12,6 +12,8 @@
 
 ## Версия 5 — 24 группы с рабочими примерами
 
+Расширение: **44 варианта / 15 семейств** отдельным слоем «Варианты»: progress, scroll, loading, steps, buttons, fields, cards, status, pagination, timeline, file queue, notifications, rating, range, split panes. Сохраняет базовые 24 группы; плотность и форма независимы от четырёх материалов. [Карта расширения](docs/variation-layer.md) · [Приёмка](docs/qa/variation-layer.md). [Слой вариативности](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#variation-atlas) · [Контракты в скилле](skill/glass-neon-motion/references/component-variants.md).
+
 Сайт и мудборд открываются с **прозрачным глянцевым стеклом и 3D-кромкой** уже до выполнения JavaScript. В разделе «Стекло» доступны матовая плёнка, матовое стекло, глянцевая плёнка и глянцевое стекло; в UI-библиотеке поверхность и край выбираются независимо. Переключение темы сохраняет выбранный материал в текущей странице; новая загрузка снова начинает с глянцевого стекла.
 
 [Открыть UI-библиотеку](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#ui-atlas). Переключатели, поля, hints/tooltip/popover, header/footer/burger, CTA, иконки, таблицы, 12 SVG-графиков и расширенные рабочие интерфейсы разделены на 24 группы. Точный состав — [manifest](site/ui-manifest.json). Единый поиск объединяет рабочие UI, HTML/input/states, motion, прежние визуальные композиции и референсы; понимает русские и английские названия.
