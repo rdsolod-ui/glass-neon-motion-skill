@@ -1,0 +1,212 @@
+{
+  "base": "https://rdsolod-ui.github.io/glass-neon-motion-skill/",
+  "checks": [
+    {
+      "name": "preserved inventories",
+      "pass": true
+    },
+    {
+      "name": "all anchors resolve",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "mobile nav closes",
+      "pass": true
+    },
+    {
+      "name": "legacy native dialog opens",
+      "pass": true
+    },
+    {
+      "name": "legacy native dialog focus",
+      "pass": true
+    },
+    {
+      "name": "legacy recipe dialog opens",
+      "pass": true
+    },
+    {
+      "name": "motion trigger press",
+      "pass": true
+    },
+    {
+      "name": "motion trigger check",
+      "pass": true
+    },
+    {
+      "name": "motion trigger error",
+      "pass": true
+    },
+    {
+      "name": "motion trigger rise",
+      "pass": true
+    },
+    {
+      "name": "motion trigger exit",
+      "pass": true
+    },
+    {
+      "name": "motion trigger mask",
+      "pass": true
+    },
+    {
+      "name": "motion trigger reorder",
+      "pass": true
+    },
+    {
+      "name": "motion trigger expand",
+      "pass": true
+    },
+    {
+      "name": "motion trigger shared",
+      "pass": true
+    },
+    {
+      "name": "motion trigger tab",
+      "pass": true
+    },
+    {
+      "name": "motion trigger breadcrumb",
+      "pass": true
+    },
+    {
+      "name": "motion trigger drawer",
+      "pass": true
+    },
+    {
+      "name": "motion trigger scroll-progress",
+      "pass": true
+    },
+    {
+      "name": "motion trigger parallax",
+      "pass": true
+    },
+    {
+      "name": "motion trigger sticky",
+      "pass": true
+    },
+    {
+      "name": "motion trigger words",
+      "pass": true
+    },
+    {
+      "name": "motion trigger underline",
+      "pass": true
+    },
+    {
+      "name": "motion trigger replace",
+      "pass": true
+    },
+    {
+      "name": "motion trigger path",
+      "pass": true
+    },
+    {
+      "name": "motion trigger orbit",
+      "pass": true
+    },
+    {
+      "name": "motion trigger morph",
+      "pass": true
+    },
+    {
+      "name": "motion trigger bars",
+      "pass": true
+    },
+    {
+      "name": "motion trigger number",
+      "pass": true
+    },
+    {
+      "name": "motion trigger ring",
+      "pass": true
+    },
+    {
+      "name": "motion trigger skeleton",
+      "pass": true
+    },
+    {
+      "name": "motion trigger dots",
+      "pass": true
+    },
+    {
+      "name": "motion trigger progress",
+      "pass": true
+    },
+    {
+      "name": "motion trigger drag",
+      "pass": true
+    },
+    {
+      "name": "motion trigger snap",
+      "pass": true
+    },
+    {
+      "name": "motion trigger swipe",
+      "pass": true
+    },
+    {
+      "name": "motion trigger light",
+      "pass": true
+    },
+    {
+      "name": "motion trigger diffusion",
+      "pass": true
+    },
+    {
+      "name": "motion trigger prism",
+      "pass": true
+    },
+    {
+      "name": "motion trigger tilt",
+      "pass": true
+    },
+    {
+      "name": "motion trigger stack",
+      "pass": true
+    },
+    {
+      "name": "motion trigger focus",
+      "pass": true
+    },
+    {
+      "name": "motion trigger stagger",
+      "pass": true
+    },
+    {
+      "name": "motion trigger flow",
+      "pass": true
+    },
+    {
+      "name": "motion trigger hero",
+      "pass": true
+    },
+    {
+      "name": "live reduced cancels legacy animations",
+      "pass": true
+    },
+    {
+      "name": "replay under reduced remains static",
+      "pass": true
+    },
+    {
+      "name": "keyboard drag End",
+      "pass": true
+    },
+    {
+      "name": "keyboard drag Home",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "passed": 50,
+  "total": 50,
+  "errors": [],
+  "source": "d6018e94adcd361576f3a4590eeca4fd8cd5f597",
+  "scope": "First V5 public deployment; the subsequent refinement changes only the optical layer CSS. Final material/fallback and all-file byte verification recorded separately."
+}

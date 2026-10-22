@@ -29,6 +29,7 @@
 | Автор data | 17/17 проверок, все 15 образцов |
 | Peer controls/search/materials | 21/21 |
 | Peer compositions/site | 25/25; отдельный recheck 6/6 |
+| Peer оптического уточнения | 11/11 |
 | Peer data/skill | 49/49; визуальный recheck control chart |
 | Phosphor sources / license | 20/20 SHA-256 совпали; MIT сохранена |
 | Обновлённый установленный skill | Пять файлов сверены после записи; validator PASS |

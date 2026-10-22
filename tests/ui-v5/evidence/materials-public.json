@@ -1,0 +1,322 @@
+{
+  "base": "https://rdsolod-ui.github.io/glass-neon-motion-skill/",
+  "checks": [
+    {
+      "name": "index.html four materials",
+      "pass": true
+    },
+    {
+      "name": "index.html light frost-film applies",
+      "pass": true,
+      "detail": {
+        "finish": "frost",
+        "edge": "film",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "index.html light frost-glass applies",
+      "pass": true,
+      "detail": {
+        "finish": "frost",
+        "edge": "depth",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "index.html light clear-film applies",
+      "pass": true,
+      "detail": {
+        "finish": "clear",
+        "edge": "film",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "index.html light clear-glass applies",
+      "pass": true,
+      "detail": {
+        "finish": "clear",
+        "edge": "depth",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "index.html light mobile overflow",
+      "pass": true
+    },
+    {
+      "name": "index.html dark frost-film applies",
+      "pass": true,
+      "detail": {
+        "finish": "frost",
+        "edge": "film",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "index.html dark frost-glass applies",
+      "pass": true,
+      "detail": {
+        "finish": "frost",
+        "edge": "depth",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "index.html dark clear-film applies",
+      "pass": true,
+      "detail": {
+        "finish": "clear",
+        "edge": "film",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "index.html dark clear-glass applies",
+      "pass": true,
+      "detail": {
+        "finish": "clear",
+        "edge": "depth",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "index.html dark mobile overflow",
+      "pass": true
+    },
+    {
+      "name": "clear motion tile uses one optical layer",
+      "pass": true
+    },
+    {
+      "name": "index.html clear vs frost diffusion distinct",
+      "pass": true,
+      "detail": [
+        {
+          "blur": "blur(16px) saturate(1.25)",
+          "border": "0px",
+          "shadow": "rgba(0, 0, 0, 0.467) 0px 18px 22px -18px"
+        },
+        {
+          "blur": "blur(16px) saturate(1.25)",
+          "border": "0px",
+          "shadow": "rgb(255, 255, 255) 3px 4px 3px -3px inset, rgba(105, 197, 232, 0.7) -4px -6px 7px -4px inset, rgba(212, 245, 255, 0.4) 0px 5px 2px -3px, rgba(0, 0, 0, 0.533) 0px 22px 24px -16px"
+        },
+        {
+          "blur": "blur(0.8px) saturate(1.12)",
+          "border": "0px",
+          "shadow": "rgba(0, 0, 0, 0.467) 0px 18px 22px -18px"
+        },
+        {
+          "blur": "blur(0.8px) saturate(1.12)",
+          "border": "0px",
+          "shadow": "rgb(255, 255, 255) 3px 4px 3px -3px inset, rgba(105, 197, 232, 0.7) -4px -6px 7px -4px inset, rgba(212, 245, 255, 0.4) 0px 5px 2px -3px, rgba(0, 0, 0, 0.533) 0px 22px 24px -16px"
+        }
+      ]
+    },
+    {
+      "name": "index.html no perimeter outline",
+      "pass": true
+    },
+    {
+      "name": "index.html thickness distinct",
+      "pass": true
+    },
+    {
+      "name": "index.html light clear solid fallback",
+      "pass": true
+    },
+    {
+      "name": "index.html light clear shell solid",
+      "pass": true
+    },
+    {
+      "name": "index.html dark clear solid fallback",
+      "pass": true
+    },
+    {
+      "name": "index.html dark clear shell solid",
+      "pass": true
+    },
+    {
+      "name": "index.html forced colors border",
+      "pass": true
+    },
+    {
+      "name": "moodboard.html four materials",
+      "pass": true
+    },
+    {
+      "name": "moodboard.html light frost-film applies",
+      "pass": true,
+      "detail": {
+        "finish": "frost",
+        "edge": "film",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "moodboard.html light frost-glass applies",
+      "pass": true,
+      "detail": {
+        "finish": "frost",
+        "edge": "depth",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "moodboard.html light clear-film applies",
+      "pass": true,
+      "detail": {
+        "finish": "clear",
+        "edge": "film",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "moodboard.html light clear-glass applies",
+      "pass": true,
+      "detail": {
+        "finish": "clear",
+        "edge": "depth",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "moodboard.html light mobile overflow",
+      "pass": true
+    },
+    {
+      "name": "moodboard.html dark frost-film applies",
+      "pass": true,
+      "detail": {
+        "finish": "frost",
+        "edge": "film",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "moodboard.html dark frost-glass applies",
+      "pass": true,
+      "detail": {
+        "finish": "frost",
+        "edge": "depth",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "moodboard.html dark clear-film applies",
+      "pass": true,
+      "detail": {
+        "finish": "clear",
+        "edge": "film",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "moodboard.html dark clear-glass applies",
+      "pass": true,
+      "detail": {
+        "finish": "clear",
+        "edge": "depth",
+        "filter": "blur(0.8px) saturate(1.12)"
+      }
+    },
+    {
+      "name": "moodboard.html dark mobile overflow",
+      "pass": true
+    },
+    {
+      "name": "moodboard.html clear vs frost diffusion distinct",
+      "pass": true,
+      "detail": [
+        {
+          "blur": "blur(16px) saturate(1.25)",
+          "border": "0px",
+          "shadow": "rgba(0, 0, 0, 0.467) 0px 18px 22px -18px"
+        },
+        {
+          "blur": "blur(16px) saturate(1.25)",
+          "border": "0px",
+          "shadow": "rgb(255, 255, 255) 3px 4px 3px -3px inset, rgba(105, 197, 232, 0.7) -4px -6px 7px -4px inset, rgba(212, 245, 255, 0.4) 0px 5px 2px -3px, rgba(0, 0, 0, 0.533) 0px 22px 24px -16px"
+        },
+        {
+          "blur": "blur(0.8px) saturate(1.12)",
+          "border": "0px",
+          "shadow": "rgba(0, 0, 0, 0.467) 0px 18px 22px -18px"
+        },
+        {
+          "blur": "blur(0.8px) saturate(1.12)",
+          "border": "0px",
+          "shadow": "rgb(255, 255, 255) 3px 4px 3px -3px inset, rgba(105, 197, 232, 0.7) -4px -6px 7px -4px inset, rgba(212, 245, 255, 0.4) 0px 5px 2px -3px, rgba(0, 0, 0, 0.533) 0px 22px 24px -16px"
+        }
+      ]
+    },
+    {
+      "name": "moodboard.html no perimeter outline",
+      "pass": true
+    },
+    {
+      "name": "moodboard.html thickness distinct",
+      "pass": true
+    },
+    {
+      "name": "independent UI surface/edge",
+      "pass": true
+    },
+    {
+      "name": "search глянец",
+      "pass": true
+    },
+    {
+      "name": "search прозрачная",
+      "pass": true
+    },
+    {
+      "name": "moodboard.html light clear solid fallback",
+      "pass": true
+    },
+    {
+      "name": "moodboard.html light clear shell solid",
+      "pass": true
+    },
+    {
+      "name": "light depth solid token is opaque",
+      "pass": true
+    },
+    {
+      "name": "moodboard.html dark clear solid fallback",
+      "pass": true
+    },
+    {
+      "name": "moodboard.html dark clear shell solid",
+      "pass": true
+    },
+    {
+      "name": "dark depth solid token is opaque",
+      "pass": true
+    },
+    {
+      "name": "moodboard.html forced colors border",
+      "pass": true
+    },
+    {
+      "name": "reduced before reload",
+      "pass": true
+    },
+    {
+      "name": "UI dispose cancels active and unmounts",
+      "pass": true
+    },
+    {
+      "name": "page errors absent",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "passed": 47,
+  "total": 47,
+  "errors": [],
+  "source": "9f44c41207f72bdcfe106039b4e8893126f96cc9"
+}

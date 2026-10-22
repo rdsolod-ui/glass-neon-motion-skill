@@ -1,0 +1,411 @@
+{
+  "date": "2026-10-22",
+  "base": "https://rdsolod-ui.github.io/glass-neon-motion-skill/",
+  "passed": 91,
+  "total": 91,
+  "checks": [
+    {
+      "name": "24 groups",
+      "pass": true
+    },
+    {
+      "name": "all working examples rendered",
+      "pass": true,
+      "detail": 76
+    },
+    {
+      "name": "only global catalog text search visible",
+      "pass": true
+    },
+    {
+      "name": "search свитчер",
+      "pass": true
+    },
+    {
+      "name": "search switch",
+      "pass": true
+    },
+    {
+      "name": "search хинт",
+      "pass": true
+    },
+    {
+      "name": "search tooltip",
+      "pass": true
+    },
+    {
+      "name": "search плейсхолдер",
+      "pass": true
+    },
+    {
+      "name": "search placeholder",
+      "pass": true
+    },
+    {
+      "name": "search бургер",
+      "pass": true
+    },
+    {
+      "name": "search burger",
+      "pass": true
+    },
+    {
+      "name": "search header",
+      "pass": true
+    },
+    {
+      "name": "search footer",
+      "pass": true
+    },
+    {
+      "name": "search cta",
+      "pass": true
+    },
+    {
+      "name": "search иконки",
+      "pass": true
+    },
+    {
+      "name": "search solid",
+      "pass": true
+    },
+    {
+      "name": "search chart",
+      "pass": true
+    },
+    {
+      "name": "search график",
+      "pass": true
+    },
+    {
+      "name": "search dialog",
+      "pass": true
+    },
+    {
+      "name": "search button",
+      "pass": true
+    },
+    {
+      "name": "empty search and reset",
+      "pass": true
+    },
+    {
+      "name": "filter 1 Основа и токены",
+      "pass": true
+    },
+    {
+      "name": "filter 2 Иконки и пиктограммы",
+      "pass": true
+    },
+    {
+      "name": "filter 3 Кнопки и действия",
+      "pass": true
+    },
+    {
+      "name": "filter 4 Призывы к действию",
+      "pass": true
+    },
+    {
+      "name": "filter 5 Переключение и выбор",
+      "pass": true
+    },
+    {
+      "name": "filter 6 Поля и ввод",
+      "pass": true
+    },
+    {
+      "name": "filter 7 Селекторы",
+      "pass": true
+    },
+    {
+      "name": "filter 8 Подсказки и объяснения",
+      "pass": true
+    },
+    {
+      "name": "filter 9 Header и burger-меню",
+      "pass": true
+    },
+    {
+      "name": "filter 10 Навигация и маршруты",
+      "pass": true
+    },
+    {
+      "name": "filter 11 Footer и нижние ссылки",
+      "pass": true
+    },
+    {
+      "name": "filter 12 Поиск и фильтрация",
+      "pass": true
+    },
+    {
+      "name": "filter 13 Карточки и контент",
+      "pass": true
+    },
+    {
+      "name": "filter 14 Медиа и файлы",
+      "pass": true
+    },
+    {
+      "name": "filter 15 Таблицы и данные",
+      "pass": true
+    },
+    {
+      "name": "filter 16 Графики и диаграммы",
+      "pass": true
+    },
+    {
+      "name": "filter 17 Организация содержимого",
+      "pass": true
+    },
+    {
+      "name": "filter 18 Наложения и окна",
+      "pass": true
+    },
+    {
+      "name": "filter 19 Обратная связь",
+      "pass": true
+    },
+    {
+      "name": "filter 20 Ожидание и отсутствие данных",
+      "pass": true
+    },
+    {
+      "name": "filter 21 Формы и сценарии",
+      "pass": true
+    },
+    {
+      "name": "filter 22 Товар и корзина",
+      "pass": true
+    },
+    {
+      "name": "filter 23 Аккаунт и настройки",
+      "pass": true
+    },
+    {
+      "name": "filter 24 Сложные рабочие области",
+      "pass": true
+    },
+    {
+      "name": "deep link 1",
+      "pass": true
+    },
+    {
+      "name": "deep link 2",
+      "pass": true
+    },
+    {
+      "name": "deep link 3",
+      "pass": true
+    },
+    {
+      "name": "deep link 4",
+      "pass": true
+    },
+    {
+      "name": "deep link 5",
+      "pass": true
+    },
+    {
+      "name": "deep link 6",
+      "pass": true
+    },
+    {
+      "name": "deep link 7",
+      "pass": true
+    },
+    {
+      "name": "deep link 8",
+      "pass": true
+    },
+    {
+      "name": "deep link 9",
+      "pass": true
+    },
+    {
+      "name": "deep link 10",
+      "pass": true
+    },
+    {
+      "name": "deep link 11",
+      "pass": true
+    },
+    {
+      "name": "deep link 12",
+      "pass": true
+    },
+    {
+      "name": "deep link 13",
+      "pass": true
+    },
+    {
+      "name": "deep link 14",
+      "pass": true
+    },
+    {
+      "name": "deep link 15",
+      "pass": true
+    },
+    {
+      "name": "deep link 16",
+      "pass": true
+    },
+    {
+      "name": "deep link 17",
+      "pass": true
+    },
+    {
+      "name": "deep link 18",
+      "pass": true
+    },
+    {
+      "name": "deep link 19",
+      "pass": true
+    },
+    {
+      "name": "deep link 20",
+      "pass": true
+    },
+    {
+      "name": "deep link 21",
+      "pass": true
+    },
+    {
+      "name": "deep link 22",
+      "pass": true
+    },
+    {
+      "name": "deep link 23",
+      "pass": true
+    },
+    {
+      "name": "deep link 24",
+      "pass": true
+    },
+    {
+      "name": "dark 1440 no page overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1425
+      }
+    },
+    {
+      "name": "dark 768 no page overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scroll": 753
+      }
+    },
+    {
+      "name": "dark 390 no page overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 375
+      }
+    },
+    {
+      "name": "dark 320 no page overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305
+      }
+    },
+    {
+      "name": "light 1440 no page overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1425
+      }
+    },
+    {
+      "name": "light 768 no page overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scroll": 753
+      }
+    },
+    {
+      "name": "light 390 no page overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 375
+      }
+    },
+    {
+      "name": "light 320 no page overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305
+      }
+    },
+    {
+      "name": "3D edge selected",
+      "pass": true
+    },
+    {
+      "name": "2D has no baseline outline",
+      "pass": true
+    },
+    {
+      "name": "manual reduced applied",
+      "pass": true
+    },
+    {
+      "name": "live system reduced applied",
+      "pass": true
+    },
+    {
+      "name": "keyboard focus visible",
+      "pass": true
+    },
+    {
+      "name": "solid fallback",
+      "pass": true
+    },
+    {
+      "name": "forced-colors outline present",
+      "pass": true
+    },
+    {
+      "name": "all UI buttons have names",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "runtime IDs unique",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "site retained and points to UI atlas",
+      "pass": true
+    },
+    {
+      "name": "site modal still works",
+      "pass": true
+    },
+    {
+      "name": "no console/network errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no-JS retains 24 groups and all examples",
+      "pass": true
+    },
+    {
+      "name": "no-JS static chart content retained",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "source": "d6018e94adcd361576f3a4590eeca4fd8cd5f597",
+  "scope": "First V5 public deployment; the subsequent refinement changes only the optical layer CSS. Final material/fallback and all-file byte verification recorded separately."
+}

@@ -1,0 +1,231 @@
+{
+  "source": "9f44c41207f72bdcfe106039b4e8893126f96cc9",
+  "base": "https://rdsolod-ui.github.io/glass-neon-motion-skill/",
+  "verifiedAt": "2026-10-22T08:42:20.031Z",
+  "normalization": "CRLF to LF only; deployed Git text bytes compared to the local source",
+  "passed": 37,
+  "total": 37,
+  "checks": [
+    {
+      "file": "site/assets/icons/phosphor/arrow-right.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "e45bc4a12592b8723110db42c6deffdf177e4fe7704cf50324963fa0a59b2d74"
+    },
+    {
+      "file": "site/assets/icons/phosphor/calendar-blank.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "6268583ae0ea04e93fd24f1e70d47a8e8d79c88fc304af397b95b318980215d6"
+    },
+    {
+      "file": "site/assets/icons/phosphor/arrow-left.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "3c2001cf957d182fc54927e4b286cc8cf66dd97830f441ca2650d42a63a9006a"
+    },
+    {
+      "file": "site/assets/icons/phosphor/check.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "cbb89a8c42f283d4f846eb935e05d88c1be04462f16480e068c0f82b9ce40b12"
+    },
+    {
+      "file": "site/assets/icons/phosphor/cube.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "7c0f13cb492d0dd212e48ab259dabec4627df32d71aa00ce31b3228c0f35112b"
+    },
+    {
+      "file": "site/assets/icons/phosphor/LICENSE",
+      "status": 200,
+      "match": true,
+      "sha256": "b5b1f1da112d18ea2147decfd48ddc1bf2b5aeb6c265381579340e95b15a2bb2"
+    },
+    {
+      "file": "site/assets/icons/phosphor/house.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "180e9259e99e23da197b59b19394d006d6a5d33e384cc2b9c8381cb0214a5716"
+    },
+    {
+      "file": "site/assets/icons/phosphor/manifest.json",
+      "status": 200,
+      "match": true,
+      "sha256": "0605ee57f897662a9a0278602dd3ea6c4886de56dfc0c16afe1947bf4fd7ab8d"
+    },
+    {
+      "file": "site/assets/icons/phosphor/kanban.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "f3a0131fad04a825e94567cc46d96943256f487c493d8f00ccdd589fa3b6e97e"
+    },
+    {
+      "file": "site/assets/icons/phosphor/heart-fill.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "d90560d4f762f1b345bd2322cd1ef696926ffa74b0c1396933b6d926faf8341e"
+    },
+    {
+      "file": "site/assets/icons/phosphor/list.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "fb1851842c74b40a3f42ce3d6ae0e67ede556b624218e79c0f4ead7d9ceec51f"
+    },
+    {
+      "file": "site/assets/icons/phosphor/heart.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "312dee73d1d969631d5498012f619ccf4edbdf31e1be3e65af4f4f1b3ac1b2dd"
+    },
+    {
+      "file": "site/assets/icons/phosphor/star-bold.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "e456b195ce0f28235d63c0612b835fd120c747a8132d2be984863e2125674240"
+    },
+    {
+      "file": "site/assets/icons/phosphor/star-fill.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "42451b34121b695bdaab88fdcf3eacec9cda9ac36d222349609426dcb9f04b48"
+    },
+    {
+      "file": "site/assets/icons/phosphor/play.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "885b3ed2095889c4ff063dac35dc424cb9f6c00273ab44e2f90dc9dadbee661a"
+    },
+    {
+      "file": "site/assets/icons/phosphor/shopping-cart.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "c972c761af11dcf0308abedac84543d235062d073d11b2119d0da870465ad474"
+    },
+    {
+      "file": "site/assets/icons/phosphor/star-duotone.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "d99a65040b32b5da2b50077a15d8b8b5ae90307c1a5bd34771c3f7b21e055835"
+    },
+    {
+      "file": "site/assets/icons/phosphor/star-light.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "513d052171854cfafb91aeca3f87e978d8c9d5d79b9424478a437f59bc9e7ec9"
+    },
+    {
+      "file": "site/assets/icons/phosphor/star.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "165cd96e51d60442fb9c7aa89592fa6ef28f22d18368c85771be302c2e977101"
+    },
+    {
+      "file": "site/assets/icons/phosphor/upload-simple.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "d2b22b75affd718a4a24d71ee71586b277cf48ddb7d52b7d7d0a85b47f8b12d1"
+    },
+    {
+      "file": "site/assets/icons/phosphor/star-thin.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "5197d618d64bedb10ad376d8b565a4272ceba1912070985ccabff413729c57bf"
+    },
+    {
+      "file": "site/index.html",
+      "status": 200,
+      "match": true,
+      "sha256": "399df487232774039783230246140143fb7d4371cbdbd250627a0fa802b722d9"
+    },
+    {
+      "file": "site/assets/icons/phosphor/x.svg",
+      "status": 200,
+      "match": true,
+      "sha256": "7397b15e1fa66eaf6ff9b59fe91d483cb5c3bcf75b2fe052097ab6f0593b513a"
+    },
+    {
+      "file": "site/catalog.js",
+      "status": 200,
+      "match": true,
+      "sha256": "276700f5802dc76ed8b041040a8c3caefda819c8cfbe6f7389f07ca012cb91dc"
+    },
+    {
+      "file": "site/material-finishes.css",
+      "status": 200,
+      "match": true,
+      "sha256": "6b3a7d9ef5db10b12fe3aac29923e698157c36dc55dc7a8628ad106f57562d37"
+    },
+    {
+      "file": "site/ui-compositions.css",
+      "status": 200,
+      "match": true,
+      "sha256": "f523f0ac53730ebca2dcbc2f8cc283979bc4fd13a5d0435fe592e6a5d33960ee"
+    },
+    {
+      "file": "site/ui-atlas.css",
+      "status": 200,
+      "match": true,
+      "sha256": "ff5381195185a042823e5c0dab2bb874bd278d0d2aa13424931b8443208ba3a5"
+    },
+    {
+      "file": "site/moodboard.html",
+      "status": 200,
+      "match": true,
+      "sha256": "bdaac51912570443926a8463a91cce04cb7abdafb5c99d8330e07c832f4344ec"
+    },
+    {
+      "file": "site/material-finishes.js",
+      "status": 200,
+      "match": true,
+      "sha256": "99d3dcbd938ab9ef4ca6f6d19dcbc91ee2be23b2ed1373b4eedff06ab503bf72"
+    },
+    {
+      "file": "site/ui-atlas.js",
+      "status": 200,
+      "match": true,
+      "sha256": "4e26f8a1f5ed8e72ce875f95a2b2b5fa41a7a85022780277cbd5e0f7d415cc97"
+    },
+    {
+      "file": "site/ui-controls.js",
+      "status": 200,
+      "match": true,
+      "sha256": "062e0c8cf648efbbc1fc31d3274a35411da3d0ac7b9237222ac2ba855e295ea7"
+    },
+    {
+      "file": "site/ui-compositions.js",
+      "status": 200,
+      "match": true,
+      "sha256": "3c94e2034a0a98b711ff07ffc2ccd6f5847fff9b03a096335e050e7434f925e1"
+    },
+    {
+      "file": "site/ui-data.js",
+      "status": 200,
+      "match": true,
+      "sha256": "b39309aa047aa95c34831cf72beed8731955f443920473d642db16d2ee6bfa37"
+    },
+    {
+      "file": "site/ui-controls.css",
+      "status": 200,
+      "match": true,
+      "sha256": "6dc18ccb5cf3c5a237fd8824d59c4f33586a1d422ba37659ff8189d502d0b75d"
+    },
+    {
+      "file": "site/ui-manifest.json",
+      "status": 200,
+      "match": true,
+      "sha256": "285f37b12494b42f22f3b9425d3d9d90890437116b2f415605df98fa2368e0c8"
+    },
+    {
+      "file": "site/ui-data.css",
+      "status": 200,
+      "match": true,
+      "sha256": "78d45d84e81cc98819bd056f9ac07eb4ee8653b62e1b65f6019557f58237ebb7"
+    },
+    {
+      "file": "site/ (default index)",
+      "status": 200,
+      "match": true
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "base": "https://rdsolod-ui.github.io/glass-neon-motion-skill/",
+  "checks": [
+    {
+      "name": "JavaScript actually disabled",
+      "pass": true
+    },
+    {
+      "name": "no-JS static groups",
+      "pass": true
+    },
+    {
+      "name": "no-JS native disclosure works",
+      "pass": true
+    },
+    {
+      "name": "light reduced transparency preference read-back",
+      "pass": true
+    },
+    {
+      "name": "light clear-depth shell becomes solid",
+      "pass": true
+    },
+    {
+      "name": "light UI clear-depth becomes solid",
+      "pass": true
+    },
+    {
+      "name": "dark reduced transparency preference read-back",
+      "pass": true
+    },
+    {
+      "name": "dark clear-depth shell becomes solid",
+      "pass": true
+    },
+    {
+      "name": "dark UI clear-depth becomes solid",
+      "pass": true
+    },
+    {
+      "name": "no browser errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "passed": 10,
+  "total": 10,
+  "errors": [],
+  "source": "9f44c41207f72bdcfe106039b4e8893126f96cc9"
+}
