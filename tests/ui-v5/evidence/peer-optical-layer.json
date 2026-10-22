@@ -1,0 +1,112 @@
+{
+  "url": "http://127.0.0.1:4177/index.html",
+  "pass": true,
+  "checks": [
+    {
+      "name": "light/1440 clear target single optical layer",
+      "pass": true,
+      "details": {
+        "host": "none",
+        "pseudo": "blur(0.8px) saturate(1.12)",
+        "display": "block",
+        "overlap": false,
+        "contained": true,
+        "border": "0px"
+      }
+    },
+    {
+      "name": "light/1440 solid target",
+      "pass": true,
+      "details": {
+        "host": "none",
+        "background": "rgb(249, 249, 255)",
+        "pseudo": "none"
+      }
+    },
+    {
+      "name": "light/390 clear target single optical layer",
+      "pass": true,
+      "details": {
+        "host": "none",
+        "pseudo": "blur(0.8px) saturate(1.12)",
+        "display": "block",
+        "overlap": false,
+        "contained": true,
+        "border": "0px"
+      }
+    },
+    {
+      "name": "light/390 solid target",
+      "pass": true,
+      "details": {
+        "host": "none",
+        "background": "rgb(249, 249, 255)",
+        "pseudo": "none"
+      }
+    },
+    {
+      "name": "light custom preview owns slider independently",
+      "pass": true,
+      "details": {
+        "host": "none",
+        "pseudo": "blur(6px) saturate(1.4)"
+      }
+    },
+    {
+      "name": "dark/1440 clear target single optical layer",
+      "pass": true,
+      "details": {
+        "host": "none",
+        "pseudo": "blur(0.8px) saturate(1.12)",
+        "display": "block",
+        "overlap": false,
+        "contained": true,
+        "border": "0px"
+      }
+    },
+    {
+      "name": "dark/1440 solid target",
+      "pass": true,
+      "details": {
+        "host": "none",
+        "background": "rgb(29, 34, 60)",
+        "pseudo": "none"
+      }
+    },
+    {
+      "name": "dark/390 clear target single optical layer",
+      "pass": true,
+      "details": {
+        "host": "none",
+        "pseudo": "blur(0.8px) saturate(1.12)",
+        "display": "block",
+        "overlap": false,
+        "contained": true,
+        "border": "0px"
+      }
+    },
+    {
+      "name": "dark/390 solid target",
+      "pass": true,
+      "details": {
+        "host": "none",
+        "background": "rgb(29, 34, 60)",
+        "pseudo": "none"
+      }
+    },
+    {
+      "name": "dark custom preview owns slider independently",
+      "pass": true,
+      "details": {
+        "host": "none",
+        "pseudo": "blur(6px) saturate(1.4)"
+      }
+    },
+    {
+      "name": "no page errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "errors": []
+}

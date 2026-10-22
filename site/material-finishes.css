@@ -25,3 +25,10 @@
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){:root[data-theme][data-finish]{--glass-fill:var(--solid);--glass-filter:none;--glass-reflection:linear-gradient(transparent,transparent)}:root[data-theme][data-finish] .ui-atlas{--ui-fill:var(--solid);--ui-optics:none}}
 @media(prefers-reduced-transparency:reduce){:root[data-theme][data-finish]{--glass-fill:var(--solid);--glass-filter:none;--glass-reflection:linear-gradient(transparent,transparent)}:root[data-theme][data-finish] .ui-atlas{--ui-fill:var(--solid);--ui-optics:none}}
 @media(forced-colors:active){:root[data-theme][data-finish]{--glass-fill:Canvas;--glass-filter:none;--glass-reflection:linear-gradient(transparent,transparent);--glass-control:Canvas}:root[data-theme][data-finish] .ui-atlas{--ui-fill:Canvas;--ui-well:Canvas;--ui-control:ButtonFace;--ui-optics:none}}
+/* Keep V4's compositor repair: content hosts never acquire a second blur plane. */
+:root[data-finish=clear] .luma-site .motion-tile{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+:root[data-finish=clear] .luma-site .motion-tile:not(#custom-material)::before{background:var(--glass-reflection),var(--glass-fill);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter)}
+:root[data-solid=true][data-finish] .luma-site .motion-tile{background:var(--solid)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){:root[data-finish=clear] .luma-site .motion-tile{background:var(--solid)}}
+@media(prefers-reduced-transparency:reduce){:root[data-finish=clear] .luma-site .motion-tile{background:var(--solid)}}
+@media(forced-colors:active){:root[data-finish=clear] .luma-site .motion-tile{background:Canvas}}

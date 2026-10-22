@@ -86,6 +86,10 @@
       "pass": true
     },
     {
+      "name": "clear motion tile uses one optical layer",
+      "pass": true
+    },
+    {
       "name": "index.html clear vs frost diffusion distinct",
       "pass": true,
       "detail": [
@@ -311,7 +315,7 @@
       "detail": []
     }
   ],
-  "passed": 46,
-  "total": 46,
+  "passed": 47,
+  "total": 47,
   "errors": []
 }
