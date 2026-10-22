@@ -1,0 +1,324 @@
+{
+  "date": "2026-10-23",
+  "sourceCommit": "d105f5b5835122555aaff4fe2017284e707b73af",
+  "offlineSmoke": {
+    "samples": 366,
+    "javascriptErrors": 0,
+    "externalRequests": 0,
+    "overflowAt390": 0,
+    "oneSpecimenPerFile": true
+  },
+  "checks": {
+    "author_actions": {
+      "passed": 11,
+      "total": 11,
+      "checks": [
+        "isolated calendar advances month",
+        "isolated product works without cart DOM",
+        "isolated chart changes dataset",
+        "isolated editor renders text safely",
+        "isolated native dialog opens",
+        "isolated dialog returns focus",
+        "isolated pagination advances",
+        "isolated dual range clamps",
+        "isolated motion live reduced cancels",
+        "export excludes current user input",
+        "no runtime errors"
+      ]
+    },
+    "author_compositions_regression": {
+      "passed": 45,
+      "total": 45,
+      "checks": [
+        "01 theme dark + global label",
+        "01 accent changes specimen",
+        "01 density",
+        "02 six genuine SVG styles and selection",
+        "02 favorite pressed and name",
+        "04 hero CTA",
+        "04 dismiss + restore focus",
+        "04 banner restored",
+        "04 save collection",
+        "09 header destination",
+        "09 burger open",
+        "09 burger escape returns focus",
+        "10 breadcrumb anchor",
+        "10 pagination changes content",
+        "10 rail content",
+        "11 footer legal disclosure",
+        "11 newsletter local validation",
+        "13 content favorite",
+        "13 FAQ native open",
+        "13 content filter",
+        "14 gallery changes image",
+        "14 local file preview",
+        "14 preview cleanup",
+        "22 product linked to cart",
+        "22 cart arithmetic",
+        "22 cart remove",
+        "24 Kanban keyboard",
+        "24 Kanban touch alternative",
+        "24 calendar select",
+        "24 calendar arrow navigation",
+        "24 calendar month lengths",
+        "24 editor HTML escaped",
+        "24 editor bold",
+        "live reduced motion no composition animation",
+        "lifecycle remount preserves cart and single listener",
+        "lifecycle gallery continuity",
+        "lifecycle calendar continuity",
+        "lifecycle theme observer restored",
+        "light 1440 overflow",
+        "light 390 overflow",
+        "light 320 overflow",
+        "dark 1440 overflow",
+        "dark 390 overflow",
+        "dark 320 overflow",
+        "no runtime errors"
+      ]
+    },
+    "author_materials_regression": {
+      "passed": 47,
+      "total": 47,
+      "checks": [
+        "index.html four materials",
+        "index.html light frost-film applies",
+        "index.html light frost-glass applies",
+        "index.html light clear-film applies",
+        "index.html light clear-glass applies",
+        "index.html light mobile overflow",
+        "index.html dark frost-film applies",
+        "index.html dark frost-glass applies",
+        "index.html dark clear-film applies",
+        "index.html dark clear-glass applies",
+        "index.html dark mobile overflow",
+        "clear motion tile uses one optical layer",
+        "index.html clear vs frost diffusion distinct",
+        "index.html no perimeter outline",
+        "index.html thickness distinct",
+        "index.html light clear solid fallback",
+        "index.html light clear shell solid",
+        "index.html dark clear solid fallback",
+        "index.html dark clear shell solid",
+        "index.html forced colors border",
+        "moodboard.html four materials",
+        "moodboard.html light frost-film applies",
+        "moodboard.html light frost-glass applies",
+        "moodboard.html light clear-film applies",
+        "moodboard.html light clear-glass applies",
+        "moodboard.html light mobile overflow",
+        "moodboard.html dark frost-film applies",
+        "moodboard.html dark frost-glass applies",
+        "moodboard.html dark clear-film applies",
+        "moodboard.html dark clear-glass applies",
+        "moodboard.html dark mobile overflow",
+        "moodboard.html clear vs frost diffusion distinct",
+        "moodboard.html no perimeter outline",
+        "moodboard.html thickness distinct",
+        "independent UI surface/edge",
+        "search глянец",
+        "search прозрачная",
+        "moodboard.html light clear solid fallback",
+        "moodboard.html light clear shell solid",
+        "light depth solid token is opaque",
+        "moodboard.html dark clear solid fallback",
+        "moodboard.html dark clear shell solid",
+        "dark depth solid token is opaque",
+        "moodboard.html forced colors border",
+        "reduced before reload",
+        "UI dispose cancels active and unmounts",
+        "page errors absent"
+      ]
+    },
+    "author_fallback": {
+      "passed": 10,
+      "total": 10,
+      "checks": [
+        "JavaScript actually disabled",
+        "no-JS static groups",
+        "no-JS native disclosure works",
+        "light reduced transparency preference read-back",
+        "light clear-depth shell becomes solid",
+        "light UI clear-depth becomes solid",
+        "dark reduced transparency preference read-back",
+        "dark clear-depth shell becomes solid",
+        "dark UI clear-depth becomes solid",
+        "no browser errors"
+      ]
+    },
+    "author_css_only": {
+      "passed": 4,
+      "total": 4,
+      "checks": [
+        "light CSS-only reduced transparency",
+        "light CSS-only forced colors",
+        "dark CSS-only reduced transparency",
+        "dark CSS-only forced colors"
+      ]
+    },
+    "independent_theme": {
+      "passed": 16,
+      "total": 16,
+      "checks": [
+        "light 1440 no document overflow",
+        "light 390 no document overflow",
+        "light 320 no document overflow",
+        "dark 1440 no document overflow",
+        "dark 390 no document overflow",
+        "dark 320 no document overflow",
+        "preview animation runs",
+        "live reduced cancels preview",
+        "copy payload equals displayed CSS",
+        "clipboard rejection selectable fallback",
+        "clipboard absent selectable fallback",
+        "download JSON actual state",
+        "film no baseline border",
+        "depth no baseline border",
+        "forced colors preserves boundary",
+        "no page errors"
+      ]
+    },
+    "independent_copy": {
+      "passed": 11,
+      "total": 11,
+      "checks": [
+        "theme copy race truthful",
+        "latest copy format JS",
+        "dialog open",
+        "focus inside dialog",
+        "export tab race suppresses stale success",
+        "export denied fallback",
+        "dialog light overflow",
+        "dialog dark overflow",
+        "real HTML download has doctype",
+        "Escape closes",
+        "return focus"
+      ]
+    },
+    "independent_real_download": {
+      "passed": 6,
+      "total": 6,
+      "checks": [
+        "offline real switch toggles",
+        "offline switch keyboard",
+        "light no horizontal overflow",
+        "dark no horizontal overflow",
+        "no external dependencies",
+        "no JS errors"
+      ]
+    },
+    "independent_motion": {
+      "passed": 8,
+      "total": 8,
+      "checks": [
+        "Вход с подъёмом starts",
+        "Вход с подъёмом live reduced cancels",
+        "Вход с подъёмом reduced replay static",
+        "Тактильное нажатие starts",
+        "Тактильное нажатие live reduced cancels",
+        "Тактильное нажатие reduced replay static",
+        "offline drag keyboard alternative",
+        "offline drag End"
+      ]
+    }
+  },
+  "static": {
+    "baseAndAtlasAssertions": 48,
+    "exportSourceHashes": 19,
+    "themeCombinations": 8,
+    "build": "pass"
+  },
+  "deployment": {
+    "runId": 39859995938,
+    "status": "success",
+    "url": "https://github.com/rdsolod-ui/glass-neon-motion-skill/actions/runs/39859995938"
+  },
+  "limitations": [
+    "Chromium on Windows/CDP; physical devices and other browser engines not tested.",
+    "Smoke proves isolated loading, not every possible interaction in 366 specimens.",
+    "Composite contrast reviewed on sampled frames; arbitrary destination imagery needs its own review.",
+    "Installed global skill not replaced."
+  ],
+  "publicReadback": {
+    "commit": "d105f5b5835122555aaff4fe2017284e707b73af",
+    "checks": [
+      {
+        "name": "public bytes moodboard.html",
+        "pass": true
+      },
+      {
+        "name": "public bytes code-export.js",
+        "pass": true
+      },
+      {
+        "name": "public bytes code-export.css",
+        "pass": true
+      },
+      {
+        "name": "public bytes export-assets.js",
+        "pass": true
+      },
+      {
+        "name": "public bytes theme-studio.js",
+        "pass": true
+      },
+      {
+        "name": "public bytes theme-studio.css",
+        "pass": true
+      },
+      {
+        "name": "public bytes app.js",
+        "pass": true
+      },
+      {
+        "name": "public bytes ui-atlas.js",
+        "pass": true
+      },
+      {
+        "name": "public bytes ui-compositions.js",
+        "pass": true
+      },
+      {
+        "name": "public bytes html-atlas.js",
+        "pass": true
+      },
+      {
+        "name": "public bytes motion-atlas.js",
+        "pass": true
+      },
+      {
+        "name": "public bytes variation-atlas.js",
+        "pass": true
+      },
+      {
+        "name": "public inventory 366",
+        "pass": true
+      },
+      {
+        "name": "public theme captured",
+        "pass": true
+      },
+      {
+        "name": "public dialog returns focus",
+        "pass": true
+      },
+      {
+        "name": "public no page errors",
+        "pass": true
+      },
+      {
+        "name": "public downloaded switch works",
+        "pass": true
+      },
+      {
+        "name": "public downloaded file offline",
+        "pass": true
+      },
+      {
+        "name": "public downloaded file narrow layout",
+        "pass": true
+      }
+    ],
+    "errors": []
+  }
+}
