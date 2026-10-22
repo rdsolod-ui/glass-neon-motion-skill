@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-22",
+  "sourceCommit": "dda3f6edb06472af24b9559a5d22e3fc3594d9bd",
+  "repository": "rdsolod-ui/glass-neon-motion-skill",
+  "branch": "main",
+  "pagesRunId": 39803076481,
+  "pagesConclusion": "success",
+  "groups": 15,
+  "variants": 44,
+  "stagedStaticChecks": 47,
+  "stagedBrowserChecks": 240,
+  "publicBrowserChecks": 133,
+  "publicReadbackMatches": 11,
+  "publicReadbackTotal": 11,
+  "normalization": "CRLF to LF for text comparison",
+  "independentReview": "native glass_qa code review and recheck",
+  "browser": "Chromium, desktop and mobile emulation",
+  "globalInstalledSkillModified": false
+}
