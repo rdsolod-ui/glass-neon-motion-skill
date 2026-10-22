@@ -2,13 +2,15 @@
 const root=document.documentElement;
 const media=matchMedia('(prefers-reduced-motion: reduce)');
 const cleanups=[];const active=new Set();let manualReduce=false;let toastTimer;
-const reduced=()=>media.matches||manualReduce;
+const reduced=()=>media.matches||manualReduce||Boolean(window.GlassTheme?.motionOptions().reduced);
 function animate(el,frames,duration=460){
  if(!el)return;for(const a of el.getAnimations())a.cancel();
  if(reduced()||!el.animate)return;
- const a=el.animate(frames,{duration,easing:'cubic-bezier(.22,1,.36,1)',fill:'none'});active.add(a);
+ const settings=window.GlassTheme?.motionOptions(duration);const a=el.animate(frames,{duration:settings?.duration??duration,easing:settings?.easing??'cubic-bezier(.22,1,.36,1)',fill:'none'});active.add(a);
  a.onfinish=a.oncancel=()=>active.delete(a);return a;
 }
+const onGlassTheme=()=>{for(const a of active)a.cancel();active.clear();syncMotion();};
+window.addEventListener('glass-theme-change',onGlassTheme);cleanups.push(()=>window.removeEventListener('glass-theme-change',onGlassTheme));
 function syncMotion(){root.dataset.reduce=String(reduced());if(reduced()){for(const a of active)a.cancel();active.clear();}document.querySelectorAll('[data-motion-status]').forEach(e=>e.textContent=reduced()?'Движение уменьшено':'Движение включено')}
 media.addEventListener('change',syncMotion);cleanups.push(()=>media.removeEventListener('change',syncMotion));syncMotion();
 function themeLabels(){document.querySelectorAll('[data-theme-toggle]').forEach(b=>{b.textContent=root.dataset.theme==='dark'?'Светлая тема':'Тёмная тема';b.setAttribute('aria-label',`Включить ${root.dataset.theme==='dark'?'светлую':'тёмную'} тему`)})}
@@ -43,6 +45,6 @@ const syncLens=()=>{const index=surfaceButtons.findIndex(b=>b.getAttribute('aria
 addEventListener('resize',syncLens);cleanups.push(()=>removeEventListener('resize',syncLens));
 document.querySelectorAll('[data-intro]').forEach((el,i)=>{const end=getComputedStyle(el).transform;animate(el,[{opacity:0,transform:`translateY(${16+i*8}px) ${end==='none'?'':end}`},{opacity:1,transform:end}],650+i*100)});
 function dispose(){for(const a of active)a.cancel();active.clear();clearTimeout(toastTimer);cleanups.forEach(fn=>fn())}
-addEventListener('pagehide',dispose);addEventListener('pageshow',e=>{if(e.persisted){media.addEventListener('change',syncMotion);addEventListener('resize',syncLens);syncMotion();syncLens()}});
+addEventListener('pagehide',dispose);addEventListener('pageshow',e=>{if(e.persisted){window.addEventListener('glass-theme-change',onGlassTheme);media.addEventListener('change',syncMotion);addEventListener('resize',syncLens);syncMotion();syncLens()}});
 window.GlassLab={animate,openDialog,toast,reduced,diagnostics:()=>({active:active.size,reduced:reduced(),theme:root.dataset.theme}),dispose};
 })();

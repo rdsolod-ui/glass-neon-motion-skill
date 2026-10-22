@@ -1,11 +1,11 @@
-const root=document.querySelector('#html-atlas');
-if(root){
+export function initHTMLAtlas(root=document.querySelector('#html-atlas')){
+ if(!root)return ()=>{};
  const search=root.querySelector('#ha-search');
  const filterButtons=[...root.querySelectorAll('[data-ha-filter]')];
  const groups=[...root.querySelectorAll('[data-ha-group]')];
  let filter='all';
  function update(){
-  const query=search.value.trim().toLocaleLowerCase('ru');
+  const query=(search?.value||'').trim().toLocaleLowerCase('ru');
   let count=0;
   for(const group of groups){
    let visible=0;
@@ -16,11 +16,10 @@ if(root){
    group.hidden=visible===0;
    if(query||filter!=='all')group.open=visible>0;
   }
-  root.querySelector('#ha-count').textContent=`${count} элементов`;
-  root.querySelector('#ha-empty').hidden=count!==0;
+  const countLabel=root.querySelector('#ha-count');if(countLabel)countLabel.textContent=`${count} элементов`;
+  const empty=root.querySelector('#ha-empty');if(empty)empty.hidden=count!==0;
  }
- search.disabled=false;
- search.addEventListener('input',update);
+ if(search){search.disabled=false;search.addEventListener('input',update);}
  filterButtons.forEach(button=>{
   button.disabled=false;
   button.addEventListener('click',()=>{filter=button.dataset.haFilter;filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));update();});
@@ -34,8 +33,8 @@ if(root){
  const range=root.querySelector('[data-ha-output]');range?.addEventListener('input',()=>root.querySelector('[data-ha-range-value]').value=`${range.value} px`);
  const dialog=root.querySelector('#ha-native-dialog');
  const openDialog=root.querySelector('[data-ha-dialog-open]');
- openDialog?.addEventListener('click',()=>{if(typeof dialog.showModal==='function')dialog.showModal();});
- dialog?.addEventListener('close',()=>openDialog.focus());
+ openDialog?.addEventListener('click',()=>{if(typeof dialog?.showModal==='function')dialog.showModal();});
+ dialog?.addEventListener('close',()=>openDialog?.focus());
  const timers=new Map();
  root.querySelectorAll('[data-ha-load]').forEach(button=>button.addEventListener('click',()=>{
   if(timers.has(button))clearTimeout(timers.get(button));
@@ -48,3 +47,4 @@ if(root){
  root.querySelectorAll('[data-ha-canvas]').forEach(canvas=>{const ctx=canvas.getContext('2d');if(!ctx)return;ctx.fillStyle='#123b4c';ctx.fillRect(0,0,240,100);ctx.fillStyle='#b1ff70';ctx.beginPath();ctx.arc(80,50,32,0,Math.PI*2);ctx.fill();ctx.fillStyle='#86eaff99';ctx.fillRect(100,22,110,58);});
  update();
 }
+initHTMLAtlas();

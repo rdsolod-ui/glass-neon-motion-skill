@@ -4,13 +4,14 @@ let dispose=()=>{};
 function mount(){
  if(!root||root.dataset.ready==='true')return;
  const controller=new AbortController(),{signal}=controller,media=matchMedia('(prefers-reduced-motion: reduce)'),timers=new Map(),animations=new Set();
- const reduced=()=>media.matches||document.documentElement.dataset.uiReduced==='true'||document.documentElement.dataset.reduce==='true';
- const on=(el,type,fn)=>el.addEventListener(type,fn,{signal});
+ const reduced=()=>media.matches||document.documentElement.dataset.uiReduced==='true'||document.documentElement.dataset.reduce==='true'||document.documentElement.dataset.themeReduce==='true';
+ const on=(el,type,fn)=>el?.addEventListener(type,fn,{signal});
  const stopMotion=()=>{animations.forEach(a=>a.cancel());animations.clear();};
+ on(window,'glass-theme-change',stopMotion);
  on(media,'change',()=>{if(reduced())stopMotion();});
- const observer=new MutationObserver(()=>{if(reduced())stopMotion();});observer.observe(document.documentElement,{attributes:true,attributeFilter:['data-ui-reduced','data-reduce']});
+ const observer=new MutationObserver(()=>{if(reduced())stopMotion();});observer.observe(document.documentElement,{attributes:true,attributeFilter:['data-ui-reduced','data-reduce','data-theme-reduce']});
  on(document,'visibilitychange',()=>{if(document.hidden)stopMotion();});
- const animate=(el,keyframes,delay=0)=>{if(reduced()||document.hidden)return;const a=el.animate(keyframes,{duration:650,iterations:2,delay});animations.add(a);a.onfinish=a.oncancel=()=>animations.delete(a);};
+ const animate=(el,keyframes,delay=0)=>{if(reduced()||document.hidden)return;const options=window.GlassTheme?.motionOptions(650);const a=el.animate(keyframes,{duration:options?.duration??650,easing:options?.easing??'linear',iterations:2,delay});animations.add(a);a.onfinish=a.oncancel=()=>animations.delete(a);};
  for(const axis of ['density','shape'])on(root.querySelector('#vx-'+axis),'change',e=>{root.dataset['vx'+axis[0].toUpperCase()+axis.slice(1)]=e.target.value;});
  const family=root.querySelector('#vx-family');on(family,'change',()=>{root.querySelectorAll('[data-vx-group]').forEach(g=>{g.hidden=family.value!=='all'&&family.value!==g.dataset.vxGroup;if(!g.hidden&&family.value!=='all')g.open=true;});});
  const reveal=()=>{let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}const target=document.getElementById(id);if(!target||!root.contains(target))return;const group=target.closest('[data-vx-group]');if(group){if(group.hidden){family.value='all';family.dispatchEvent(new Event('change'));}group.hidden=false;group.open=true;}requestAnimationFrame(()=>target.scrollIntoView({block:'start',behavior:'instant'}));};on(window,'hashchange',reveal);

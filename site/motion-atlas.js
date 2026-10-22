@@ -4,20 +4,20 @@ export function initMotionAtlas(root=document.querySelector('#motion-atlas')){
  const media=matchMedia('(prefers-reduced-motion: reduce)');
  const cards=[...root.querySelectorAll('[data-ma-id]')];
  const search=root.querySelector('#ma-search'),group=root.querySelector('#ma-group');
- const status=root.querySelector('#ma-status'),manual=root.querySelector('#ma-reduce');
+ const status=root.querySelector('#ma-status')||{textContent:''},manual=root.querySelector('#ma-reduce');
  const signalController=new AbortController(),signal=signalController.signal;
- const listen=(el,event,fn,options={})=>el.addEventListener(event,fn,{...options,signal});
- const reduced=()=>media.matches||manual.checked||document.documentElement.dataset.reduce==='true';
+ const listen=(el,event,fn,options={})=>el?.addEventListener(event,fn,{...options,signal});
+ const reduced=()=>media.matches||manual?.checked||document.documentElement.dataset.reduce==='true'||window.GlassTheme?.motionOptions(220).reduced;
  let current=null,timer=null,pointer=null,disposed=false;
  const scroll=root.querySelector('.ma-scroll'),scrollFill=root.querySelector('.ma-scroll-fill');
  const knob=root.querySelector('.ma-drag-knob'),track=root.querySelector('.ma-drag-track');
- root.querySelectorAll('button:disabled,input:disabled,select:disabled').forEach(el=>el.disabled=false);knob.removeAttribute('aria-disabled');knob.tabIndex=0;
- const updateScroll=()=>{const max=scroll.scrollHeight-scroll.clientHeight;const value=max>0?Math.max(0,Math.min(1,scroll.scrollTop/max)):0;scrollFill.style.transform=`scaleX(${value})`;scrollFill.parentElement.setAttribute('aria-valuenow',String(Math.round(value*100)))};
- const setDrag=value=>{const v=Math.max(0,Math.min(100,Math.round(value)));knob.setAttribute('aria-valuenow',String(v));knob.style.transform=`translateX(${Math.max(0,track.clientWidth-knob.offsetWidth)*v/100}px)`};
+ root.querySelectorAll('button:disabled,input:disabled,select:disabled').forEach(el=>el.disabled=false);if(knob){knob.removeAttribute('aria-disabled');knob.tabIndex=0;}
+ const updateScroll=()=>{if(!scroll||!scrollFill)return;const max=scroll.scrollHeight-scroll.clientHeight;const value=max>0?Math.max(0,Math.min(1,scroll.scrollTop/max)):0;scrollFill.style.transform=`scaleX(${value})`;scrollFill.parentElement.setAttribute('aria-valuenow',String(Math.round(value*100)))};
+ const setDrag=value=>{if(!knob||!track)return;const v=Math.max(0,Math.min(100,Math.round(value)));knob.setAttribute('aria-valuenow',String(v));knob.style.transform=`translateX(${Math.max(0,track.clientWidth-knob.offsetWidth)*v/100}px)`};
  function releasePointer(){if(pointer!==null){try{if(knob.hasPointerCapture(pointer))knob.releasePointerCapture(pointer)}catch{}pointer=null}}
  function stop(message){clearTimeout(timer);timer=null;const old=current;current=null;old?.animations.forEach(animation=>animation.cancel());if(old?.id==='scroll-progress')scroll.scrollTo({top:scroll.scrollTop,behavior:'instant'});releasePointer();root.removeAttribute('data-ma-playing');if(message)status.textContent=message}
  function syncPreference(){root.dataset.maReduced=String(reduced());if(reduced())stop('Уменьшение движения: статичные кадры; прямое управление доступно.');else status.textContent='Движение доступно · выберите образец'}
- function filter(){stop();const query=search.value.trim().toLocaleLowerCase('ru');let count=0;cards.forEach(card=>{const visible=(group.value==='all'||card.closest('[data-ma-group]').dataset.maGroup===group.value)&&card.dataset.maSearch.toLocaleLowerCase('ru').includes(query);card.hidden=!visible;if(visible)count++});root.querySelectorAll('[data-ma-group]').forEach(section=>section.hidden=![...section.querySelectorAll('[data-ma-id]')].some(card=>!card.hidden));root.querySelector('#ma-count').textContent=`${count} из 39 образцов`;root.querySelector('.ma-empty').hidden=count>0;status.textContent=reduced()?'Статичные кадры':'Выберите образец'}
+ function filter(){stop();const query=(search?.value||'').trim().toLocaleLowerCase('ru');let count=0;cards.forEach(card=>{const visible=(!group||group.value==='all'||card.closest('[data-ma-group]')?.dataset.maGroup===group.value)&&card.dataset.maSearch.toLocaleLowerCase('ru').includes(query);card.hidden=!visible;if(visible)count++});root.querySelectorAll('[data-ma-group]').forEach(section=>section.hidden=![...section.querySelectorAll('[data-ma-id]')].some(card=>!card.hidden));const countLabel=root.querySelector('#ma-count');if(countLabel)countLabel.textContent=`${count} из 39 образцов`;const empty=root.querySelector('.ma-empty');if(empty)empty.hidden=count>0;status.textContent=reduced()?'Статичные кадры':'Выберите образец'}
  const durations={press:220,check:540,error:360,rise:480,exit:1100,mask:720,reorder:800,expand:650,shared:1000,tab:600,breadcrumb:900,drawer:650,parallax:1600,sticky:1500,words:1000,underline:750,replace:1000,path:1200,orbit:1500,morph:900,bars:1000,number:900,ring:1100,skeleton:1400,dots:1400,progress:1700,snap:1100,swipe:1200,light:1400,diffusion:1800,prism:1300,tilt:1400,stack:1500,focus:1200,stagger:1100,flow:1600,hero:1800};
  const ease='cubic-bezier(.22,1,.36,1)';
  async function play(id){
@@ -31,7 +31,7 @@ export function initMotionAtlas(root=document.querySelector('#motion-atlas')){
   }
   if(reduced()||!Element.prototype.animate){status.textContent='Показан статичный кадр: движение выключено или WAAPI недоступен.';return}
   const run={id,card,animations:[]};current=run;root.dataset.maPlaying=id;status.textContent=`Воспроизводится: ${card.querySelector('h4').textContent}`;
-  const a=(selector,frames,options={})=>{card.querySelectorAll(selector).forEach((el,i)=>{const animation=el.animate(typeof frames==='function'?frames(i):frames,{duration:durations[id],easing:ease,...(typeof options==='function'?options(i):options)});run.animations.push(animation)})};
+  const a=(selector,frames,options={})=>{card.querySelectorAll(selector).forEach((el,i)=>{const config={duration:durations[id],easing:ease,...(typeof options==='function'?options(i):options)};const motion=window.GlassTheme?.motionOptions(config.duration);if(motion){if(motion.reduced)return;config.duration=motion.duration;config.easing=motion.easing;if(config.delay)config.delay=window.GlassTheme.motionOptions(config.delay).duration;}const animation=el.animate(typeof frames==='function'?frames(i):frames,config);run.animations.push(animation)})};
   const tr=values=>values.map(transform=>({transform}));
   try{switch(id){
    case 'press':a('.ma-target',tr(['scale(1)','scale(.92)','scale(1)']));break;
@@ -77,7 +77,7 @@ export function initMotionAtlas(root=document.querySelector('#motion-atlas')){
   if(current===run){run.animations.forEach(animation=>animation.cancel());current=null;root.removeAttribute('data-ma-playing');status.textContent='Этюд завершён · показан статичный кадр'}
   }catch(error){stop('Этот браузер не воспроизвёл эффект. Статичный образец доступен.');console.warn('Motion Atlas specimen:',id,error.message)}
  }
- listen(root,'click',event=>{const button=event.target.closest('[data-ma-play]');if(button)play(button.dataset.maPlay);const jump=event.target.closest('[data-ma-jump]');if(jump){group.value='all';search.value='';filter()}});
+ listen(root,'click',event=>{const button=event.target.closest('[data-ma-play]');if(button)play(button.dataset.maPlay);const jump=event.target.closest('[data-ma-jump]');if(jump&&group&&search){group.value='all';search.value='';filter()}});
  listen(root.querySelector('#ma-stop'),'click',()=>stop('Остановлено · показан статичный кадр'));
  listen(search,'input',filter);listen(group,'change',filter);listen(manual,'change',syncPreference);listen(media,'change',syncPreference);
  listen(scroll,'scroll',()=>{if(current&&current.id!=='scroll-progress')stop();updateScroll()},{passive:true});
@@ -85,13 +85,14 @@ export function initMotionAtlas(root=document.querySelector('#motion-atlas')){
  listen(knob,'pointermove',event=>{if(pointer!==event.pointerId)return;const bounds=track.getBoundingClientRect();const range=bounds.width-knob.offsetWidth;setDrag(range>0?(event.clientX-bounds.left-knob.offsetWidth/2)/range*100:0)});
  listen(knob,'pointerup',()=>releasePointer());listen(knob,'pointercancel',()=>releasePointer());listen(knob,'lostpointercapture',()=>{pointer=null});
  listen(knob,'keydown',event=>{const step=event.shiftKey?10:5;let value=Number(knob.getAttribute('aria-valuenow'));if(event.key==='ArrowRight')value+=step;else if(event.key==='ArrowLeft')value-=step;else if(event.key==='Home')value=0;else if(event.key==='End')value=100;else return;event.preventDefault();stop();setDrag(value);status.textContent='Положение изменено с клавиатуры.'});
- const resize=typeof ResizeObserver==='function'?new ResizeObserver(()=>{setDrag(Number(knob.getAttribute('aria-valuenow')));updateScroll()}):null;resize?.observe(track);resize?.observe(scroll);
+ const resize=typeof ResizeObserver==='function'?new ResizeObserver(()=>{setDrag(Number(knob?.getAttribute('aria-valuenow')||50));updateScroll()}):null;if(track)resize?.observe(track);if(scroll)resize?.observe(scroll);
  const offscreen=typeof IntersectionObserver==='function'?new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting&&current?.card===entry.target)stop('Этюд остановлен за пределами экрана.');if(!entry.isIntersecting&&entry.target.dataset.maId==='drag')releasePointer()}},{threshold:0}):null;
  cards.forEach(card=>offscreen?.observe(card));
  const attributes=new MutationObserver(syncPreference);attributes.observe(document.documentElement,{attributes:true,attributeFilter:['data-reduce']});
  listen(document,'visibilitychange',()=>{if(document.hidden)stop()});
+ listen(window,'glass-theme-change',()=>{stop();syncPreference()});
  listen(window,'pagehide',()=>{stop();offscreen?.disconnect();resize?.disconnect()});
- listen(window,'pageshow',()=>{cards.forEach(card=>offscreen?.observe(card));resize?.observe(track);resize?.observe(scroll);setDrag(Number(knob.getAttribute('aria-valuenow')));updateScroll();syncPreference()});
+ listen(window,'pageshow',()=>{cards.forEach(card=>offscreen?.observe(card));if(track)resize?.observe(track);if(scroll)resize?.observe(scroll);setDrag(Number(knob?.getAttribute('aria-valuenow')||50));updateScroll();syncPreference()});
  setDrag(50);updateScroll();syncPreference();
  return ()=>{if(disposed)return;disposed=true;stop();signalController.abort();offscreen?.disconnect();resize?.disconnect();attributes.disconnect()};
 }

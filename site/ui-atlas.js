@@ -13,11 +13,11 @@ function mount(){
  const search=root.querySelector('#ui-search'),family=root.querySelector('#ui-family'),reduce=root.querySelector('#ui-reduce');
  const results=root.querySelector('#ui-search-results'),links=root.querySelector('#ui-result-links');
  const groups=[...root.querySelectorAll('[data-ui-group]')],cards=[...root.querySelectorAll('[data-ui-example]')];
- const reduced=()=>media.matches||reduce.checked;
+ const reduced=()=>media.matches||reduce.checked||Boolean(window.GlassTheme?.motionOptions().reduced);
  const stop=()=>{for(const a of active)a.cancel();active.clear();};
- const api={animate(el,frames,options={}){if(!el)return;el.getAnimations().forEach(a=>a.cancel());if(reduced()||!el.animate||document.hidden)return;const duration=typeof options==='number'?options:options.duration??220;if(!Number.isFinite(duration)||duration<0)return;const a=el.animate(frames,{duration:Math.min(duration,5000),easing:'cubic-bezier(.22,1,.36,1)',fill:'none'});active.add(a);a.onfinish=a.oncancel=()=>active.delete(a);return a;},announce(text){root.querySelector('#ui-announcement').textContent=text;},reduced};
+ const api={animate(el,frames,options={}){if(!el)return;el.getAnimations().forEach(a=>a.cancel());if(reduced()||!el.animate||document.hidden)return;const duration=typeof options==='number'?options:options.duration??220;if(!Number.isFinite(duration)||duration<0)return;const settings=window.GlassTheme?.motionOptions(duration);const a=el.animate(frames,{duration:settings?.duration??Math.min(duration,5000),easing:settings?.easing??'cubic-bezier(.22,1,.36,1)',fill:'none'});active.add(a);a.onfinish=a.oncancel=()=>active.delete(a);return a;},announce(text){root.querySelector('#ui-announcement').textContent=text;},reduced};
  const syncReduce=()=>{document.documentElement.dataset.uiReduced=String(reduced());if(reduced())stop();};
- media.addEventListener('change',syncReduce,{signal});reduce.addEventListener('change',()=>{syncReduce();const ma=document.querySelector('#ma-reduce');if(ma){ma.checked=reduce.checked;ma.dispatchEvent(new Event('change',{bubbles:true}));}},{signal});syncReduce();
+ window.addEventListener('glass-theme-change',()=>{stop();syncReduce();},{signal});media.addEventListener('change',syncReduce,{signal});reduce.addEventListener('change',()=>{syncReduce();const ma=document.querySelector('#ma-reduce');if(ma){ma.checked=reduce.checked;ma.dispatchEvent(new Event('change',{bubbles:true}));}},{signal});syncReduce();
  document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();},{signal});
  for(const init of [initControls,initCompositions,initData]){const cleanup=init(root,api);if(typeof cleanup==='function')cleanups.push(cleanup);}
  root.querySelectorAll('[name=ui-edge]').forEach(radio=>radio.addEventListener('change',()=>{if(radio.checked)root.dataset.uiEdge=radio.value;},{signal}));

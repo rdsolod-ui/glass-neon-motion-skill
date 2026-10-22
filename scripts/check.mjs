@@ -29,3 +29,5 @@ console.log(JSON.stringify({passed:checks.length,checks},null,2));
 
 await import('./check-ui.mjs');
 await import('./check-variations.mjs');
+
+await import('./check-code-theme.mjs');

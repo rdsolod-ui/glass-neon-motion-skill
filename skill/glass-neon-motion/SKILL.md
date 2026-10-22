@@ -18,6 +18,8 @@ description: Design, build and review glassmorphism websites and moodboards with
 
 ## Расширенная библиотека UI
 
+Для копирования HTML/CSS/JS, автономных примеров и редактора темы используй [code-export.md](references/code-export.md): согласованные файлы, честные статусы, лицензии, Clipboard fallback и проверка вне мудборда.
+
 При расширении готовых решений используй отдельный слой вариативности: [component-variants.md](references/component-variants.md). Разделяй семейство, вариант, состояние и материальные оси. В LUMA реализованы 44 live-local варианта в 15 семействах; это проектный пример, не обязательный объём каждого сайта.
 
 Для карты компонентов, единого поиска, графиков и иконок прочитай [ui-atlas.md](references/ui-atlas.md): 24 группы, различие live-local/visual/recipe/planned, stable links и контракт состояний. Полнота HTML-тегов не доказывает полноту UI; проверяй действия каждого заявленного рабочего образца.
