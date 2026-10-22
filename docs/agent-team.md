@@ -39,3 +39,8 @@ Standalone TOML содержит `name`, `description`, `developer_instructions`
 ## Распределение V4
 
 Для стеклянной оболочки сайта и мудборда повторно запущены реальные задания: `motion_atlas_v3` реализовал главную и проверял мудборд; `html_atlas_v3` реализовал оболочку атласа и проверял сайт; `desktop_roles_v3` подготовил арт-дирекцию и независимо проверял обе страницы. Координатор владел общими CSS-токенами, интеграцией и публикацией. Контракты переданы collaboration-исполнителям, поскольку текущий родительский чат не предоставляет native selector. Это не меняет результат отдельного Desktop smoke. [Приёмка V4](acceptance-v4.md).
+
+
+## Распределение V5 — 2026-10-22
+
+Иван поручил все 24 группы. Начальные задания html_atlas_v3, desktop_roles_v3 и motion_atlas_v3 оставили частичные исходники. После возобновления эти агенты отсутствовали в live inventory. Реально запущены controls_finish — 12 групп controls/forms; compositions_finish — 10 групп compositions/icons; data_finish — tables и 12 SVG charts. Они закончили реализацию и выполнили перекрёстную приёмку: data → controls/search/materials, controls → compositions/site, compositions → charts/skill. Coordinator владеет общей UI-оболочкой, глобальным поиском, lifecycle, generator integration, skill и release. Точные новые файлы отражены в ownership registry. Приёмка после сборки перекрёстная; её итог фиксируется в acceptance-v5.md. Native discovery текущим запуском не перепроверяется, ранее сохранённое доказательство относится к прежним версиям role files, которые в V5 не менялись.

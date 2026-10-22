@@ -1,0 +1,211 @@
+{
+  "url": "http://127.0.0.1:4177/",
+  "checks": [
+    {
+      "name": "01 theme dark + global label",
+      "pass": true
+    },
+    {
+      "name": "01 accent changes specimen",
+      "pass": true
+    },
+    {
+      "name": "01 density",
+      "pass": true
+    },
+    {
+      "name": "02 six genuine SVG styles and selection",
+      "pass": true
+    },
+    {
+      "name": "02 favorite pressed and name",
+      "pass": true
+    },
+    {
+      "name": "04 hero CTA",
+      "pass": true
+    },
+    {
+      "name": "04 dismiss + restore focus",
+      "pass": true
+    },
+    {
+      "name": "04 banner restored",
+      "pass": true
+    },
+    {
+      "name": "04 save collection",
+      "pass": true
+    },
+    {
+      "name": "09 header destination",
+      "pass": true
+    },
+    {
+      "name": "09 burger open",
+      "pass": true
+    },
+    {
+      "name": "09 burger escape returns focus",
+      "pass": true
+    },
+    {
+      "name": "10 breadcrumb anchor",
+      "pass": true
+    },
+    {
+      "name": "10 pagination changes content",
+      "pass": true
+    },
+    {
+      "name": "10 rail content",
+      "pass": true
+    },
+    {
+      "name": "11 footer legal disclosure",
+      "pass": true
+    },
+    {
+      "name": "11 newsletter local validation",
+      "pass": true
+    },
+    {
+      "name": "13 content favorite",
+      "pass": true
+    },
+    {
+      "name": "13 FAQ native open",
+      "pass": true
+    },
+    {
+      "name": "13 content filter",
+      "pass": true
+    },
+    {
+      "name": "14 gallery changes image",
+      "pass": true
+    },
+    {
+      "name": "14 local file preview",
+      "pass": true
+    },
+    {
+      "name": "14 preview cleanup",
+      "pass": true
+    },
+    {
+      "name": "22 product linked to cart",
+      "pass": true
+    },
+    {
+      "name": "22 cart arithmetic",
+      "pass": true
+    },
+    {
+      "name": "22 cart remove",
+      "pass": true
+    },
+    {
+      "name": "24 Kanban keyboard",
+      "pass": true
+    },
+    {
+      "name": "24 Kanban touch alternative",
+      "pass": true
+    },
+    {
+      "name": "24 calendar select",
+      "pass": true
+    },
+    {
+      "name": "24 calendar arrow navigation",
+      "pass": true
+    },
+    {
+      "name": "24 calendar month lengths",
+      "pass": true
+    },
+    {
+      "name": "24 editor HTML escaped",
+      "pass": true
+    },
+    {
+      "name": "24 editor bold",
+      "pass": true
+    },
+    {
+      "name": "live reduced motion no composition animation",
+      "pass": true
+    },
+    {
+      "name": "lifecycle remount preserves cart and single listener",
+      "pass": true
+    },
+    {
+      "name": "lifecycle gallery continuity",
+      "pass": true
+    },
+    {
+      "name": "lifecycle calendar continuity",
+      "pass": true
+    },
+    {
+      "name": "lifecycle theme observer restored",
+      "pass": true
+    },
+    {
+      "name": "light 1440 overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1425
+      }
+    },
+    {
+      "name": "light 390 overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 375
+      }
+    },
+    {
+      "name": "light 320 overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305
+      }
+    },
+    {
+      "name": "dark 1440 overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1425
+      }
+    },
+    {
+      "name": "dark 390 overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scroll": 375
+      }
+    },
+    {
+      "name": "dark 320 overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scroll": 305
+      }
+    },
+    {
+      "name": "no runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,13 @@
+{
+  "base": "http://127.0.0.1:4177",
+  "checks": [
+    "reduced-before-load-readback",
+    "theme-pressed-sync-both-directions",
+    "reduced-no-active",
+    "site-primary-cta-studio",
+    "site-touch-menu-escape-focus",
+    "site-dialog-escape-focus"
+  ],
+  "errors": [],
+  "pass": true
+}

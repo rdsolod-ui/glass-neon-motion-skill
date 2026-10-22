@@ -26,3 +26,5 @@ for(const file of await walk('skill/glass-neon-motion'))if(file.endsWith('.md'))
 check('skill frontmatter name',(await readFile('skill/glass-neon-motion/SKILL.md','utf8')).startsWith('---\nname: glass-neon-motion')||(await readFile('skill/glass-neon-motion/SKILL.md','utf8')).startsWith('---\r\nname: glass-neon-motion'));
 check('font license retained',(await readFile('site/assets/Manrope-OFL.txt','utf8')).includes('SIL OPEN FONT LICENSE'));
 console.log(JSON.stringify({passed:checks.length,checks},null,2));
+
+await import('./check-ui.mjs');

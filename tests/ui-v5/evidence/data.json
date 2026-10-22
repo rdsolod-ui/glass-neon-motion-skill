@@ -1,0 +1,92 @@
+{
+  "base": "http://127.0.0.1:4177",
+  "checks": [
+    {
+      "name": "table-inventory",
+      "detail": "6 rows; numeric asc/desc; filter empty state; persisted hidden selection; bulk update; reset"
+    },
+    {
+      "name": "table-expandable",
+      "detail": "Keyboard native disclosure and open/close all"
+    },
+    {
+      "name": "table-inline",
+      "detail": "Reject 100 without corrupting total; save 7→35; Escape reverts edit and returns focus"
+    },
+    {
+      "name": "chart-bar",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-grouped",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-line",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-histogram",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-scatter",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-donut",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-stacked",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-treemap",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-sankey",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-geo",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-bullet",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "chart-control",
+      "detail": "Dataset changes static SVG and table; labels, table disclosure, special control, reset and numeric invariant checked"
+    },
+    {
+      "name": "reduced-motion",
+      "detail": "No active common API animation with reduced motion before load"
+    },
+    {
+      "name": "mobile-chart",
+      "detail": "390px page has no overflow; plot uses an explicit scrollable keyboard region"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\ui-v5\\data-dark-desktop.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\ui-v5\\data-light-desktop.png",
+    "C:\\CodexWork\\glass-neon-motion-skill\\qa\\ui-v5\\data-light-mobile.png"
+  ],
+  "status": "passed",
+  "motionReadback": {
+    "m": true,
+    "d": {
+      "groups": 24,
+      "examples": 76,
+      "index": 355,
+      "active": 0,
+      "reduced": true,
+      "mounted": true
+    },
+    "animations": []
+  }
+}

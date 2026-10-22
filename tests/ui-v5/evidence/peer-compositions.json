@@ -1,0 +1,79 @@
+{
+  "base": "http://127.0.0.1:4177",
+  "checks": [
+    "foundation-theme",
+    "foundation-accent",
+    "foundation-density",
+    "icon-weights",
+    "icon-actions",
+    "cta-hero",
+    "cta-banner",
+    "cta-inline",
+    "header-desktop",
+    "header-burger",
+    "navigation-breadcrumb",
+    "navigation-pagination",
+    "navigation-rail",
+    "footer-links",
+    "footer-subscribe",
+    "content-card",
+    "content-accordion",
+    "content-filter",
+    "media-gallery",
+    "media-upload",
+    "commerce-product",
+    "commerce-cart",
+    "workspace-kanban",
+    "workspace-calendar",
+    "workspace-editor"
+  ],
+  "findings": [],
+  "errors": [],
+  "optical": [
+    {
+      "finish": "frost",
+      "edge": "film",
+      "blur": "blur(16px) saturate(1.25)",
+      "shadow": "rgba(0, 0, 0, 0.467) 0px 18px 22px -18px",
+      "border": "0px"
+    },
+    {
+      "finish": "frost",
+      "edge": "depth",
+      "blur": "blur(16px) saturate(1.25)",
+      "shadow": "rgb(255, 255, 255) 3px 4px 3px -3px inset, rgba(105, 197, 232, 0.7) -4px -6px 7px -4px inset, rgba(212, 245, 255, 0.4) 0px 5px 2px -3px, rgba(0, 0, 0, 0.533) 0px 22px 24px -16px",
+      "border": "0px"
+    },
+    {
+      "finish": "clear",
+      "edge": "film",
+      "blur": "blur(0.8px) saturate(1.12)",
+      "shadow": "rgba(0, 0, 0, 0.467) 0px 18px 22px -18px",
+      "border": "0px"
+    },
+    {
+      "finish": "clear",
+      "edge": "depth",
+      "blur": "blur(0.8px) saturate(1.12)",
+      "shadow": "rgb(255, 255, 255) 3px 4px 3px -3px inset, rgba(105, 197, 232, 0.7) -4px -6px 7px -4px inset, rgba(212, 245, 255, 0.4) 0px 5px 2px -3px, rgba(0, 0, 0, 0.533) 0px 22px 24px -16px",
+      "border": "0px"
+    }
+  ],
+  "pass": true,
+  "originalFindings": [
+    "Theme specimen aria-pressed remains dark after global theme switches to light."
+  ],
+  "recheck": {
+    "base": "http://127.0.0.1:4177",
+    "checks": [
+      "reduced-before-load-readback",
+      "theme-pressed-sync-both-directions",
+      "reduced-no-active",
+      "site-primary-cta-studio",
+      "site-touch-menu-escape-focus",
+      "site-dialog-escape-focus"
+    ],
+    "errors": [],
+    "pass": true
+  }
+}

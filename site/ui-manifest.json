@@ -1,0 +1,706 @@
+{
+  "version": 5,
+  "groups": [
+    {
+      "number": 1,
+      "id": "foundation",
+      "title": "Основа и токены",
+      "specimens": [
+        {
+          "id": "ui-foundation-theme",
+          "title": "Светлая и тёмная тема",
+          "tags": "light dark тема",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-foundation-accent",
+          "title": "Акцент без потери смысла",
+          "tags": "accent color цвет токен",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-foundation-density",
+          "title": "Плотность и типографика",
+          "tags": "density spacing type scale плотность размер",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "icons",
+      "title": "Иконки и пиктограммы",
+      "specimens": [
+        {
+          "id": "ui-icon-weights",
+          "title": "Шесть начертаний Phosphor",
+          "tags": "solid fill regular duotone thin light bold svg",
+          "status": "live-local",
+          "note": "Официальные локальные SVG Phosphor. MIT-лицензия и URL исходников сохранены в assets/icons/phosphor."
+        },
+        {
+          "id": "ui-icon-actions",
+          "title": "Иконка с именем и состоянием",
+          "tags": "icon button favorite accessible name избранное",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "actions",
+      "title": "Кнопки и действия",
+      "specimens": [
+        {
+          "id": "ui-action-buttons",
+          "title": "Иерархия действий",
+          "tags": "primary secondary ghost icon toggle disabled кнопка",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-action-save",
+          "title": "Busy → success / error",
+          "tags": "сохранение кнопка отмена loading retry success error",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-action-split",
+          "title": "Основное действие и варианты",
+          "tags": "split button dropdown action menu команды",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "id": "cta",
+      "title": "Призывы к действию",
+      "specimens": [
+        {
+          "id": "ui-cta-hero",
+          "title": "Hero CTA с результатом",
+          "tags": "hero primary secondary CTA",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-cta-banner",
+          "title": "Закрываемый промобаннер",
+          "tags": "banner dismiss alert cta",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-cta-inline",
+          "title": "Контекстный CTA и подтверждение",
+          "tags": "inline CTA confirmation",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "id": "selection",
+      "title": "Переключение и выбор",
+      "specimens": [
+        {
+          "id": "ui-switches",
+          "title": "Switch с настоящим результатом",
+          "tags": "switch свитчер переключатель on off disabled focus track thumb",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-selection-bulk",
+          "title": "Checkbox и mixed-состояние",
+          "tags": "checkbox mixed indeterminate выбрать все флажок bulk",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-selection-choice",
+          "title": "Карточки выбора и оценка",
+          "tags": "radio selectable card rating single выбор оценка",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "id": "inputs",
+      "title": "Поля и ввод",
+      "specimens": [
+        {
+          "id": "ui-field-anatomy",
+          "title": "Label / placeholder / help / value",
+          "tags": "placeholder плейсхолдер label helper prefix suffix readonly",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-textarea-counter",
+          "title": "Textarea и счётчик",
+          "tags": "textarea autogrow counter текст многострочный maxlength",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-password-otp",
+          "title": "Пароль и одноразовый код",
+          "tags": "password reveal пароль показать otp одноразовый код",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "id": "selectors",
+      "title": "Селекторы",
+      "specimens": [
+        {
+          "id": "ui-native-select",
+          "title": "Select и множественный выбор",
+          "tags": "native select optgroup multiple селект список",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-combobox",
+          "title": "Combobox с клавиатурой",
+          "tags": "combobox autocomplete автодополнение селектор поиск список",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-range-pickers",
+          "title": "Диапазон, дата и цвет",
+          "tags": "range slider number stepper date color picker диапазон",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "id": "hints",
+      "title": "Подсказки и объяснения",
+      "specimens": [
+        {
+          "id": "ui-tooltip",
+          "title": "Tooltip: hover / focus / touch",
+          "tags": "tooltip hint хинт подсказка hover focus escape",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-rich-popover",
+          "title": "Popover с действием",
+          "tags": "popover rich подсказка интерактивная помощь",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-coachmark",
+          "title": "Пошаговое объяснение",
+          "tags": "coachmark onboarding spotlight обучение подсказки шаг",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "id": "header",
+      "title": "Header и burger-меню",
+      "specimens": [
+        {
+          "id": "ui-header-desktop",
+          "title": "Навигационная шапка",
+          "tags": "header desktop navigation",
+          "status": "live-local",
+          "note": "Ссылки ведут к реальным секциям внутри этого образца."
+        },
+        {
+          "id": "ui-header-burger",
+          "title": "Burger с раскрытием",
+          "tags": "burger menu hamburger mobile touch escape",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "navigation",
+      "title": "Навигация и маршруты",
+      "specimens": [
+        {
+          "id": "ui-navigation-breadcrumb",
+          "title": "Хлебные крошки",
+          "tags": "breadcrumb breadcrumbs path",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-navigation-pagination",
+          "title": "Пагинация коллекции",
+          "tags": "pagination page pages страницы",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-navigation-rail",
+          "title": "Вертикальная навигация",
+          "tags": "sidebar rail navigation",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "id": "footer",
+      "title": "Footer и нижние ссылки",
+      "specimens": [
+        {
+          "id": "ui-footer-links",
+          "title": "Полный подвал",
+          "tags": "footer sitemap links legal",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-footer-subscribe",
+          "title": "Форма в подвале",
+          "tags": "newsletter subscribe email подписка",
+          "status": "live-local",
+          "note": "Форма валидирует email и согласие. Никакой рассылки, передачи или постоянного хранения данных."
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "id": "search-filter",
+      "title": "Поиск и фильтрация",
+      "specimens": [
+        {
+          "id": "ui-faceted-search",
+          "title": "Поиск + фильтр + сортировка",
+          "tags": "search facets sort no results поиск фильтр сортировка",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-command-palette",
+          "title": "Палитра команд",
+          "tags": "command palette поиск команд dialog keyboard",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-saved-view",
+          "title": "Сохранённое представление",
+          "tags": "saved view filters chips reset сохранить фильтр",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "id": "content",
+      "title": "Карточки и контент",
+      "specimens": [
+        {
+          "id": "ui-content-card",
+          "title": "Карточка с избранным",
+          "tags": "card favorite content",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-content-accordion",
+          "title": "FAQ с независимыми разделами",
+          "tags": "accordion faq details",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-content-filter",
+          "title": "Фильтрация карточек",
+          "tags": "cards filter tags content",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "id": "media",
+      "title": "Медиа и файлы",
+      "specimens": [
+        {
+          "id": "ui-media-gallery",
+          "title": "Галерея без автопрокрутки",
+          "tags": "gallery carousel media arrows",
+          "status": "live-local",
+          "note": "Оригинальные CSS-композиции. Навигация ручная; подпись обновляется вместе с изображением."
+        },
+        {
+          "id": "ui-media-upload",
+          "title": "Локальный preview изображения",
+          "tags": "file upload preview image",
+          "status": "live-local",
+          "note": "Проверяется формат и размер. Object URL освобождается при замене, очистке и уходе со страницы."
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "id": "tables",
+      "title": "Таблицы и данные",
+      "specimens": [
+        {
+          "id": "ui-table-inventory",
+          "title": "Реестр: сортировка, фильтр и выбор",
+          "tags": "table sort filter selection bulk таблица сортировка фильтр чекбокс массовое действие",
+          "status": "live-local",
+          "note": "Демонстрационный реестр. Выбранные строки сохраняются при фильтре; массовое действие не отправляет данные."
+        },
+        {
+          "id": "ui-table-expandable",
+          "title": "Раскрываемые записи",
+          "tags": "table expandable details master detail disclosure таблица строки раскрытие",
+          "status": "live-local",
+          "note": "Нативные details доступны без JavaScript; общее управление добавляется после загрузки скрипта."
+        },
+        {
+          "id": "ui-table-inline",
+          "title": "Редактирование и валидация",
+          "tags": "table inline edit validation number error таблица редактирование валидация ошибка",
+          "status": "live-local",
+          "note": "Локальные условные баллы, не цена и не платёж. Значения 0–99; Escape возвращает предыдущее число."
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "id": "charts",
+      "title": "Графики и диаграммы",
+      "specimens": [
+        {
+          "id": "ui-chart-bar",
+          "title": "Сортируемые столбцы",
+          "tags": "bar столбчатый сортировка comparison Сравнение chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Длина от нуля; сортировка меняет порядок, а не значения. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-grouped",
+          "title": "Сравнение двух серий",
+          "tags": "grouped bar series группы сравнение Сравнение chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Общая линейная шкала. Серии различаются цветом и узором. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-line",
+          "title": "Линия с пропуском",
+          "tags": "line time null линия время динамика Время chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Разрыв — отсутствие наблюдения, не ноль. Пропуск не интерполируется. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-histogram",
+          "title": "Распределение по интервалам",
+          "tags": "histogram bins гистограмма распределение Распределение chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Равные интервалы [a, b), последний включает правую границу. Исходная выборка доступна ниже. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-scatter",
+          "title": "Связь двух величин",
+          "tags": "scatter correlation диаграмма рассеяния корреляция Связи chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Каждая точка — отдельное учебное наблюдение; связь не доказывает причинность. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-donut",
+          "title": "Доли целого",
+          "tags": "donut pie доли круговая кольцевая Доли chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Сектора рассчитаны от общей суммы. Точные значения и доли есть в таблице. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-stacked",
+          "title": "Нормированные группы",
+          "tags": "100 stacked percent доли нормировка Доли chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Каждая строка нормируется до 100% выбранных серий. Абсолютные значения не теряются в таблице. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-treemap",
+          "title": "Иерархия площадей",
+          "tags": "treemap hierarchy дерево карта иерархия Иерархия chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Два уровня, алгоритм slice-and-dice. Площадь пропорциональна величине; можно раскрыть ветвь. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-sankey",
+          "title": "Потоки между этапами",
+          "tags": "sankey flow санки потоки связи Потоки chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Двухэтапный Sankey: ширина ленты пропорциональна потоку. Суммы входов и выходов равны. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-geo",
+          "title": "Схематическая хороплетная карта",
+          "tags": "choropleth geography карта регионы география География chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Авторская условная география из шести областей; не реальные территории, границы или статистика. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-bullet",
+          "title": "Цель и история показателя",
+          "tags": "bullet sparkline KPI target цель спарклайн Мониторинг chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Bullet со шкалой 0–100, целью 70 и историей из восьми учебных периодов. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        },
+        {
+          "id": "ui-chart-control",
+          "title": "Контрольные границы",
+          "tags": "control chart limits мониторинг контрольные границы Мониторинг chart charts график диаграмма",
+          "status": "live-local",
+          "note": "Учебные фиксированные границы 35/65 и центр 50; это не статистически оценённые нормативы процесса. Наборы A/B — вымышленные учебные данные. Это 12 действующих примеров, а не утверждение о покрытии всех существующих типов графиков."
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "id": "organization",
+      "title": "Организация содержимого",
+      "specimens": [
+        {
+          "id": "ui-tabs",
+          "title": "Вкладки с настоящими панелями",
+          "tags": "tabs tabpanel вкладки arrow keyboard",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-disclosure-tree",
+          "title": "Раскрытие и вложенная структура",
+          "tags": "accordion disclosure details tree структура аккордеон",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-master-detail",
+          "title": "Master/detail и ширина панели",
+          "tags": "master detail resizer split panel список карточка",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "id": "overlays",
+      "title": "Наложения и окна",
+      "specimens": [
+        {
+          "id": "ui-edit-dialog",
+          "title": "Dialog: редактирование и возврат фокуса",
+          "tags": "dialog modal focus trap form окно",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-confirm-dialog",
+          "title": "Подтверждение удаления",
+          "tags": "alertdialog confirmation destructive cancel confirm удаление",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-bottom-sheet",
+          "title": "Bottom sheet с выбором",
+          "tags": "sheet bottom drawer mobile панель снизу",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "id": "feedback",
+      "title": "Обратная связь",
+      "specimens": [
+        {
+          "id": "ui-toast-undo",
+          "title": "Snackbar и Undo",
+          "tags": "toast snackbar undo отменить уведомление",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-offline-retry",
+          "title": "Alert: offline → retry → ready",
+          "tags": "alert offline retry error reconnect ошибка соединение",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-notifications",
+          "title": "Центр уведомлений",
+          "tags": "notification center read unread badge уведомления",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "id": "loading",
+      "title": "Ожидание и отсутствие данных",
+      "specimens": [
+        {
+          "id": "ui-progress-job",
+          "title": "Progress с отменой",
+          "tags": "progress determinate cancel загрузка прогресс",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-skeleton-content",
+          "title": "Skeleton → содержимое",
+          "tags": "skeleton shimmer loading placeholder контент плейсхолдер",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-empty-state",
+          "title": "Empty / error / retry",
+          "tags": "empty error no results placeholder retry пусто ошибка",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "id": "form-flows",
+      "title": "Формы и сценарии",
+      "specimens": [
+        {
+          "id": "ui-validated-form",
+          "title": "Форма с summary ошибок",
+          "tags": "validation summary required error aria форма ошибки",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-wizard",
+          "title": "Wizard: ввод → выбор → проверка",
+          "tags": "wizard stepper multistep review confirm пошаговая форма",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-dirty-form",
+          "title": "Черновик: save / cancel / dirty",
+          "tags": "dirty state save cancel draft черновик сохранение",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "id": "commerce",
+      "title": "Товар и корзина",
+      "specimens": [
+        {
+          "id": "ui-commerce-product",
+          "title": "Товар с вариантом",
+          "tags": "product variant price price card",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-commerce-cart",
+          "title": "Корзина с расчётом",
+          "tags": "cart quantity sum total корзина",
+          "status": "live-local",
+          "note": "Количество, удаление и сумма работают локально. Заказ не создаётся, реальные платежи отсутствуют."
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "id": "account",
+      "title": "Аккаунт и настройки",
+      "specimens": [
+        {
+          "id": "ui-local-login",
+          "title": "Вход: локальная проверка формы",
+          "tags": "login auth email password session вход аккаунт",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-local-preferences",
+          "title": "Настройки с локальным preview",
+          "tags": "preferences theme density language профиль настройки тема",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        },
+        {
+          "id": "ui-consent",
+          "title": "Настройки согласия",
+          "tags": "consent privacy cookies settings согласие конфиденциальность",
+          "status": "live-local",
+          "note": "Локальный интерактивный пример. Данные не отправляются и не сохраняются после перезагрузки."
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "id": "workspace",
+      "title": "Сложные рабочие области",
+      "specimens": [
+        {
+          "id": "ui-workspace-kanban",
+          "title": "Kanban с клавиатурой",
+          "tags": "kanban drag alternative keyboard move",
+          "status": "live-local",
+          "note": "Перемещение доступно без drag. Это один локальный учебный элемент, не многопользовательский планировщик."
+        },
+        {
+          "id": "ui-workspace-calendar",
+          "title": "Календарь с выбором даты",
+          "tags": "calendar date month select",
+          "status": "live-local",
+          "note": "Учебный пример: изменения остаются на странице."
+        },
+        {
+          "id": "ui-workspace-editor",
+          "title": "Текстовый редактор с preview",
+          "tags": "editor markdown preview textarea",
+          "status": "live-local",
+          "note": "Preview создаётся безопасными DOM-узлами. HTML не выполняется. Текст не отправляется и не сохраняется постоянно."
+        }
+      ]
+    }
+  ],
+  "count": 76
+}

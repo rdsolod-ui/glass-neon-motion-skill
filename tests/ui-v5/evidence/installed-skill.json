@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-22",
+  "files": [
+    {
+      "file": "SKILL.md",
+      "sha256": "1b58a905c4b8357fbd5c02f462c9595b8b8277d2f83091b2d56c1a8d423a219a"
+    },
+    {
+      "file": "references/components.md",
+      "sha256": "f2c4a728bde7dc0ad20fb2440d28ea7c3ea933bdfa5bd51d63952704646fb6e9"
+    },
+    {
+      "file": "references/materials.md",
+      "sha256": "c9978ca90e0d352f0ced7eb63f33e92d96f0768836d57840b8dd40f3179a720b"
+    },
+    {
+      "file": "references/ui-atlas.md",
+      "sha256": "877408bb6c80327537065ff67981f4c2fb5ca899d16ecbf2b38a869c420424fb"
+    },
+    {
+      "file": "references/surface-finishes.md",
+      "sha256": "6f427f8a4791bef731d2623dc94a7050d44ce21b0351adf3edffdeb9de042374"
+    }
+  ],
+  "verified": true,
+  "scope": "Five changed skill files; no native role/config change or chat reload claim."
+}

@@ -123,3 +123,6 @@
 - Выбери единое семейство иконок. Декоративные SVG скрывай от accessibility tree; icon-only button получает понятное имя. Не заменяй рабочие контролы декоративными SVG.
 
 Источники, проверены 2026-10-21: [MDN backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter), [MDN reduced transparency](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-transparency), [W3C contrast minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). Пример токенов оригинальный; источники не утверждают его автоматическую пригодность для каждого сайта.
+
+
+Для прозрачных глянцевых вариантов и сравнения четырёх материалов см. [surface-finishes.md](surface-finishes.md). Blur не обязателен: clear-film и clear-glass сохраняют резкость фона.

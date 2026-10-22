@@ -1,0 +1,374 @@
+{
+  "url": "http://127.0.0.1:4177/",
+  "reviewer": "compositions_finish",
+  "checks": [
+    {
+      "name": "reduced preference before load verified",
+      "pass": true
+    },
+    {
+      "name": "12 working chart specimens",
+      "pass": true
+    },
+    {
+      "name": "bar SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "bar data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "bar reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "grouped SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "grouped data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "grouped reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "line SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "line data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "line reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "histogram SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "histogram data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "histogram reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "scatter SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "scatter data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "scatter reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "donut SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "donut data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "donut reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "stacked SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "stacked data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "stacked reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "treemap SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "treemap data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "treemap reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "sankey SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "sankey data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "sankey reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "geo SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "geo data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "geo reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "bullet SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "bullet data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "bullet reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "control SVG accessible title and description",
+      "pass": true
+    },
+    {
+      "name": "control data/table/screenreader change together",
+      "pass": true
+    },
+    {
+      "name": "control reduced animation",
+      "pass": true,
+      "detail": {
+        "mql": true,
+        "diag": {
+          "groups": 24,
+          "examples": 76,
+          "index": 355,
+          "active": 0,
+          "reduced": true,
+          "mounted": true
+        },
+        "animations": []
+      }
+    },
+    {
+      "name": "bar zero origin and proportional lengths",
+      "pass": true,
+      "detail": {
+        "geometry": [
+          {
+            "x": 100,
+            "w": 280
+          },
+          {
+            "x": 100,
+            "w": 240
+          },
+          {
+            "x": 100,
+            "w": 200
+          },
+          {
+            "x": 100,
+            "w": 80
+          }
+        ],
+        "values": [
+          35,
+          30,
+          25,
+          10
+        ]
+      }
+    },
+    {
+      "name": "line missing observation is gap not zero",
+      "pass": true
+    },
+    {
+      "name": "Sankey flow conservation",
+      "pass": true
+    },
+    {
+      "name": "light chart keyboard horizontal scroll",
+      "pass": true
+    },
+    {
+      "name": "light page no overflow",
+      "pass": true
+    },
+    {
+      "name": "dark chart keyboard horizontal scroll",
+      "pass": true
+    },
+    {
+      "name": "dark page no overflow",
+      "pass": true
+    },
+    {
+      "name": "live reduced cancels chart feedback",
+      "pass": true
+    },
+    {
+      "name": "fractional quantity rejected",
+      "pass": true
+    },
+    {
+      "name": "cancel returns trigger focus",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

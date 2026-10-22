@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 5,
   "roles": {
     "glass_design": {
       "native_config": ".codex/agents/glass_design.toml",
@@ -25,7 +25,13 @@
         "site/motion-atlas.js",
         "site/motion-atlas.css",
         "docs/motion-atlas-coverage.md",
-        "tests/agent-smoke/**"
+        "tests/agent-smoke/**",
+        "scripts/ui-controls.mjs",
+        "site/ui-controls.js",
+        "site/ui-controls.css",
+        "scripts/ui-data.mjs",
+        "site/ui-data.js",
+        "site/ui-data.css"
       ],
       "reads": [
         "site/style.css",
@@ -48,7 +54,11 @@
         "scripts/html-atlas-section.mjs",
         "site/html-atlas.js",
         "site/html-atlas.css",
-        "docs/html-atlas-coverage.md"
+        "docs/html-atlas-coverage.md",
+        "scripts/ui-compositions.mjs",
+        "site/ui-compositions.js",
+        "site/ui-compositions.css",
+        "site/assets/icons/**"
       ],
       "reads": [
         "site/style.css",
@@ -106,7 +116,16 @@
         "scripts/publish-study.mjs",
         "site/study/**",
         "docs/agent-native-smoke.md",
-        "docs/desktop-project-verification.md"
+        "docs/desktop-project-verification.md",
+        "scripts/ui-atlas-section.mjs",
+        "site/ui-atlas.js",
+        "site/ui-atlas.css",
+        "site/ui-manifest.json",
+        "scripts/check-ui.mjs",
+        "tests/ui-v5/**",
+        "scripts/material-finishes.mjs",
+        "site/material-finishes.css",
+        "site/material-finishes.js"
       ],
       "reads": [
         "**"

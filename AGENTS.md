@@ -24,6 +24,8 @@
 
 ## Gate
 
+Уточнение V5: матовость/прозрачный глянец и 2D/3D край независимы. Проверять четыре сочетания на одинаковом фоне. Clear сохраняет резкость и узкое отражение, Frost рассеивает фон. Без baseline outline; читаемые wells, focus и системные fallback сохраняются. См. `skill/glass-neon-motion/references/surface-finishes.md`.
+
 Проверить light/dark desktop/mobile, материальную глубину, keyboard/touch/dialog, long text, reduced motion до load и при live change, solid fallback, ошибки assets. Не маскировать overflow. Build: `npm run check`, `npm run build`; generator: `node scripts/render-atlas.mjs`. Проверки старой версии не считать доказательством новой.
 
 Публикация только в рамках прямого разрешения; при разрешённом обновлении сохраняй прежние GitHub Pages URL. Не загружай secrets, node_modules, backups или тяжёлые QA. В отчёте различай commit, push, deploy и публичный read-back.
