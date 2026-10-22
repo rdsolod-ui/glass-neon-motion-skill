@@ -23,7 +23,11 @@
 
 Публичный репозиторий: [rdsolod-ui/glass-neon-motion-skill](https://github.com/rdsolod-ui/glass-neon-motion-skill), `main`. База перед изменением: `911d6cc828cf523db30bcda10630ba5f7e47349f`. Источник — существующая рабочая папка; новых runtime-зависимостей и копий репозитория нет. QA screenshots и backups остаются вне Git.
 
-Статус на момент подготовки этого документа: локальная реализация и проверки; commit, deployment и публичный read-back будут записаны после фактического выполнения.
+Source commit: [`9915d161fc20eb56967249c2f43a8dce29e227fe`](https://github.com/rdsolod-ui/glass-neon-motion-skill/commit/9915d161fc20eb56967249c2f43a8dce29e227fe), отправлен в `origin/main`. [GitHub Pages run 39758483962](https://github.com/rdsolod-ui/glass-neon-motion-skill/actions/runs/39758483962) завершён `success` именно для этого SHA.
+
+Публичный read-back: **40/40 PASS, pageerrors 0**. Все шесть изменённых HTML/JS/CSS файлов вернулись HTTP200 и совпали с локальным source после нормализации CRLF/LF. В новом браузерном контексте проверены обе прежние ссылки, clear/depth при открытии, все четыре пресета, переключение тем, размеры1440/390 без overflow, UI24/76 и поиск, согласованные подписи края, возврат основного стиля при новой загрузке. Просмотрены публичные кадры тёмного сайта1440 и светлого мудборда390. [Машиночитаемая проверка](qa/default-clear-public-20261022.json).
+
+Первый public-прогон с дополнительным Playwright `serviceWorkers:'block'` дал39/40: sandboxed учебные iframe вызвали ошибки доступа к navigator.serviceWorker. В source сайта обращений к этому API нет; проверка повторена со стандартным контекстом браузера и завершилась40/40. Код сайта для этого не менялся, исходный failed receipt сохранён локально. Локальные итоговые independent gates: сайт29+24, мудборд36+2+26; все замечания закрыты. Это проверка данного изменения, не повторная полная приёмка поведения всех76компонентов.
 
 - [Сайт](https://rdsolod-ui.github.io/glass-neon-motion-skill/)
 - [Мудборд](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html)
