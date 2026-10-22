@@ -32,3 +32,7 @@
 @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){:root[data-finish=clear] .luma-site .motion-tile{background:var(--solid)}}
 @media(prefers-reduced-transparency:reduce){:root[data-finish=clear] .luma-site .motion-tile{background:var(--solid)}}
 @media(forced-colors:active){:root[data-finish=clear] .luma-site .motion-tile{background:Canvas}}
+
+/* Sticky navigation keeps text readable over the moving page. */
+:root[data-finish=clear] .topbar :is(.brand,nav a,.actions .btn){background:var(--solid);border-radius:5px;box-shadow:0 0 0 4px var(--solid)}
+@media(forced-colors:active){:root[data-finish=clear] .topbar :is(.brand,nav a,.actions .btn){background:Canvas;box-shadow:none}}

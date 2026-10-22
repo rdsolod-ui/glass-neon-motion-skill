@@ -5,13 +5,14 @@ let dispose=()=>{},mounted=false;
 function mount(){
  if(mounted)return;mounted=true;
  const controller=new AbortController(),signal=controller.signal,html=document.documentElement;
- function apply(finish=html.dataset.finish||'frost',edge=html.dataset.materialEdge||'film'){
+ function apply(finish=html.dataset.finish||'clear',edge=html.dataset.materialEdge||'depth'){
   html.dataset.finish=finish;html.dataset.materialEdge=edge;
   const atlas=document.querySelector('#ui-atlas');if(atlas)atlas.dataset.uiEdge=edge;
   document.querySelectorAll('[data-material-preset]').forEach(b=>{const p=presets[b.dataset.materialPreset];b.disabled=false;b.setAttribute('aria-pressed',String(p[0]===finish&&p[1]===edge));});
   document.querySelectorAll('[data-finish-select]').forEach(s=>s.value=finish);
   document.querySelectorAll('[name=ui-edge]').forEach(r=>r.checked=r.value===edge);
   document.querySelectorAll('[data-material-status]').forEach(s=>s.textContent=`${names[finish+'-'+edge]} · ${edge==='film'?'2D':'3D'}. CSS-имитация, без физической рефракции.`);
+  document.querySelectorAll('[data-current-edge]').forEach(s=>s.textContent=edge==='film'?'2D':'3D');
   document.querySelectorAll('[data-current-blur]').forEach(s=>s.textContent=finish==='clear'?'0.8 px / clear':'20 px / frost');
  }
  document.querySelectorAll('[data-material-preset]').forEach(b=>b.addEventListener('click',()=>apply(...presets[b.dataset.materialPreset]),{signal}));
