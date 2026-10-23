@@ -1,0 +1,32 @@
+/* Manrope variable 200–800, bundled under OFL. No synthesized italic. */
+:root{--type-body:1rem;--type-small:.875rem;--type-lead:clamp(1.25rem,2.4vw,1.75rem);--type-heading:clamp(1.75rem,3.6vw,3rem);--type-display:clamp(3rem,7.5vw,6.5rem)}
+body,input,textarea,select,button{font-family:Manrope,Arial,sans-serif;font-style:normal;font-synthesis: none}
+body{font-size:var(--type-body);line-height:1.6}
+body *{font-style:normal}
+h1,h2,h3,h4,h5,h6,strong,b{font-weight:800}
+h1,h2,h3,h4,h5,h6{line-height:1.12;text-wrap:balance;overflow-wrap:anywhere;letter-spacing:-.035em}
+h4{font-size:1.5rem}h5{font-size:1.25rem}h6{font-size:1rem}
+p,li,dd{overflow-wrap:anywhere}em{font-weight:700}cite,address{font-style:normal}
+code,pre,kbd,samp{font-family:ui-monospace,Consolas,monospace;font-style:normal}
+button,.btn,label,summary,th,dt{font-weight:700}input,textarea,select{font-size:1rem}
+.ty-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.ty-card{padding:clamp(20px,3vw,36px);min-width:0;align-content:start}
+.ty-stage{margin:24px 0;min-height:220px;overflow-wrap:anywhere}
+.ty-stage>*{max-width:65ch}.ty-stage>h3{font-size:var(--type-heading)}
+.ty-stage h4,.ty-stage h5,.ty-stage h6{margin-block:1.25rem .75rem}
+.ty-stage p{margin-block:0 1em}.ty-stage .ty-display{font-size:var(--type-display);font-weight:800;line-height:.98;letter-spacing:-.055em}
+.ty-stage .ty-hero{font-size:clamp(2.5rem,5vw,4.5rem);font-weight:800;line-height:1.04;letter-spacing:-.045em}
+.ty-lead{font-size:var(--type-lead);line-height:1.4;font-weight:600}
+.ty-eyebrow{font-size:var(--type-small);font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.ty-caption,.ty-meta{font-size:var(--type-small);line-height:1.55;font-weight:500}
+.ty-meta{font-weight:700}.ty-number{font-size:clamp(2.8rem,6vw,5rem);font-weight:800;line-height:1.1;letter-spacing:-.045em;font-variant-numeric:tabular-nums lining-nums}
+.ty-number span{font-size:1.25rem;letter-spacing:0}.ty-numeric{font-variant-numeric:tabular-nums lining-nums}
+.ty-stage blockquote{margin:0;font-size:clamp(1.5rem,3vw,2.4rem);font-weight:800;line-height:1.3;letter-spacing:-.025em}
+.ty-stage cite{display:block;font-size:.875rem;font-weight:500;letter-spacing:0;margin-top:1rem}
+.ty-stage input{display:block;width:100%;max-width:100%;margin:8px 0;padding:12px;border-radius:12px}
+.ty-stage table{width:100%;border-collapse:collapse;text-align:left}.ty-stage td,.ty-stage th{padding:8px 4px;overflow-wrap:anywhere}.ty-stage caption{text-align:left;font-weight:700;margin-bottom:12px}
+.ty-stage dd{margin:0 0 12px}.ty-stage dt{font-weight:800}.ty-stage pre{white-space:pre-wrap}.ty-stage kbd{padding:3px 6px;border:1px solid currentColor;border-radius:4px}
+.ty-badge{display:inline-block;padding:6px 12px;border-radius:99px;background:var(--accent);color:#14200e;font-size:.875rem;font-weight:800}
+@media(max-width:700px){.ty-grid{grid-template-columns:minmax(0,1fr)}.ty-stage{min-height:180px}}
+@media(forced-colors:active){.ty-card{border:1px solid CanvasText}.ty-badge{color:CanvasText;background:Canvas}}
+.ty-stage input::placeholder{color:inherit;opacity:.8}

@@ -5,13 +5,13 @@ import {createHash} from 'node:crypto';
 // One shared, generated resource pack. Specimens are assembled on demand, never duplicated.
 export async function renderExportAssets(){
  const hashes={};const source=async file=>{const text=(await readFile(file,'utf8')).replaceAll('\r\n','\n');hashes[file]=createHash('sha256').update(text).digest('hex');return text;};
- const names=['style','board-v2','html-atlas','motion-atlas','ui-atlas','ui-controls','ui-compositions','ui-data','material-finishes','variation-advanced','variation-atlas'];
+ const names=['typography','style','board-v2','html-atlas','motion-atlas','ui-atlas','ui-controls','ui-compositions','ui-data','material-finishes','variation-advanced','variation-atlas'];
  const assets={};
  async function collect(dir){for(const e of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())await collect(p);else if(/\.(svg|woff2)$/.test(e.name)){assets[p.replaceAll('\\','/').replace(/^site\//,'')]='data:'+(e.name.endsWith('.svg')?'image/svg+xml':'font/woff2')+';base64,'+(await readFile(p)).toString('base64');}}}
  await collect('site/assets');
  const css={};for(const name of names){css[name]=(await source(`site/${name}.css`)).replace(/@import\s+url\([^)]*\);?/g,'').replace(/url\(['"]?(\.\/assets\/[^)'" ]+)['"]?\)/g,(all,url)=>`url("${assets[url.slice(2)]||url}")`);}
  const modules={};
- for(const name of ['ui-controls','ui-compositions','ui-data','html-atlas','motion-atlas','variation-advanced','variation-atlas']){
+ for(const name of ['typography','ui-controls','ui-compositions','ui-data','html-atlas','motion-atlas','variation-advanced','variation-atlas']){
   let code=await source(`site/${name}.js`);const exports=[...code.matchAll(/export (?:function|const) (\w+)/g)].map(m=>m[1]);
   code=code.replace(/import \{([^}]+)\} from ['"]\.\/([^'"]+)\.js['"];?/g,(_,bindings,file)=>`const {${bindings}}=modules[${JSON.stringify(file)}];`).replace(/\bexport (?=function|const)/g,'');
   modules[name]=`modules[${JSON.stringify(name)}]=(()=>{\n${code}\nreturn {${exports.join(',')}};\n})();`;

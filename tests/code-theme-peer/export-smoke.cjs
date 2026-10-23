@@ -1,7 +1,7 @@
 const {chromium}=require('C:/Users/admin/.codex/playwright-runtime/node_modules/playwright');
 const fs=require('node:fs/promises');
 (async()=>{
- const browser=await chromium.connectOverCDP('http://127.0.0.1:9223'),context=await browser.newContext({viewport:{width:390,height:844}}),out='qa/code-export';await fs.mkdir(out,{recursive:true});
+ const browser=await chromium.launch({channel:'chrome',headless:true}),context=await browser.newContext({viewport:{width:390,height:844}}),out='qa/code-export';await fs.mkdir(out,{recursive:true});
  try{
   const source=await context.newPage();await source.goto(process.env.BASE_URL||'http://127.0.0.1:4177/moodboard.html');await source.waitForFunction(()=>window.GlassExport);
   const inventory=await source.evaluate(()=>GlassExport.inventory().map(record=>({...record,html:GlassExport.build(record.id).standalone})));await source.close();
@@ -10,7 +10,7 @@ const fs=require('node:fs/promises');
   for(const record of inventory){
    const html=record.html,errors=[];requests=[];await p.goto('about:blank');p.removeAllListeners('pageerror');p.on('pageerror',e=>errors.push(e.message));
    await p.setContent(html,{waitUntil:'load'});await p.waitForTimeout(15);
-   const state=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,cards:document.querySelectorAll('[data-ui-example],[data-vx-example],[data-ha-entry],.ha-input-card,.ha-state,.ma-card,.pattern,.finish-card,.optical-study').length,images:[...document.images].filter(i=>i.hasAttribute('src')&&!i.complete).length}));
+   const state=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,cards:document.querySelectorAll('[data-type-example],[data-ui-example],[data-vx-example],[data-ha-entry],.ha-input-card,.ha-state,.ma-card,.pattern,.finish-card,.optical-study').length,images:[...document.images].filter(i=>i.hasAttribute('src')&&!i.complete).length}));
    results.push({id:record.id,kind:record.kind,errors,requests:[...requests],...state});
    if(errors.length||requests.length||state.overflow)console.log(JSON.stringify(results.at(-1)));
    if(results.length%50===0)console.log('Checked '+results.length+' / '+inventory.length);
