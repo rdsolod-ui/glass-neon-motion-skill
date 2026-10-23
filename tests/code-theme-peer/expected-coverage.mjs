@@ -18,8 +18,8 @@ export function expectedCoverage(){
 }
 if(process.argv[1]?.endsWith('expected-coverage.mjs')){
  const actual=expectedCoverage();
- assert.deepEqual(actual.collections,{typography:24,variation:44,ui:76,html:115,input:22,state:12,motion:39,composition:48,finish:4,optical:6});
- assert.equal(actual.total,390);
+ assert.deepEqual(actual.collections,{typography:35,variation:44,ui:76,html:115,input:22,state:12,motion:39,composition:48,finish:4,optical:6});
+ assert.equal(actual.total,401);
  for(const [kind,ids]of Object.entries(actual.ids))assert.equal(new Set(ids).size,ids.length,`${kind}: duplicate authored IDs`);
  const {ids,...summary}=actual;console.log(JSON.stringify(summary,null,2));
 }

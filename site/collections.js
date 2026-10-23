@@ -1,3 +1,4 @@
+import {mountCollectionPreview} from './collection-preview.js';
 import {parseCollection} from './collection-format.js';
 import './code-export.js';
 
@@ -58,3 +59,5 @@ $('import').addEventListener('change',async e=>{const file=e.target.files[0];if(
  if(!GlassTheme.setSnapshot(parsed.theme))throw new Error('Не удалось применить тему.');
  const entry={id:crypto.randomUUID(),name:parsed.name,ids:parsed.ids,theme:parsed.theme};data.collections.push(entry);data.selected=[...entry.ids];$('name').value=entry.name;const persisted=save();render();$('saved').value=entry.id;if(persisted)say('Подборка импортирована. Пропущено неизвестных компонентов: '+parsed.skipped+'.');
  }catch(error){say('Импорт отменён: '+error.message);}finally{e.target.value='';}});
+
+mountCollectionPreview(panel,()=>[...data.selected],()=>$('name').value.trim()||'Моя подборка');

@@ -6,8 +6,9 @@ export function initTypography(root=document){
   [...stage.children].forEach((el,i)=>{
    active.get(el)?.cancel();if(reduced())return;
    const mode=stage.dataset.cinema;
-   const from=mode==='mask'?{clipPath:'inset(0 0 100% 0)',transform:'translateY(12px)'}:mode==='scale'?{opacity:.25,transform:'scale(.96)'}:{opacity:.15,transform:'translateY(20px)'};
-   const a=el.animate([from,{opacity:1,transform:'none',clipPath:'inset(0)'}],{duration:900,delay:Math.min(i,5)*90,easing:'cubic-bezier(.22,1,.36,1)',fill:'none'});
+   const special={focus:{opacity:.1,filter:'blur(6px)'},slide:{opacity:.1,transform:'translateX(-24px)'},depth:{opacity:.1,transform:'perspective(600px) rotateX(14deg) translateY(14px)'},curtain:{clipPath:'inset(0 100% 0 0)'},tracking:{opacity:.1,letterSpacing:'.08em'},cascade:{opacity:.1,transform:'translateY(24px)'}};
+   const from=special[mode]||(mode==='mask'?{clipPath:'inset(0 0 100% 0)',transform:'translateY(12px)'}:mode==='scale'?{opacity:.25,transform:'scale(.96)'}:{opacity:.15,transform:'translateY(20px)'});
+   const a=el.animate([from,{opacity:1,transform:'none',clipPath:'inset(0)',filter:'none',letterSpacing:getComputedStyle(el).letterSpacing}],{duration:900,delay:Math.min(i,5)*90,easing:'cubic-bezier(.22,1,.36,1)',fill:'none'});
    active.set(el,a);a.onfinish=a.oncancel=()=>{if(active.get(el)===a)active.delete(el);};
   });
  }

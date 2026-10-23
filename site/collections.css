@@ -5,3 +5,5 @@
 .cl-lists li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 4px}.cl-lists a{overflow-wrap:anywhere}.cl-card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.cl-card-actions .btn[aria-pressed=true]{background:var(--accent);color:#14200e}
 @media(max-width:700px){.cl-lists{grid-template-columns:1fr}.cl-controls .btn{flex:1 1 45%}}
 @media(forced-colors:active){.cl-card-actions .btn[aria-pressed=true]{background:Highlight;color:HighlightText}}
+
+.collection-preview{width:min(1400px,96vw);max-width:96vw;max-height:94vh;padding:24px;background:var(--solid);color:var(--ink);border:0;border-radius:24px}.preview-viewport{max-width:100%;overflow:auto}.preview-viewport iframe{display:block;height:65vh;border:0;max-width:none}.collection-preview::backdrop{background:#111827aa}

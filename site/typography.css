@@ -30,3 +30,7 @@ button,.btn,label,summary,th,dt{font-weight:700}input,textarea,select{font-size:
 @media(max-width:700px){.ty-grid{grid-template-columns:minmax(0,1fr)}.ty-stage{min-height:180px}}
 @media(forced-colors:active){.ty-card{border:1px solid CanvasText}.ty-badge{color:CanvasText;background:Canvas}}
 .ty-stage input::placeholder{color:inherit;opacity:.8}
+
+.ty-violet{color:#6130a8}.ty-cyan{color:#00616c}.ty-rose{color:#a51f57}.ty-amber{color:#805000}
+[data-theme=dark] .ty-violet{color:#d8b8ff}[data-theme=dark] .ty-cyan{color:#7ce6ee}[data-theme=dark] .ty-rose{color:#ffb5d0}[data-theme=dark] .ty-amber{color:#ffda8a}
+@media(forced-colors:active){.ty-violet,.ty-cyan,.ty-rose,.ty-amber,[data-theme=dark] .ty-violet,[data-theme=dark] .ty-cyan,[data-theme=dark] .ty-rose,[data-theme=dark] .ty-amber{color:CanvasText}}

@@ -22,6 +22,18 @@ export const typeSamples=[
  ['multilingual','Кириллица и латиница','<p class="ty-lead">Ёж, щука, чай. Свет и тень.</p><p class="ty-lead">Clear type. Bold ideas.</p><p class="ty-numeric">0123456789 · № 24 · 50 % · ₽ € $</p>'],
  ['cinema-title','Кинотитр','<p class="ty-eyebrow">Авторская серия / 01</p><p class="ty-hero">СВЕТ<br>ОСТАЁТСЯ.</p><p class="ty-caption">Появление слоями · 900 мс</p>'],
  ['cinema-quote','Постепенное раскрытие','<blockquote>Материал открывается.<br>Смысл остаётся.</blockquote><p class="ty-caption">Маска и мягкое смещение · 900 мс</p>'],
- ['cinema-number','Масштаб и ритм','<p class="ty-number">2026</p><p class="ty-eyebrow">Год новых идей</p><p class="ty-caption">Мягкий масштаб · 900 мс</p>']
+ ['cinema-number','Масштаб и ритм','<p class="ty-number">2026</p><p class="ty-eyebrow">Год новых идей</p><p class="ty-caption">Мягкий масштаб · 900 мс</p>'],
+ ['color-violet','Фиолетовый акцент','<p class="ty-hero ty-violet">Глубина мысли.</p>'],
+ ['color-cyan','Бирюзовый акцент','<p class="ty-hero ty-cyan">Свежий взгляд.</p>'],
+ ['color-rose','Розовый акцент','<p class="ty-hero ty-rose">Смелый голос.</p>'],
+ ['color-amber','Янтарный акцент','<p class="ty-hero ty-amber">Тёплый свет.</p>'],
+ ['color-gradient','Двухцветная типографика','<p class="ty-hero"><span class="ty-violet">Смысл.</span><br><span class="ty-cyan">Движение.</span></p>'],
+ ['motion-focus','Проявление резкости','<p class="ty-hero ty-violet">В фокусе.</p>'],
+ ['motion-slide','Боковое раскрытие','<p class="ty-hero ty-cyan">Новый ракурс.</p>'],
+ ['motion-depth','Глубина перспективы','<p class="ty-hero ty-rose">Ближе к сути.</p>'],
+ ['motion-curtain','Шторка по горизонтали','<p class="ty-hero ty-amber">Открытый смысл.</p>'],
+ ['motion-tracking','Сборка ритма','<p class="ty-hero ty-violet">РИТМ.</p>'],
+ ['motion-cascade','Каскад тезисов','<p class="ty-lead ty-cyan">Сначала увидеть.</p><p class="ty-lead ty-violet">Затем понять.</p><p class="ty-lead ty-rose">И действовать.</p>']
+
 ];
-export const typographySection=()=>`<section id="typography-atlas" class="section wrap"><div class="section-head"><div><p class="eyebrow">Типографика / 24 роли</p><h2>Смысл.<br>С весом.</h2></div><p>Прямой гротеск Manrope. Жирные акценты, ясная иерархия и конечное движение. Все примеры доступны для подборок и экспорта.</p></div><div class="ty-grid">${typeSamples.map(([id,title,body],i)=>`<article class="ty-card glass" data-type-example data-title="${title}" id="type-${id}"><p class="ty-meta">${String(i+1).padStart(2,'0')} / ${title}</p><div class="ty-stage" data-cinema="${id==='cinema-quote'?'mask':id==='cinema-number'?'scale':'rise'}">${body}</div><button type="button" class="btn" data-type-play>Повторить движение</button></article>`).join('')}</div></section>`;
+export const typographySection=()=>`<section id="typography-atlas" class="section wrap"><div class="section-head"><div><p class="eyebrow">Типографика / 35 образцов</p><h2>Смысл.<br>С весом.</h2></div><p>Прямой гротеск Manrope. Жирные акценты, ясная иерархия и конечное движение. Все примеры доступны для подборок и экспорта.</p></div><div class="ty-grid">${typeSamples.map(([id,title,body],i)=>`<article class="ty-card glass" data-type-example data-title="${title}" id="type-${id}"><p class="ty-meta">${String(i+1).padStart(2,'0')} / ${title}</p><div class="ty-stage" data-cinema="${id.startsWith('motion-')?id.slice(7):id==='cinema-quote'?'mask':id==='cinema-number'?'scale':'rise'}">${body}</div><button type="button" class="btn" data-type-play>Повторить движение</button></article>`).join('')}</div></section>`;
