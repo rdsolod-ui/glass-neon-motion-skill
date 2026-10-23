@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-23",
+  "source": "584e753f45cefec325051f05661ee35962612c3b",
+  "pages_run": 39980196149,
+  "public_checks": 23,
+  "offline_specimens": 390,
+  "independent_scenarios": 10,
+  "limits": [
+    "Chromium only",
+    "No full WCAG certification",
+    "Collections stored in current browser",
+    "Export uses isolated iframe documents"
+  ]
+}
