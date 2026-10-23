@@ -13,6 +13,7 @@ const inkFor=c=>contrast('#111827',c)>=contrast('#ffffff',c)?'#111827':'#ffffff'
 const colorOK=v=>typeof v==='string'&&/^#[0-9a-f]{6}$/i.test(v);
 const ensureContrast=(color,bg,min=4.5)=>{if(contrast(color,bg)>=min)return color;const target=inkFor(bg);for(let i=1;i<=20;i++){const candidate=mix(color,target,i/20);if(contrast(candidate,bg)>=min)return candidate;}return target;};
 export function validateTheme(input){
+ if(!input||typeof input!=='object'||Array.isArray(input))return{valid:false,errors:['Некорректная тема.']};
  const state=clone(input),errors=[];state.layout??={radius:24,density:1};if(!Number.isFinite(state.layout.radius)||state.layout.radius<0||state.layout.radius>40||!Number.isFinite(state.layout.density)||state.layout.density<.75||state.layout.density>1.25)errors.push('Размеры вне допустимого диапазона.');
  if(state.schema!==THEME_SCHEMA||state.version!==1)return{valid:false,errors:['Неподдерживаемая версия темы.']};
  if(!['light','dark'].includes(state.appearance?.theme))errors.push('Неизвестная тема.');
@@ -66,7 +67,7 @@ function mountStudio(){
  const onMedia=()=>apply();media.addEventListener('change',onMedia,{signal});
  const observer=new MutationObserver(()=>{const theme=html.dataset.theme,finish=html.dataset.finish,edge=html.dataset.materialEdge;if(theme===state.appearance.theme&&finish===state.material.finish&&edge===state.material.edge)return;const next=getSnapshot();if(['light','dark'].includes(theme))next.appearance.theme=theme;if(['clear','frost'].includes(finish))next.material.finish=finish;if(['film','depth'].includes(edge))next.material.edge=edge;update(next);});observer.observe(html,{attributes:true,attributeFilter:['data-theme','data-finish','data-material-edge']});
  root.querySelectorAll('[data-ts-action]:disabled').forEach(b=>b.disabled=false);
- window.GlassTheme={getSnapshot,getCSS:()=>buildThemeCSS(state),getRuntimeJS:()=>runtimeSource(state),motionOptions,getContrast:()=>getContrastReport(state),get state(){return getSnapshot();},dispose(){if(!studioMounted)return;studioState=getSnapshot();studioMounted=false;stop();events.abort();observer.disconnect();timers.forEach(clearTimeout);timers.clear();urls.forEach(url=>URL.revokeObjectURL(url));urls.clear();root.dataset.ready='false';}};
+ window.GlassTheme={setSnapshot:update,getSnapshot,getCSS:()=>buildThemeCSS(state),getRuntimeJS:()=>runtimeSource(state),motionOptions,getContrast:()=>getContrastReport(state),get state(){return getSnapshot();},dispose(){if(!studioMounted)return;studioState=getSnapshot();studioMounted=false;stop();events.abort();observer.disconnect();timers.forEach(clearTimeout);timers.clear();urls.forEach(url=>URL.revokeObjectURL(url));urls.clear();root.dataset.ready='false';}};
  apply();root.dataset.ready='true';
  addEventListener('pagehide',()=>window.GlassTheme?.dispose(),{once:true});
 }
