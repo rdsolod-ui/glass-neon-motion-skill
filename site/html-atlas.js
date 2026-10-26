@@ -24,7 +24,7 @@ export function initHTMLAtlas(root=document.querySelector('#html-atlas')){
   button.disabled=false;
   button.addEventListener('click',()=>{filter=button.dataset.haFilter;filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));update();});
  });
- root.querySelectorAll('[name="ha-edge"]').forEach(radio=>radio.addEventListener('change',()=>{if(radio.checked)root.dataset.haEdge=radio.value;}));
+ root.querySelectorAll('[name="ha-edge"]').forEach(radio=>radio.addEventListener('change',()=>{if(radio.checked){root.dataset.haEdge=radio.value;document.documentElement.dataset.materialEdge=radio.value==='3d'?'depth':'film';}}));
  function feedback(control,message){const scope=control.closest('.ha-demo');const output=scope?.querySelector('[data-ha-feedback]');if(output)output.textContent=message;}
  root.querySelectorAll('[data-ha-action]').forEach(button=>button.addEventListener('click',()=>feedback(button,'Действие выполнено в локальном примере.')));
  root.querySelectorAll('[data-ha-form]').forEach(form=>form.addEventListener('submit',event=>{event.preventDefault();feedback(form,'Проверка пройдена. Данные никуда не отправлены.');}));

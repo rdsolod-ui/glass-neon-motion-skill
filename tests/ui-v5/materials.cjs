@@ -2,7 +2,7 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'C:/Users/admin/.codex/p
 const fs=require('node:fs'),path=require('node:path');
 const base=(process.env.BASE_URL||'http://127.0.0.1:4177/').replace(/\/?$/,'/'),out=path.resolve('qa/ui-v5');fs.mkdirSync(out,{recursive:true});
 const checks=[],errors=[];function check(name,pass,detail){checks.push({name,pass:!!pass,detail});if(!pass)console.error(name,detail)}
-(async()=>{const b=await chromium.connectOverCDP('http://127.0.0.1:9223'),c=await b.newContext({viewport:{width:1440,height:1100}});try{
+(async()=>{const b=await (process.env.HEADLESS==='1'?chromium.launch({channel:'chrome',headless:true}):chromium.connectOverCDP('http://127.0.0.1:9223')),c=await b.newContext({viewport:{width:1440,height:1100}});try{
 const p=await c.newPage();p.on('pageerror',e=>errors.push(e.message));
 for(const page of ['index.html','moodboard.html']){await p.goto(base+page);await p.locator('[data-material-preset="clear-film"]').waitFor();await p.waitForFunction(()=>!document.querySelector('[data-material-preset]').disabled);
 check(page+' four materials',await p.locator('.finish-card').count()===4);

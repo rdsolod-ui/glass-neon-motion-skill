@@ -28,8 +28,16 @@ function capture(card,index){
  // Document-local fragment references stay local. Authored reference links remain explicit URLs.
  for(const link of node.querySelectorAll('a[href^="./"]'))link.href=new URL(link.getAttribute('href'),'https://rdsolod-ui.github.io/glass-neon-motion-skill/').href;
  const title=card.dataset.title||card.querySelector('h3,h4,code')?.textContent.trim()||`Образец ${index+1}`;
- const type=kind==='composition'||kind==='material'?'Визуальный образец':kind==='motion'?'Motion-этюд':kind==='html'?'HTML-пример; ограничения и статус указаны в карточке':'Рабочий локальный пример; без серверной интеграции';
- return{id:card.id||`specimen-${index+1}`,title,kind,type,html:node.outerHTML,pattern:card.dataset.id};
+ const fixedTechnique=kind==='motion'&&!!card.querySelector('.ma-glass-2d,.ma-glass-3d');
+ const type=(kind==='composition'||kind==='material'?'Визуальный образец':kind==='motion'?'Motion-этюд':kind==='html'?'HTML-пример; ограничения и статус указаны в карточке':'Рабочий локальный пример; без серверной интеграции')+(fixedTechnique?' · Материал внутреннего этюда фиксирован; оболочка следует общей теме.':'');
+ return{id:card.id||`specimen-${index+1}`,title,kind,type,html:node.outerHTML,pattern:card.dataset.id,materialPolicy:kind==='material'?'fixed-study':fixedTechnique?'global-shell/fixed-study':'global-theme'};
+}
+function materialHTML(record,state){
+ const template=document.createElement('template');template.innerHTML=record.html;
+ for(const root of template.content.querySelectorAll('.ha-root'))root.dataset.haEdge=state.material.edge==='depth'?'3d':'2d';
+ for(const input of template.content.querySelectorAll('[name="ha-edge"]'))input.toggleAttribute('checked',input.value===(state.material.edge==='depth'?'3d':'2d'));
+ for(const root of template.content.querySelectorAll('.ui-atlas'))root.dataset.uiEdge=state.material.edge;
+ return template.innerHTML;
 }
 function scriptFor(record,state,shared=true){
  let code=shared?runtimeSource(state)+'\n'+sharedRuntime+'\n':'const api=window.__exportAPI;\n';
@@ -47,9 +55,9 @@ function scriptFor(record,state,shared=true){
 }
 function build(record,state=window.GlassTheme?.getSnapshot?.()||structuredClone(DEFAULT_THEME)){
  const specific={typography:[],ui:['ui-atlas','ui-controls','ui-compositions','ui-data'],variation:['variation-advanced','variation-atlas'],html:['html-atlas'],motion:['motion-atlas'],composition:[],material:[]}[record.kind];
- const css='/* '+license+pack.license.replaceAll('*/','* /')+'*/\n'+['style','board-v2','material-finishes',...specific,'typography'].map(n=>pack.css[n]).join('\n')+'\n'+buildThemeCSS(state)+'\n'+baseCSS;
+ const css='/* '+license+pack.license.replaceAll('*/','* /')+'*/\n'+['style','board-v2','material-finishes',...specific,'typography','material-contract'].map(n=>pack.css[n]).join('\n')+'\n'+buildThemeCSS(state)+'\n'+baseCSS;
  const js=scriptFor(record,state);
- const body=`<main><p class="export-note">${escape(record.title)} · ${escape(record.type)}<br><a href="https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#${encodeURIComponent(record.id)}">Исходный атлас</a> · LUMA · Manrope / OFL</p><div class="export-sample">${record.html}</div><p id="export-status" role="status" aria-live="polite"></p></main>`;
+ const body=`<main><p class="export-note">${escape(record.title)} · ${escape(record.type)}<br><a href="https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#${encodeURIComponent(record.id)}">Исходный атлас</a> · LUMA · Manrope / OFL</p><div class="export-sample">${materialHTML(record,state)}</div><p id="export-status" role="status" aria-live="polite"></p></main>`;
  const head=`<!doctype html>\n<html lang="ru" data-glass-theme="exported" data-theme="${state.appearance.theme}" data-finish="${state.material.finish}" data-material-edge="${state.material.edge}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(record.title)} — LUMA</title><link rel="icon" href="data:,">`;
  const html=head+'<link rel="stylesheet" href="sample.css"></head><body class="atlas-page">'+body+'<script src="sample.js" defer></script></body></html>';
  const standalone=head+'<style>'+css.replace(/<\/style/gi,'<\\/style')+'</style></head><body class="atlas-page">'+body+'<script>'+js.replace(/<\/script/gi,'<\\/script')+'</script></body></html>';
@@ -64,7 +72,7 @@ const code=dialog.querySelector('#ce-code'),status=dialog.querySelector('.ce-sta
 const showTab=key=>{tab=key;revision++;code.value=parts[key];dialog.querySelector('#ce-label').textContent=key.toUpperCase()+' · sample.'+(key==='html'?'html':key);dialog.querySelector('[data-ce-copy]').textContent='Копировать '+key.toUpperCase();dialog.querySelectorAll('[data-ce-tab]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.ceTab===key)));status.textContent='';};
 let legacyIndex=0;
 document.querySelectorAll(selectors).forEach((card,index)=>{
- const record=capture(card,card.matches('[data-type-example]')?index:legacyIndex++);if(!card.id)card.id=record.id;records.push(record);
+ const record=capture(card,card.matches('[data-type-example]')?index:legacyIndex++);if(!card.id)card.id=record.id;records.push(record);if(record.materialPolicy==='global-shell/fixed-study'){const note=document.createElement('p');note.className='small material-policy-note';note.textContent='Материал внутреннего этюда фиксирован; оболочка следует общей теме.';card.append(note);}
  const button=document.createElement('button');button.type='button';button.className='btn ce-launch';button.textContent='Код и экспорт';button.setAttribute('aria-label',`Код и экспорт: ${record.title}`);
  button.addEventListener('click',()=>{selected=record;parts=build(record);opener=button;dialog.querySelector('#ce-title').textContent=record.title;dialog.querySelector('#ce-description').textContent=record.type;showTab('html');dialog.showModal();});card.append(button);
 });
@@ -87,10 +95,10 @@ function buildCollection(ids,title='Моя подборка',state=window.GlassT
  if(!chosen.length)throw new Error('Выберите хотя бы один компонент.');
  const cssNames=new Set(['style','board-v2','material-finishes']);
  const byKind={ui:['ui-atlas','ui-controls','ui-compositions','ui-data'],variation:['variation-advanced','variation-atlas'],html:['html-atlas'],motion:['motion-atlas'],typography:[],composition:[],material:[]};
- chosen.forEach(r=>byKind[r.kind].forEach(n=>cssNames.add(n)));cssNames.add('typography');
+ chosen.forEach(r=>byKind[r.kind].forEach(n=>cssNames.add(n)));cssNames.add('typography');cssNames.add('material-contract');
  const css='/* '+license+pack.license.replaceAll('*/','* /')+'*/\n'+[...cssNames].map(n=>pack.css[n]).join('\n')+'\n'+buildThemeCSS(state)+'\n'+baseCSS;
  const core='(()=>{'+runtimeSource(state)+'\n'+sharedRuntime+'\nwindow.__exportAPI=api;})();';
- const scripts={},items=chosen.map(r=>{const key=r.kind==='composition'?r.id:r.kind;scripts[key]??=scriptFor(r,state,false);return{id:r.id,title:r.title,type:r.type,html:r.html,key};});
+ const scripts={},items=chosen.map(r=>{const key=r.kind==='composition'?r.id:r.kind;scripts[key]??=scriptFor(r,state,false);return{id:r.id,title:r.title,type:r.type,html:materialHTML(r,state),key};});
  const payload=JSON.stringify({title,state,items,css,core,scripts});
  const js=`(()=>{const data=${payload};const urls=[];const blob=(text,type)=>{const url=URL.createObjectURL(new Blob([text],{type}));urls.push(url);return url;};
  const cssURL=blob(data.css,'text/css'),coreURL=blob(data.core,'text/javascript'),scripts=Object.fromEntries(Object.entries(data.scripts).map(([k,v])=>[k,blob(v,'text/javascript')]));

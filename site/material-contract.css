@@ -1,0 +1,59 @@
+/* Material ownership: global shells / independent studies / readable wells. */
+:root{--material-edge:var(--glass-edge-shadow);--material-modal:color-mix(in srgb,var(--solid) 78%,transparent);--material-scrim:color-mix(in srgb,var(--solid) 56%,transparent)}
+:root[data-material-edge=film]{--material-edge:var(--glass-shadow)}
+:root[data-material-edge=depth]{--material-edge:var(--glass-edge-shadow)}
+
+/* High specificity is deliberate: older component families must share this state. */
+:root[data-theme][data-finish][data-material-edge] :is(.board-copy,.atlas-route a,.map-node,.pattern,.source-card,.user-reference,.board-toolbar,.material-controls,.ha-entry,.ha-input-card,.ha-state,.ma-card,.ty-card){
+ background:var(--glass-reflection),var(--glass-fill);box-shadow:var(--material-edge);border:0;backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);
+}
+:root[data-theme][data-finish][data-material-edge] :is(.ui-example-card,.vx-card){box-shadow:none}
+:root[data-theme][data-finish][data-material-edge] :is(.ui-example-card,.vx-card)::before{background:var(--glass-reflection),var(--glass-fill);box-shadow:var(--material-edge);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);border:0}
+:root[data-theme][data-finish][data-material-edge] :is(.uip-mini-header,.uip-mini-footer,.uip-hero,.uip-banner,.uic-dialog-preview,.uic-created,.uic-note-preview){background:var(--glass-reflection),var(--glass-fill);box-shadow:var(--material-edge);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);color:var(--ink);border:0}
+:root[data-theme][data-finish][data-material-edge] :is(.uic-dialog,.uic-popover,.uic-tooltip){background:var(--glass-reflection),var(--material-modal);box-shadow:var(--material-edge);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);color:var(--ink);border:0}
+
+/* Each scene has its own visible substrate. Native inputs keep solid reading wells. */
+:root[data-theme][data-finish][data-material-edge] .ha-surface{background:var(--glass-reflection),var(--material-scrim);color:var(--ink);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);box-shadow:var(--material-edge);border:0}
+:root[data-theme][data-finish][data-material-edge] .ha-root{--ha-text:var(--ink);--ha-subtle:var(--muted);--ha-panel:var(--material-scrim);--ha-control:var(--solid)}
+:root[data-theme][data-finish][data-material-edge] .pattern-preview{background:radial-gradient(ellipse at 15% 85%,#ba77e047,transparent 60%),radial-gradient(ellipse at 95% 15%,#28cbd54d,transparent 65%),var(--bg)}
+:root[data-theme][data-finish][data-material-edge] .pattern-preview .mini-ui{background:var(--glass-reflection),var(--material-scrim);color:var(--ink);box-shadow:var(--material-edge);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);border:0}
+:root[data-theme][data-finish][data-material-edge] .ma-pane:not(.ma-glass-2d):not(.ma-glass-3d){background:var(--glass-reflection),var(--material-scrim);color:var(--ink);box-shadow:var(--material-edge);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);border:0}
+
+/* One quiet navigation plane instead of opaque islands around every word. */
+:root[data-theme][data-finish][data-material-edge] .topbar.glass{background:linear-gradient(180deg,#ffffff10,transparent),var(--material-modal);box-shadow:var(--material-edge);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter)}
+:root[data-theme][data-finish] .topbar :is(.brand,nav a,.actions .btn){background:transparent;box-shadow:none;border-radius:10px}
+:root[data-theme][data-finish] .topbar .btn{padding:10px 13px}
+
+/* The main page shares the atlas material, while the three local studies remain independent. */
+:root[data-theme][data-finish][data-material-edge] .luma-site :is(.instrument,.rear-pane,.float-chip,.settings,.rail,.closing){background:var(--glass-reflection),var(--glass-fill);box-shadow:var(--material-edge);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);color:var(--ink);border:0}
+:root[data-theme][data-finish] .luma-site :is(.instrument h3,.instrument .muted,.instrument .eyebrow,.float-chip>span:last-child,.motion-tile strong,.motion-tile small){background:none;padding-inline:0;box-shadow:none;color:var(--ink)}
+:root[data-theme][data-finish] .luma-site .instrument{background:linear-gradient(110deg,var(--material-scrim),transparent 84%),var(--glass-reflection),var(--glass-fill)}
+.luma-site .hero h1{font-weight:800;letter-spacing:-.055em;font-size:clamp(3.2rem,6.6vw,6.3rem)}
+.luma-site .instrument h3{font-weight:750}
+.luma-site .hero-note{max-width:52ch}
+.luma-site .material-copy{background:transparent;padding:20px 4px 6px}
+
+/* Scoped teaching choices own fill, blur and text together, independent of global Clear. */
+:root[data-theme][data-finish] .luma-site .tactile-preview[data-surface-preview=frost]{background:linear-gradient(125deg,#ffffff18,transparent),var(--material-modal);color:var(--ink);backdrop-filter:blur(16px) saturate(125%);-webkit-backdrop-filter:blur(16px) saturate(125%);box-shadow:var(--glass-shadow)}
+:root[data-theme][data-finish] .luma-site .tactile-preview[data-surface-preview=smoke]{background:linear-gradient(125deg,#a5d7ec16,transparent),rgba(17,34,53,.86);color:#f6faff;backdrop-filter:blur(3px) saturate(115%);-webkit-backdrop-filter:blur(3px) saturate(115%);box-shadow:var(--glass-shadow)}
+:root[data-theme][data-finish] .luma-site .tactile-preview[data-surface-preview=smoke] :is(p,.eyebrow){color:#e0edf7}
+:root[data-theme][data-finish] .luma-site .tactile-preview[data-surface-preview=prism]{background:linear-gradient(130deg,#b6eaff10,#cf9eff10),var(--glass-fill);color:var(--ink);backdrop-filter:blur(.8px) saturate(112%);-webkit-backdrop-filter:blur(.8px) saturate(112%);box-shadow:var(--glass-edge-shadow)}
+:root[data-theme][data-finish] .luma-site .tactile-preview:not([data-surface-preview=smoke]) :is(p,.eyebrow){color:var(--ink)}
+
+/* Fallback remains stronger than material styling, including locally scoped studies. */
+:root[data-solid=true][data-theme][data-finish][data-material-edge]{--material-edge:var(--glass-shadow);--material-modal:var(--solid);--material-scrim:var(--solid)}
+:root[data-solid=true][data-theme][data-finish][data-material-edge] :is(.ha-surface,.ma-pane,.pattern-preview .mini-ui,.uic-dialog,.uic-popover,.uic-tooltip,.luma-site .tactile-preview){background:var(--solid);color:var(--ink);backdrop-filter:none;-webkit-backdrop-filter:none}
+:root[data-solid=true][data-theme][data-finish][data-material-edge] .luma-site .tactile-preview :is(p,.eyebrow){color:var(--ink)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){:root{--material-modal:var(--solid);--material-scrim:var(--solid)}:root[data-theme][data-finish][data-material-edge] :is(.ha-surface,.ma-pane,.pattern-preview .mini-ui,.uic-dialog,.uic-popover,.uic-tooltip,.luma-site .tactile-preview){background:var(--solid);color:var(--ink);backdrop-filter:none;-webkit-backdrop-filter:none}:root[data-theme][data-finish][data-material-edge] .luma-site .tactile-preview :is(p,.eyebrow){color:var(--ink)}}
+@media(prefers-reduced-transparency:reduce){:root{--material-modal:var(--solid);--material-scrim:var(--solid)}:root[data-theme][data-finish][data-material-edge] :is(.ha-surface,.ma-pane,.pattern-preview .mini-ui,.uic-dialog,.uic-popover,.uic-tooltip,.luma-site .tactile-preview){background:var(--solid);color:var(--ink);backdrop-filter:none;-webkit-backdrop-filter:none}:root[data-theme][data-finish][data-material-edge] .luma-site .tactile-preview :is(p,.eyebrow){color:var(--ink)}}
+@media(forced-colors:active){:root[data-theme][data-finish][data-material-edge] :is(.board-copy,.atlas-route a,.ha-entry,.ha-input-card,.ha-state,.ma-card,.ty-card,.pattern,.source-card,.user-reference,.ha-surface,.ma-pane,.pattern-preview .mini-ui,.uic-dialog,.uic-popover,.uic-tooltip,.uip-mini-header,.uip-mini-footer,.uip-hero,.uip-banner,.uic-dialog-preview,.uic-created,.uic-note-preview,.luma-site .tactile-preview){background:Canvas;color:CanvasText;border:1px solid CanvasText;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}:root[data-theme][data-finish][data-material-edge] .luma-site .tactile-preview :is(p,.eyebrow){color:CanvasText}}
+
+.tactile-study-note{margin:14px auto 0;text-align:center;max-width:54ch;font-size:.8rem;line-height:1.6;color:var(--muted)}
+
+/* Compact navigation uses quiet illumination; the narrow streak belongs to large specimens. */
+:root[data-theme][data-finish][data-material-edge] :is(.atlas-route a,.ui-map a,.map-node,.source-card,.user-reference,.luma-site .rail){background:linear-gradient(180deg,#ffffff0e,transparent 65%),var(--glass-fill)}
+:root[data-theme][data-finish][data-material-edge] .atlas-page .board-copy{background:linear-gradient(155deg,#ffffff12,transparent 65%),var(--glass-fill)}
+:root[data-theme][data-finish][data-material-edge] .btn:not(.primary){background:var(--material-modal);box-shadow:inset 0 1px 1px #ffffff20,0 6px 18px -10px #04082240}
+@media(forced-colors:active){:root[data-theme][data-finish][data-material-edge] :is(.topbar.glass,.atlas-route a,.ui-map a,.map-node,.source-card,.user-reference,.luma-site .rail,.board-copy,.btn:not(.primary)){background:Canvas;color:CanvasText;box-shadow:none;border:1px solid CanvasText}}
+
+.material-policy-note{padding:12px 20px 0;color:var(--muted);font-size:.8rem;line-height:1.6}

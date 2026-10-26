@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 // One shared, generated resource pack. Specimens are assembled on demand, never duplicated.
 export async function renderExportAssets(){
  const hashes={};const source=async file=>{const text=(await readFile(file,'utf8')).replaceAll('\r\n','\n');hashes[file]=createHash('sha256').update(text).digest('hex');return text;};
- const names=['typography','style','board-v2','html-atlas','motion-atlas','ui-atlas','ui-controls','ui-compositions','ui-data','material-finishes','variation-advanced','variation-atlas'];
+ const names=['material-contract','typography','style','board-v2','html-atlas','motion-atlas','ui-atlas','ui-controls','ui-compositions','ui-data','material-finishes','variation-advanced','variation-atlas'];
  const assets={};
  async function collect(dir){for(const e of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())await collect(p);else if(/\.(svg|woff2)$/.test(e.name)){assets[p.replaceAll('\\','/').replace(/^site\//,'')]='data:'+(e.name.endsWith('.svg')?'image/svg+xml':'font/woff2')+';base64,'+(await readFile(p)).toString('base64');}}}
  await collect('site/assets');
