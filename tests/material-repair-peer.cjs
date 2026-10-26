@@ -66,4 +66,3 @@ async function main(){
  }catch(e){errors.push(e.stack);check('suite completion',false,e.message);}finally{await c.close();await b.close();evidence.checks=checks;evidence.errors=errors;evidence.passed=checks.filter(x=>x.pass).length;evidence.total=checks.length;fs.writeFileSync(path.join(out,base.includes('github.io')?'public.json':'result.json'),JSON.stringify(evidence,null,2));console.log(JSON.stringify({passed:evidence.passed,total:evidence.total,failures:checks.filter(x=>!x.pass),errors}));if(evidence.passed!==evidence.total)process.exitCode=1;}
 }
 main().catch(e=>{console.error(e);process.exitCode=1});
-

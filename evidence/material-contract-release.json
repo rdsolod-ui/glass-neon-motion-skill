@@ -1,0 +1,31 @@
+{
+  "source": "a3dd46227ac7f1addec506be405c30e51e230a20",
+  "pages_run": 40324708484,
+  "pages_conclusion": "success",
+  "main_url": "https://rdsolod-ui.github.io/glass-neon-motion-skill/",
+  "atlas_url": "https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html",
+  "local": {
+    "check": "pass",
+    "build": "pass",
+    "offline_export": { "passed": 401, "total": 401 },
+    "material_regression": { "passed": 47, "total": 47 },
+    "fallback_regression": { "passed": 10, "total": 10 },
+    "css_only": { "passed": 4, "total": 4 },
+    "independent_material_acceptance": { "passed": 197, "total": 197 },
+    "independent_touch_long_content": { "passed": 9, "total": 9 }
+  },
+  "public": {
+    "readback_export": { "passed": 29, "total": 29 },
+    "byte_matched_source_files": 22,
+    "material_acceptance": { "passed": 197, "total": 197 },
+    "page_http_errors": []
+  },
+  "coverage": {
+    "global_shells": 391,
+    "fixed_material_studies": 10,
+    "single_material_exports": 8,
+    "mixed_material_exports": 2,
+    "browser": "Chrome headless, desktop and mobile emulation",
+    "limits": ["No physical-device certification", "No all-engine or complete WCAG certification", "No FPS claim"]
+  }
+}

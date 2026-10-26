@@ -15,7 +15,15 @@
 
 ## Проверка
 
-Локально: check/build pass; offline401/401 без ошибок JS, внешних запросов и overflow; material47/47, no-JS/transparency10/10, CSS-only4/4. Независимая приёмка197/197 плюс9/9 touch/content; 391 общая оболочка, 8 одиночных и 2 смешанных экспорта, обе темы и два viewport. Публикация фиксируется ниже после public read-back. Полные screenshots и runtime receipts хранятся в локальных qa/material-repair и qa/material-repair-peer. Тяжёлые QA-файлы в репозиторий не включаются.
+Локально: check/build pass; offline401/401 без ошибок JS, внешних запросов и overflow; material47/47, no-JS/transparency10/10, CSS-only4/4. Независимая приёмка197/197 плюс9/9 touch/content; 391 общая оболочка, 8 одиночных и 2 смешанных экспорта, обе темы и два viewport. Полные screenshots и runtime receipts хранятся в локальных qa/material-repair и qa/material-repair-peer. Тяжёлые QA-файлы в репозиторий не включаются.
+
+## Публикация
+
+Source commit: `a3dd46227ac7f1addec506be405c30e51e230a20`, ветка `main`. [GitHub Pages run 40324708484](https://github.com/rdsolod-ui/glass-neon-motion-skill/actions/runs/40324708484) завершён успешно.
+
+После публикации: public read-back/export **29/29** (в том числе побайтовое совпадение 22 опубликованных файлов с source commit), material acceptance на публичном URL **197/197**, ошибок JS и HTTP нет. Эти повторные проверки выполнены координатором по тестам независимого QA; они не являются вторым независимым аудитом. [Краткий receipt](../evidence/material-contract-release.json).
+
+Публичные адреса: [LUMA](https://rdsolod-ui.github.io/glass-neon-motion-skill/) · [Glass Atlas](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html).
 
 ## Ограничения
 
