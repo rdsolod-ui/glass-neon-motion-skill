@@ -26,3 +26,7 @@
 Проверки выполнены на Chrome с desktop/mobile эмуляцией; результаты публикации и численные итоги фиксируются в `evidence/material-comparison-release.json` после выпуска. Визуальная проверка представителей семейств не является полной проверкой всех состояний каждого из 401 примера. Safari, Firefox, физические устройства, FPS и полная WCAG-сертификация не заявляются.
 
 Skill в репозитории дополнен `references/material-comparison.md`; глобально установленная копия навыка не заменялась. Тяжёлые скриншоты и offline-файлы остаются в локальном `qa/material-compare*`.
+
+## Публикация
+
+Source `b8e01ae66413dc10580bd61bfb9919de0a52806c`, main. [Pages run40327535028](https://github.com/rdsolod-ui/glass-neon-motion-skill/actions/runs/40327535028) завершён успешно. После deploy: public read-back/export31/31 (24 файла побайтово совпали с source), compare65/65 и повтор peer-теста координатором46/46, без ошибок. [Режим сравнения](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#material-compare) · [Компактный receipt](../evidence/material-comparison-release.json).

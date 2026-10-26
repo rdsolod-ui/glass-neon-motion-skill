@@ -1,0 +1,77 @@
+{
+  "verified_at": "2026-10-26T13:06:15.108011+00:00",
+  "source": "b8e01ae66413dc10580bd61bfb9919de0a52806c",
+  "pages_run": 40327535028,
+  "pages_conclusion": "success",
+  "url": "https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#material-compare",
+  "local": {
+    "check": "pass",
+    "build": "pass",
+    "offline_export": {
+      "passed": 401,
+      "total": 401
+    },
+    "material_regression": {
+      "passed": 197,
+      "total": 197
+    },
+    "compare": {
+      "passed": 65,
+      "total": 65
+    },
+    "independent_functional": {
+      "passed": 46,
+      "total": 46
+    },
+    "independent_focus": {
+      "passed": 18,
+      "total": 18
+    },
+    "independent_material_styles": {
+      "passed": 192,
+      "total": 192
+    },
+    "independent_export": {
+      "passed": 16,
+      "total": 16
+    },
+    "independent_accessibility": {
+      "passed": 8,
+      "total": 8
+    },
+    "independent_collection_forms": {
+      "passed": 4,
+      "total": 4
+    }
+  },
+  "public": {
+    "readback_export": {
+      "passed": 31,
+      "total": 31
+    },
+    "byte_matched_source_files": 24,
+    "compare": {
+      "passed": 65,
+      "total": 65
+    },
+    "peer_test_repeated_by_coordinator": {
+      "passed": 46,
+      "total": 46
+    },
+    "errors": []
+  },
+  "coverage": {
+    "selectable_global_shells": 391,
+    "ui_family_representatives": 24,
+    "material_combinations": 4,
+    "themes": 2,
+    "contact_sheets_visually_reviewed": 12,
+    "browser": "Chrome 156, desktop/mobile emulation"
+  },
+  "limits": [
+    "No all-state audit of every specimen",
+    "No Safari/Firefox or physical touch certification",
+    "No FPS or complete WCAG claim"
+  ],
+  "skill": "Repository copy updated; global installed copy unchanged"
+}
