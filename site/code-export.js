@@ -1,5 +1,5 @@
 import pack from './export-assets.js';
-import {DEFAULT_THEME,buildThemeCSS,runtimeSource} from './theme-studio.js';
+import {DEFAULT_THEME,buildThemeCSS,runtimeSource,validateTheme} from './theme-studio.js';
 
 const selectors='[data-type-example],[data-ui-example],[data-vx-example],[data-ha-entry],.ha-input-card,.ha-state,.ma-card,.pattern,.finish-card,.optical-study';
 const records=[];
@@ -9,6 +9,8 @@ const baseCSS=`body{margin:0;padding:clamp(16px,4vw,48px);min-height:100vh}main{
 const moduleCode=names=>'const modules={};\n'+names.map(n=>pack.modules[n]).join('\n');
 const sharedRuntime=`const status=document.querySelector('#export-status');
 window.GlassTheme=window.GlassThemeRuntime;
+// Exported forms are local demonstrations: run their validation, never submit data.
+document.addEventListener('submit',event=>{const method=(event.submitter?.getAttribute('formmethod')||event.target.getAttribute('method')||'get').trim().toLowerCase();if(method!=='dialog')event.preventDefault();});
 const api={reduced:()=>GlassThemeRuntime.motionOptions().reduced,animate:(el,frames,options={})=>GlassThemeRuntime.animate(el,frames,typeof options==='number'?options:options.duration??220),announce:text=>{status.textContent=text;}};
 const sync=()=>{if(api.reduced())document.getAnimations().forEach(a=>a.cancel());document.documentElement.dataset.uiReduced=String(api.reduced());dispatchEvent(new Event('glass-theme-change'));};
 matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',sync);sync();
@@ -53,12 +55,12 @@ function scriptFor(record,state,shared=true){
  if(record.kind==='material')code+=`document.querySelectorAll('[data-material-preset]').forEach(b=>{b.disabled=false;b.addEventListener('click',()=>{api.announce('Это автономный образец выбранного материала. Настройте другой материал в исходном атласе.');});});`;
  return'/* '+license+'*/\n(()=>{\n'+code+'\n})();\n';
 }
-function build(record,state=window.GlassTheme?.getSnapshot?.()||structuredClone(DEFAULT_THEME)){
+function build(record,state=window.GlassTheme?.getSnapshot?.()||structuredClone(DEFAULT_THEME),environment={}){
  const specific={typography:[],ui:['ui-atlas','ui-controls','ui-compositions','ui-data'],variation:['variation-advanced','variation-atlas'],html:['html-atlas'],motion:['motion-atlas'],composition:[],material:[]}[record.kind];
  const css='/* '+license+pack.license.replaceAll('*/','* /')+'*/\n'+['style','board-v2','material-finishes',...specific,'typography','material-contract'].map(n=>pack.css[n]).join('\n')+'\n'+buildThemeCSS(state)+'\n'+baseCSS;
  const js=scriptFor(record,state);
  const body=`<main><p class="export-note">${escape(record.title)} · ${escape(record.type)}<br><a href="https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#${encodeURIComponent(record.id)}">Исходный атлас</a> · LUMA · Manrope / OFL</p><div class="export-sample">${materialHTML(record,state)}</div><p id="export-status" role="status" aria-live="polite"></p></main>`;
- const head=`<!doctype html>\n<html lang="ru" data-glass-theme="exported" data-theme="${state.appearance.theme}" data-finish="${state.material.finish}" data-material-edge="${state.material.edge}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(record.title)} — LUMA</title><link rel="icon" href="data:,">`;
+ const head=`<!doctype html>\n<html lang="ru" data-glass-theme="exported" data-theme="${state.appearance.theme}" data-finish="${state.material.finish}" data-material-edge="${state.material.edge}"${environment.solid?' data-solid="true"':''}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(record.title)} — LUMA</title><link rel="icon" href="data:,">`;
  const html=head+'<link rel="stylesheet" href="sample.css"></head><body class="atlas-page">'+body+'<script src="sample.js" defer></script></body></html>';
  const standalone=head+'<style>'+css.replace(/<\/style/gi,'<\\/style')+'</style></head><body class="atlas-page">'+body+'<script>'+js.replace(/<\/script/gi,'<\\/script')+'</script></body></html>';
  return{html,css,js,standalone};
@@ -88,7 +90,7 @@ const urls=new Set();
 dialog.querySelector('[data-ce-download]').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([parts.standalone],{type:'text/html;charset=utf-8'}));urls.add(url);const a=document.createElement('a');a.href=url;a.download='luma-'+selected.id.replace(/[^a-z0-9_-]/gi,'-')+'.html';a.click();status.textContent='Автономный HTML подготовлен к скачиванию.';setTimeout(()=>{URL.revokeObjectURL(url);urls.delete(url);},1500);});
 addEventListener('pagehide',()=>{revision++;urls.forEach(url=>URL.revokeObjectURL(url));urls.clear();});
 // Deterministic inspection API for coverage and offline regression checks.
-window.GlassExport={buildCollection,inventory:()=>records.map(({html,...r})=>r),build:id=>{const r=records.find(r=>r.id===id);if(!r)throw new Error('Unknown specimen');return build(r);}};
+window.GlassExport={buildCollection,inventory:()=>records.map(({html,...r})=>r),build:(id,state,environment)=>{const r=records.find(r=>r.id===id);if(!r)throw new Error('Unknown specimen');if(state){const checked=validateTheme(state);if(!checked.valid)throw new Error(checked.errors.join(' '));return build(r,checked.state,environment);}return build(r,undefined,environment);}};
 
 function buildCollection(ids,title='Моя подборка',state=window.GlassTheme?.getSnapshot?.()||structuredClone(DEFAULT_THEME)){
  const chosen=[...new Set(ids)].map(id=>records.find(r=>r.id===id)).filter(Boolean);
@@ -105,7 +107,7 @@ function buildCollection(ids,title='Моя подборка',state=window.GlassT
  Object.assign(document.documentElement.dataset,{glassTheme:'exported',theme:data.state.appearance.theme,finish:data.state.material.finish,materialEdge:data.state.material.edge});
  const link=document.createElement('link');link.rel='stylesheet';link.href=cssURL;document.head.append(link);
  const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
- for(const item of data.items){const section=document.createElement('section'),heading=document.createElement('h2'),frame=document.createElement('iframe');heading.textContent=item.title;section.append(heading,frame);document.querySelector('#collection-items').append(section);frame.title=item.title;frame.setAttribute('sandbox','allow-scripts allow-same-origin');frame.style.cssText='width:100%;border:0;display:block;height:600px';
+ for(const item of data.items){const section=document.createElement('section'),heading=document.createElement('h2'),frame=document.createElement('iframe');heading.textContent=item.title;section.append(heading,frame);document.querySelector('#collection-items').append(section);frame.title=item.title;frame.setAttribute('sandbox','allow-scripts allow-same-origin allow-forms');frame.style.cssText='width:100%;border:0;display:block;height:600px';
  frame.addEventListener('load',()=>{const doc=frame.contentDocument;if(!doc)return;const measure=()=>{frame.style.height=Math.ceil(doc.body.getBoundingClientRect().height+32)+'px';};const observer=new ResizeObserver(measure);observer.observe(doc.body);measure();addEventListener('pagehide',()=>observer.disconnect(),{once:true});});
  const s=data.state;frame.srcdoc='<!doctype html><html lang="ru" data-glass-theme="exported" data-theme="'+s.appearance.theme+'" data-finish="'+s.material.finish+'" data-material-edge="'+s.material.edge+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="'+cssURL+'"><style>body{min-height:0;padding:16px}main{max-width:none}</style></head><body class="atlas-page"><main><p class="export-note">'+esc(item.type)+'</p><div class="export-sample">'+item.html+'</div><p id="export-status" role="status"></p></main><script src="'+coreURL+'"><\/script><script src="'+scripts[item.key]+'"><\/script></body></html>';}
  addEventListener('pagehide',()=>urls.forEach(URL.revokeObjectURL),{once:true});})();`;
