@@ -20,6 +20,8 @@ description: Design, build and review glassmorphism websites and moodboards with
 
 Для избранного, подборок, общего экспорта и расширенной типографики используй [collections-typography.md](references/collections-typography.md).
 
+Для плотной кириллической типографики с цветовым акцентом внутри заголовка используй [editorial-typography.md](references/editorial-typography.md): профиль по измерениям WowPovod, роли текста, реальные глифы, локальные шрифты и экспорт.
+
 Для копирования HTML/CSS/JS, автономных примеров и редактора темы используй [code-export.md](references/code-export.md): согласованные файлы, честные статусы, лицензии, Clipboard fallback и проверка вне мудборда.
 
 При расширении готовых решений используй отдельный слой вариативности: [component-variants.md](references/component-variants.md). Разделяй семейство, вариант, состояние и материальные оси. В LUMA реализованы 44 live-local варианта в 15 семействах; это проектный пример, не обязательный объём каждого сайта.

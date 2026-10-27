@@ -1,0 +1,267 @@
+{
+  "source": "https://wowpovod.ru/ploshchadki/",
+  "review_date": "2026-10-27",
+  "method": "Chrome computed styles at three viewports; platform fonts from Chrome DevTools CSS.getPlatformFontsForNode",
+  "measurements": [
+    {
+      "viewport": 1440,
+      "role": "hero",
+      "fontFamily": "\"Bricolage Grotesque\", -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "62px",
+      "fontWeight": "760",
+      "lineHeight": "64.48px",
+      "letterSpacing": "-2.17px"
+    },
+    {
+      "viewport": 1440,
+      "role": "section",
+      "fontFamily": "\"Bricolage Grotesque\", -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "72px",
+      "fontWeight": "740",
+      "lineHeight": "70.56px",
+      "letterSpacing": "-2.592px"
+    },
+    {
+      "viewport": 1440,
+      "role": "offer",
+      "fontFamily": "\"Bricolage Grotesque\", -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "21px",
+      "fontWeight": "450",
+      "lineHeight": "31.5px",
+      "letterSpacing": "-0.252px"
+    },
+    {
+      "viewport": 1440,
+      "role": "card-body",
+      "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "21px",
+      "letterSpacing": "-0.187px"
+    },
+    {
+      "viewport": 1440,
+      "role": "action",
+      "fontFamily": "Onest, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "15.5px",
+      "fontWeight": "700",
+      "lineHeight": "24.025px",
+      "letterSpacing": "-0.155px"
+    },
+    {
+      "viewport": 768,
+      "role": "hero",
+      "fontFamily": "\"Bricolage Grotesque\", -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "35.328px",
+      "fontWeight": "760",
+      "lineHeight": "36.7411px",
+      "letterSpacing": "-1.23648px"
+    },
+    {
+      "viewport": 768,
+      "role": "section",
+      "fontFamily": "\"Bricolage Grotesque\", -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "32px",
+      "fontWeight": "740",
+      "lineHeight": "33.28px",
+      "letterSpacing": "-0.96px"
+    },
+    {
+      "viewport": 768,
+      "role": "offer",
+      "fontFamily": "\"Bricolage Grotesque\", -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "17px",
+      "fontWeight": "450",
+      "lineHeight": "25.5px",
+      "letterSpacing": "-0.204px"
+    },
+    {
+      "viewport": 768,
+      "role": "card-body",
+      "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "13.5px",
+      "fontWeight": "400",
+      "lineHeight": "20.25px",
+      "letterSpacing": "-0.1705px"
+    },
+    {
+      "viewport": 768,
+      "role": "action",
+      "fontFamily": "Onest, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "15.5px",
+      "fontWeight": "700",
+      "lineHeight": "23.25px",
+      "letterSpacing": "-0.155px"
+    },
+    {
+      "viewport": 390,
+      "role": "hero",
+      "fontFamily": "\"Bricolage Grotesque\", -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "34px",
+      "fontWeight": "760",
+      "lineHeight": "35.36px",
+      "letterSpacing": "-1.19px"
+    },
+    {
+      "viewport": 390,
+      "role": "section",
+      "fontFamily": "\"Bricolage Grotesque\", -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "32px",
+      "fontWeight": "740",
+      "lineHeight": "33.28px",
+      "letterSpacing": "-0.96px"
+    },
+    {
+      "viewport": 390,
+      "role": "offer",
+      "fontFamily": "\"Bricolage Grotesque\", -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "17px",
+      "fontWeight": "450",
+      "lineHeight": "25.5px",
+      "letterSpacing": "-0.204px"
+    },
+    {
+      "viewport": 390,
+      "role": "card-body",
+      "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "13.5px",
+      "fontWeight": "400",
+      "lineHeight": "20.25px",
+      "letterSpacing": "-0.1705px"
+    },
+    {
+      "viewport": 390,
+      "role": "action",
+      "fontFamily": "Onest, -apple-system, BlinkMacSystemFont, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+      "fontSize": "15.5px",
+      "fontWeight": "700",
+      "lineHeight": "23.25px",
+      "letterSpacing": "-0.155px"
+    }
+  ],
+  "platform_fonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "Bricolage Grotesque 96pt ExtraBold",
+          "postScriptName": "Bricolage-Grotesque-96pt-ExtraBold-96pt-ExtraBold",
+          "isCustomFont": true,
+          "glyphCount": 1
+        },
+        {
+          "familyName": "Arial",
+          "postScriptName": "Arial-BoldMT",
+          "isCustomFont": false,
+          "glyphCount": 8
+        },
+        {
+          "familyName": "Onest",
+          "postScriptName": "Onest-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    {
+      "selector": "h2",
+      "fonts": [
+        {
+          "familyName": "Bricolage Grotesque 96pt ExtraBold",
+          "postScriptName": "Bricolage-Grotesque-96pt-ExtraBold-72pt-Bold",
+          "isCustomFont": true,
+          "glyphCount": 5
+        },
+        {
+          "familyName": "Arial",
+          "postScriptName": "Arial-BoldMT",
+          "isCustomFont": false,
+          "glyphCount": 21
+        },
+        {
+          "familyName": "Onest",
+          "postScriptName": "Onest-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "selector": "h2 span",
+      "fonts": [
+        {
+          "familyName": "Onest",
+          "postScriptName": "Onest-SemiBold",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "selector": "p.offer",
+      "fonts": [
+        {
+          "familyName": "Arial",
+          "postScriptName": "ArialMT",
+          "isCustomFont": false,
+          "glyphCount": 143
+        },
+        {
+          "familyName": "Bricolage Grotesque 96pt ExtraBold",
+          "postScriptName": "Bricolage-Grotesque-96pt-ExtraBold-24pt-Medium",
+          "isCustomFont": true,
+          "glyphCount": 51
+        }
+      ]
+    },
+    {
+      "selector": "p.desc",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter",
+          "isCustomFont": true,
+          "glyphCount": 155
+        }
+      ]
+    },
+    {
+      "selector": ".btn-grad",
+      "fonts": [
+        {
+          "familyName": "Onest",
+          "postScriptName": "Onest-Bold",
+          "isCustomFont": true,
+          "glyphCount": 18
+        }
+      ]
+    }
+  ],
+  "stylesheets": [
+    {
+      "url": "https://wowpovod.ru/assets/css/theme.css?v=30a2aa8a4f",
+      "sha256": "30a2aa8a4ff99d2600a74b5f8f8bf7601556fd6409d7aca281b7f97e8409bae1"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Onest:wght@300..900&family=Inter:wght@400..700&family=JetBrains+Mono:wght@400..600&display=swap",
+      "sha256": "4565cacb9ba4e4d402b700b50f3a71162a04dfc59feac5ce16b9b97f2896dbdf"
+    },
+    {
+      "url": "https://wowpovod.ru/assets/css/site.css?v=8e2f126c89",
+      "sha256": "8e2f126c8901f21bb2ae244d8500050cf2df2a338ae9ea9a3476316e8fc55063"
+    },
+    {
+      "url": "https://wowpovod.ru/assets/css/format.css?v=34b7feea15",
+      "sha256": "34b7feea15c1bfccf6d64ba49357e480a3010a9440f6ecd7bd6c7d1917fb2325"
+    },
+    {
+      "url": "https://wowpovod.ru/assets/css/venues.css?v=bb81f49fb2",
+      "sha256": "bb81f49fb2bfba1d329e8e37f876e6f86777ff7568db7f51f9c9bbeaed076968"
+    },
+    {
+      "url": "https://wowpovod.ru/assets/css/menu.css?v=4cdaf44561",
+      "sha256": "4cdaf44561f0deb8a13a50c3df0c13e308298a1c5722a7efcbcd0b999b919fe3"
+    }
+  ],
+  "adaptation": "Onest for consistent Cyrillic headings and accents; Inter body; original LUMA examples. No source photos or commercial copy reused."
+}

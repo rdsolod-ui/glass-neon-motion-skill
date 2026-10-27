@@ -4,7 +4,7 @@ import {DEFAULT_THEME,buildThemeCSS,runtimeSource,validateTheme} from './theme-s
 const selectors='[data-type-example],[data-ui-example],[data-vx-example],[data-ha-entry],.ha-input-card,.ha-state,.ma-card,.pattern,.finish-card,.optical-study';
 const records=[];
 const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
-const license='LUMA / Glass Atlas — original specimen.\nhttps://github.com/rdsolod-ui/glass-neon-motion-skill\nFonts: Manrope, SIL Open Font License. Icons retain their embedded source attribution.\n';
+const license='LUMA / Glass Atlas — original specimen.\nhttps://github.com/rdsolod-ui/glass-neon-motion-skill\nFonts: Manrope, Onest, Inter — SIL Open Font License. Icons retain their embedded source attribution.\n';
 const baseCSS=`body{margin:0;padding:clamp(16px,4vw,48px);min-height:100vh}main{max-width:1100px;margin:auto;min-width:0}.export-note{font:14px/1.6 system-ui;margin:0 0 24px}.export-sample{min-width:0}.export-sample>section{padding:0;margin:0;width:100%}.export-sample .wrap{width:100%;margin-inline:0}.export-sample .ui-grid,.export-sample .ha-grid,.export-sample .ma-grid,.export-sample .atlas-grid,.export-sample .finish-grid,.export-sample .optical-grid,.export-sample .vx-grid,.export-sample .ty-grid{grid-template-columns:minmax(0,1fr)}.export-sample .pattern{max-width:700px;margin:auto}.export-sample .ha-state,.export-sample .ha-input-card{min-width:0}img,svg{max-width:100%}#export-status:empty{display:none}`;
 const moduleCode=names=>'const modules={};\n'+names.map(n=>pack.modules[n]).join('\n');
 const sharedRuntime=`const status=document.querySelector('#export-status');
@@ -29,6 +29,10 @@ function capture(card,index){
  for(const image of node.querySelectorAll('[src]')){const src=image.getAttribute('src').replace(/^\.\//,'');if(pack.assets[src])image.setAttribute('src',pack.assets[src]);}
  // Document-local fragment references stay local. Authored reference links remain explicit URLs.
  for(const link of node.querySelectorAll('a[href^="./"]'))link.href=new URL(link.getAttribute('href'),'https://rdsolod-ui.github.io/glass-neon-motion-skill/').href;
+ const localIds=new Set([node.id,...[...node.querySelectorAll('[id]')].map(el=>el.id)]);
+ for(const link of node.querySelectorAll('a[href^="#"]')){
+  const hash=link.getAttribute('href');if(hash.length>1&&!localIds.has(decodeURIComponent(hash.slice(1))))link.href='https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html'+hash;
+ }
  const title=card.dataset.title||card.querySelector('h3,h4,code')?.textContent.trim()||`Образец ${index+1}`;
  const fixedTechnique=kind==='motion'&&!!card.querySelector('.ma-glass-2d,.ma-glass-3d');
  const type=(kind==='composition'||kind==='material'?'Визуальный образец':kind==='motion'?'Motion-этюд':kind==='html'?'HTML-пример; ограничения и статус указаны в карточке':'Рабочий локальный пример; без серверной интеграции')+(fixedTechnique?' · Материал внутреннего этюда фиксирован; оболочка следует общей теме.':'');
@@ -59,7 +63,7 @@ function build(record,state=window.GlassTheme?.getSnapshot?.()||structuredClone(
  const specific={typography:[],ui:['ui-atlas','ui-controls','ui-compositions','ui-data'],variation:['variation-advanced','variation-atlas'],html:['html-atlas'],motion:['motion-atlas'],composition:[],material:[]}[record.kind];
  const css='/* '+license+pack.license.replaceAll('*/','* /')+'*/\n'+['style','board-v2','material-finishes',...specific,'typography','material-contract'].map(n=>pack.css[n]).join('\n')+'\n'+buildThemeCSS(state)+'\n'+baseCSS;
  const js=scriptFor(record,state);
- const body=`<main><p class="export-note">${escape(record.title)} · ${escape(record.type)}<br><a href="https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#${encodeURIComponent(record.id)}">Исходный атлас</a> · LUMA · Manrope / OFL</p><div class="export-sample">${materialHTML(record,state)}</div><p id="export-status" role="status" aria-live="polite"></p></main>`;
+ const body=`<main><p class="export-note">${escape(record.title)} · ${escape(record.type)}<br><a href="https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#${encodeURIComponent(record.id)}">Исходный атлас</a> · LUMA · Fonts / OFL</p><div class="export-sample">${materialHTML(record,state)}</div><p id="export-status" role="status" aria-live="polite"></p></main>`;
  const head=`<!doctype html>\n<html lang="ru" data-glass-theme="exported" data-theme="${state.appearance.theme}" data-finish="${state.material.finish}" data-material-edge="${state.material.edge}"${environment.solid?' data-solid="true"':''}><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(record.title)} — LUMA</title><link rel="icon" href="data:,">`;
  const html=head+'<link rel="stylesheet" href="sample.css"></head><body class="atlas-page">'+body+'<script src="sample.js" defer></script></body></html>';
  const standalone=head+'<style>'+css.replace(/<\/style/gi,'<\\/style')+'</style></head><body class="atlas-page">'+body+'<script>'+js.replace(/<\/script/gi,'<\\/script')+'</script></body></html>';

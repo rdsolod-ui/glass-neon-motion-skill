@@ -13,7 +13,7 @@ const check=(name,pass,detail)=>{checks.push({name,pass:!!pass,detail});if(!pass
   await p.goto(base+'moodboard.html');await p.waitForFunction(()=>window.GlassCompare);
   const original=await p.evaluate(()=>JSON.stringify(GlassTheme.getSnapshot()));
   await open('ui-action-buttons');
-  check('391 selectable global shells',await p.evaluate(()=>GlassCompare.snapshot().count===391));
+  check('403 selectable global shells',await p.evaluate(()=>GlassCompare.snapshot().count===403));
   check('four material frames',await p.locator('.mc-viewport iframe').count()===4);
   check('authored disabled state retained',await frame(0).getByRole('button',{name:'Экспорт недоступен'}).isDisabled());
   await frame(0).locator('[data-uic-action="add"]').first().click();

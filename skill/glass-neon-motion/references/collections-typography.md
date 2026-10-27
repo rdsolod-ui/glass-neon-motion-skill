@@ -24,6 +24,6 @@ Drag/drop и нативные кнопки Выше/Ниже меняют одн
 
 ZIP STORE без зависимости содержит index.html, collection.css, collection.js, theme.json, LICENSES.txt и README.txt. Это изолированные рабочие демонстрации, не объединённый production DOM. Проверяй CRC, распаковку, file:// offline и реальные действия, а не только наличие download.
 
-Цветовые варианты: violet/cyan/rose/amber, разные значения для light/dark и CanvasText в forced colors. Дополнительные WAAPI эффекты focus/slide/depth/curtain/tracking/cascade конечные, отменяются при replay, live reduced и pagehide. Текст остаётся виден без JS. В атласе 35 типографических образцов, общий объём 401.
+Цветовые варианты: violet/cyan/rose/amber, разные значения для light/dark и CanvasText в forced colors. Дополнительные WAAPI эффекты focus/slide/depth/curtain/tracking/cascade конечные, отменяются при replay, live reduced и pagehide. Текст остаётся виден без JS. Базовый набор сохраняет 35 образцов; editorial-профиль добавляет 12. Итого 47 типографических образцов и 413 в атласе. См. [editorial-typography.md](editorial-typography.md).
 
 Галереи website-reference-pack: Supahero (сообщает о переходе к Screensdesign), Pricing Pages, Navbar Gallery, CTA.gallery, Footer Design. Проверены 2026-10-23. Это пять источников референсов; website-components — отдельный маршрут к готовому коду. Не называй их шестью галереями без подтверждения и не копируй их assets без лицензии.

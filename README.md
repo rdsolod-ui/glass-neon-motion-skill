@@ -10,9 +10,15 @@
 
 Страницы публичны и не требуют входа. GitHub Pages публикует `site/` через `.github/workflows/pages.yml` после изменений сайта в `main`.
 
+## Типографика по референсу WowPovod
+
+В атласе **47 типографических образцов**, включая 12 оригинальных editorial-композиций по ритму [страницы площадок WowPovod](https://wowpovod.ru/ploshchadki/): плотные заголовки, цвет внутри фразы, свободный основной текст и компактные метки. Профиль использует локальные Onest / Inter с кириллицей и OFL, другие образцы сохраняют Manrope. [Открыть новый набор](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#type-editorial-hero) · [Измерения и адаптация](docs/typography-reference-wowpovod.md) · [Правила скилла](skill/glass-neon-motion/references/editorial-typography.md).
+
+Общий объём — 413 образцов; 403 с общей оболочкой доступны в [сравнении четырёх материалов](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#material-compare). Подборки, автономный HTML и ZIP сохраняют тему, локальные шрифты и лицензии.
+
 ## Версия 5 — 24 группы с рабочими примерами
 
-**Theme Studio и экспорт:** две палитры, материал, радиус, плотность и движение; HTML/CSS/JS отдельно или единый автономный HTML для 366 авторских образцов. Шрифты и иконки встроены, текущий пользовательский ввод не экспортируется. [Открыть редактор](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#theme-studio) · [Как использовать](docs/code-theme.md) · [Контракт скилла](skill/glass-neon-motion/references/code-export.md). Визуальные композиции и справочные рецепты сохраняют свои ограничения.
+**Theme Studio и экспорт:** две палитры, материал, радиус, плотность и движение; HTML/CSS/JS отдельно или единый автономный HTML для 413 авторских образцов. Шрифты и иконки встроены, текущий пользовательский ввод не экспортируется. [Открыть редактор](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#theme-studio) · [Как использовать](docs/code-theme.md) · [Контракт скилла](skill/glass-neon-motion/references/code-export.md). Визуальные композиции и справочные рецепты сохраняют свои ограничения.
 
 Расширение: **44 варианта / 15 семейств** отдельным слоем «Варианты»: progress, scroll, loading, steps, buttons, fields, cards, status, pagination, timeline, file queue, notifications, rating, range, split panes. Сохраняет базовые 24 группы; плотность и форма независимы от четырёх материалов. [Карта расширения](docs/variation-layer.md) · [Приёмка](docs/qa/variation-layer.md). [Слой вариативности](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#variation-atlas) · [Контракты в скилле](skill/glass-neon-motion/references/component-variants.md).
 

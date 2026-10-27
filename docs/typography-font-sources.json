@@ -1,0 +1,45 @@
+{
+  "source_css": "https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Onest:wght@400..800&display=swap",
+  "fonts": [
+    {
+      "family": "inter",
+      "license_url": "https://raw.githubusercontent.com/google/fonts/0b58fb370093f9a9f4ff785d94405710b79de67c/ofl/inter/OFL.txt",
+      "files": [
+        {
+          "file": "inter-cyrillic.woff2",
+          "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2",
+          "sha256": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+          "bytes": 18748
+        },
+        {
+          "file": "inter-latin.woff2",
+          "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+          "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+          "bytes": 48256
+        }
+      ],
+      "license_revision": "0b58fb370093f9a9f4ff785d94405710b79de67c"
+    },
+    {
+      "family": "onest",
+      "license_url": "https://raw.githubusercontent.com/google/fonts/4c1db3aec83c67dd223dd82a68c039cab30917a9/ofl/onest/OFL.txt",
+      "files": [
+        {
+          "file": "onest-cyrillic.woff2",
+          "url": "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
+          "sha256": "68e5e01d6265bd68967746d4f5a9d18d0e6cbb5d15583c7082d6384ab1229b27",
+          "bytes": 15860
+        },
+        {
+          "file": "onest-latin.woff2",
+          "url": "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmf-HY.woff2",
+          "sha256": "052df74533250c2e0ca0c4bdd32de594e107d99c1648e63820ef9c6142067828",
+          "bytes": 33760
+        }
+      ],
+      "license_revision": "4c1db3aec83c67dd223dd82a68c039cab30917a9"
+    }
+  ],
+  "checked_on": "2026-10-27",
+  "provenance_note": "WOFF2 bytes come from immutable Google Fonts CDN URLs and are pinned by SHA-256. Repository revisions pin license text, not a claim of reproducible binary build."
+}
