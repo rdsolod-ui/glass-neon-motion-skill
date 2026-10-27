@@ -23,3 +23,9 @@ Skill дополнен `references/editorial-typography.md`; README и акту�
 ## Ограничения
 
 Chrome desktop/mobile emulation; не заявляются одинаковая растеризация во всех ОС, физические устройства, все движки, полный WCAG-аудит или FPS. Локально поставляются Latin и Cyrillic subsets; другие письменности используют стек fallback и требуют отдельной проверки. Снимок референса относится к 27 октября 2026.
+
+## Публикация
+
+Source `510cd88e1b8862dab174493b0b08666aa2c0f087`, main. [Pages run40483823061](https://github.com/rdsolod-ui/glass-neon-motion-skill/actions/runs/40483823061) завершён успешно. Первая попытка40483684399 остановилась до deploy из-за различий CRLF/LF в лицензиях; генератор и проверка теперь нормализуют окончания строк.
+
+После публикации: public read-back/export37/37 (30 файлов совпали с исходным commit, включая четыре WOFF2 и две OFL), typography88/88, повтор peer-теста координатором41/41. [Открыть новый набор](https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#type-editorial-hero) · [Receipt](../evidence/editorial-typography-release.json).

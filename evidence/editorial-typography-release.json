@@ -1,0 +1,48 @@
+{
+  "review_date": "2026-10-27",
+  "verified_at_utc": "2026-10-27T09:51:29.649219+00:00",
+  "source": "510cd88e1b8862dab174493b0b08666aa2c0f087",
+  "feature_commit": "b550e453a8466dace03af69e71af715e1661fa86",
+  "pages_run": 40483823061,
+  "pages_conclusion": "success",
+  "initial_attempt": {
+    "run": 40483684399,
+    "result": "failed before deployment",
+    "reason": "Cross-platform license line-ending mismatch",
+    "repair": "Normalized license text in generator and validation"
+  },
+  "url": "https://rdsolod-ui.github.io/glass-neon-motion-skill/moodboard.html#type-editorial-hero",
+  "counts": {
+    "editorial": 12,
+    "typography": 47,
+    "total": 413,
+    "compare": 403
+  },
+  "local": {
+    "check": "pass",
+    "build": "pass",
+    "typography": 88,
+    "offline_exports": 413,
+    "compare_regression": 65,
+    "independent": 41,
+    "independent_targeted": 8,
+    "contrast_samples": 28,
+    "contrast_minimum": 4.81,
+    "visual_screenshots": 48
+  },
+  "public": {
+    "readback_and_export": 37,
+    "matched_source_files": 30,
+    "typography": 88,
+    "peer_test_repeated_by_coordinator": 41,
+    "errors": []
+  },
+  "limits": [
+    "Chrome desktop/mobile emulation",
+    "No 200% browser zoom or all-engine certification",
+    "No physical devices or FPS claim",
+    "Contrast is sampled, not complete WCAG certification",
+    "Latin and Cyrillic font subsets; other scripts use fallback"
+  ],
+  "skill_scope": "Repository skill updated; global installed copy unchanged"
+}
