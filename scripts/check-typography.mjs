@@ -8,7 +8,7 @@ assert.equal(new Set(typeSamples.map(r=>r[0])).size,typeSamples.length,'Stable t
 assert.equal(typeSamples.filter(r=>r[0].startsWith('editorial-')).length,12);
 assert.ok((await readFile('site/moodboard.html','utf8')).includes(typographySection()),'Regenerate typography markup');
 for(const font of manifest.fonts){
- const license=await readFile(`site/assets/fonts/editorial/${font.family}-OFL.txt`,'utf8');
+ const license=(await readFile(`site/assets/fonts/editorial/${font.family}-OFL.txt`,'utf8')).replaceAll('\r\n','\n');
  assert.ok(license.includes('SIL OPEN FONT LICENSE'));
  assert.ok(pack.license.includes(license),'Font license must travel with export');
  for(const file of font.files){
