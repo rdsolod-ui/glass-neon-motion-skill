@@ -32,3 +32,5 @@ await import('./check-variations.mjs');
 
 await import('./check-code-theme.mjs');
 await import('./check-typography.mjs');
+
+await import('./check-structured-data.mjs');

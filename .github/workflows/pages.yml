@@ -2,7 +2,7 @@ name: Publish LUMA and Glass Atlas
 on:
   push:
     branches: [main]
-    paths: ['site/**', 'scripts/check.mjs', '.github/workflows/pages.yml']
+    paths: ['site/**', 'scripts/check.mjs', 'scripts/check-structured-data.mjs', 'scripts/structured-data.mjs', '.github/workflows/pages.yml']
   workflow_dispatch:
 permissions:
   contents: read

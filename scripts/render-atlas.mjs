@@ -1,3 +1,4 @@
+import {writeStructuredData} from './structured-data.mjs';
 import {installSection} from './install-section.mjs';
 import {typographySection} from './typography.mjs';
 import {themeStudioSection} from './theme-studio.mjs';
@@ -39,3 +40,5 @@ await writeFile('site/ui-manifest.json',JSON.stringify({version:5,groups:uiGroup
 await writeFile('site/variation-manifest.json',JSON.stringify({version:1,count:variationCount,groups:variationGroups.map(({items,...g})=>({...g,items:items.map(({body,...item})=>item)}))},null,2)+'\n');
 
 await renderExportAssets();
+
+await writeStructuredData('site');

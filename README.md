@@ -134,3 +134,7 @@ HTML/CSS/JS и оптические этюды написаны для прое�
 Материалы V5: матовая плёнка, матовое стекло, прозрачная глянцевая плёнка и прозрачное глянцевое стекло. [Сравнение на сайте](https://rdsolod-ui.github.io/glass-neon-motion-skill/#finish-lab) и [правила](skill/glass-neon-motion/references/surface-finishes.md). Переключатели поверхности и 2D/3D края независимы.
 
 [Приёмка V5](docs/acceptance-v5.md) · [Публикация V5](docs/release-v5.md) · [Повторяемые browser-проверки](tests/ui-v5/README.md).
+
+## Структурированные данные
+
+LUMA и Glass Atlas содержат статический JSON-LD Schema.org. Для VPS сборка задаёт собственные абсолютные URL через `SCHEMA_SITE_URL`; исходные страницы используют GitHub Pages. Типы, сборка и проверки: [GEO-SCHEMA-REPORT.md](docs/GEO-SCHEMA-REPORT.md).
