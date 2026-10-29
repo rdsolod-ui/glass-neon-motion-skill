@@ -1,0 +1,11 @@
+/* Glass ring: constant diameter; only neon breathes while actionable. */
+.motion-cursor span{position:relative;box-sizing:border-box;width:48px!important;height:48px!important;margin:-24px!important;border-radius:50%!important;border:1px solid #7acbd0;background:#a8e6ed12;color:transparent;backdrop-filter:blur(3px);box-shadow:inset 0 1px 0 #ffffff44;}
+.motion-cursor span::after{content:'';position:absolute;inset:-1px;border:1px solid #88fff0;border-radius:50%;box-shadow:0 0 12px #65f5e5,0 0 26px #69cfff77,inset 0 0 10px #91fff044;opacity:0;pointer-events:none}
+.motion-cursor[data-mode=active] span::after{animation:cursor-neon-breathe 1.8s ease-in-out infinite}
+@keyframes cursor-neon-breathe{0%,100%{opacity:.2}50%{opacity:.9}}
+:root[data-theme=light] .motion-cursor span{border-color:#26858c;background:#ffffff22}
+:root[data-theme=light] .motion-cursor span::after{border-color:#147d87;box-shadow:0 0 10px #16aca0aa,0 0 24px #32abb255,inset 0 0 9px #29b3a833}
+.cursor-active summary,.cursor-active label,.cursor-active input[type=checkbox],.cursor-active input[type=radio],.cursor-active [role=button]{cursor:none!important}
+@media(prefers-reduced-motion:reduce),(forced-colors:active){.motion-cursor{display:none!important}.motion-cursor span::after{animation:none!important}}
+html[data-motion=reduce] .motion-cursor span::after{animation:none!important}
+.motion-cursor{position:fixed;left:0;top:0;z-index:10001;pointer-events:none;opacity:0}.motion-cursor span{display:block}.cursor-active .motion-cursor{opacity:1}.cursor-active,.cursor-active a,.cursor-active button{cursor:none!important}

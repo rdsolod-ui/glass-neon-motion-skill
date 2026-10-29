@@ -53,3 +53,8 @@ description: Design, build and review glassmorphism websites and moodboards with
 ## Установка и обновление
 
 Команды для Codex и Claude Code, область установки и сохранение локальных адаптаций: [installation.md](references/installation.md).
+
+
+## Стеклянное кольцо курсора
+
+Утвержденный hover/click паттерн: [glass-ring-cursor.md](references/glass-ring-cursor.md). Кольцо48px со стеклом; hover — плавная неоновая пульсация только над активным элементом; primary press — scale2/3. Этот явно запрошенный hover-loop — ограниченное исключение из запрета бесконечного декоративного движения.
